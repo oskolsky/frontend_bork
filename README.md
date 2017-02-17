@@ -1,2 +1,3 @@
-# frontend_bork
-Front-end for Bork
+# Front-end for Bork
+
+(c) Irbis
