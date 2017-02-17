@@ -1,9 +1,46 @@
+/*
+    Font family:
+
+    font-family: "BorkDisplayRegilar", Helvetica, Arial, sans-serif;
+    font-family: "AkzidenzGroteskProLight", Helvetica, Arial, sans-serif;
+    font-family: "AkzidenzGroteskProRegular", Helvetica, Arial, sans-serif;
+    font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
+    font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif;
+*/
+
 html {
     height: 100%;
 }
 
 body {
     height: 100%;
+    background: #1b1b1b;
+    color: #fff;
+    font-family: "AkzidenzGroteskProLight", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .4px;
+}
+
+h1 {
+    color: #fff;
+    font-family: "BorkDisplayRegilar", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+h2 {
+    color: #fff;
+    font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h3 {
+    font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    line-height: 28px;
 }
 
 a,
@@ -20,9 +57,11 @@ a:hover {
 }
 
 .section {
-
+    padding: 50px 0;
+    text-align: center;
 }
 
 .footer {
-
+    text-align: center;
+    opacity: .5;
 }

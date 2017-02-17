@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'BorkDisplayRegilar';
+    src: url('../fonts/Bork-Display-Regilar/Bork-Display-Regilar.eot');
+    src:
+        url('../fonts/Bork-Display-Regilar/Bork-Display-Regilar.woff') format('woff'),
+        url('../fonts/Bork-Display-Regilar/Bork-Display-Regilar.ttf') format('truetype'),
+        url('../fonts/Bork-Display-Regilar/Bork-Display-Regilar.svg#BorkDisplay-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AkzidenzGroteskProLight';
+    src: url('../fonts/AkzidenzGroteskPro-Light/AkzidenzGroteskPro-Light.eot');
+    src:
+        url('../fonts/AkzidenzGroteskPro-Light/AkzidenzGroteskPro-Light.woff') format('woff'),
+        url('../fonts/AkzidenzGroteskPro-Light/AkzidenzGroteskPro-Light.ttf') format('truetype'),
+        url('../fonts/AkzidenzGroteskPro-Light/AkzidenzGroteskPro-Light.svg#AkzidenzGroteskPro-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AkzidenzGroteskProRegular';
+    src: url('../fonts/AkzidenzGroteskPro-Regular/AkzidenzGroteskPro-Regular.eot');
+    src:
+        url('../fonts/AkzidenzGroteskPro-Regular/AkzidenzGroteskPro-Regular.woff') format('woff'),
+        url('../fonts/AkzidenzGroteskPro-Regular/AkzidenzGroteskPro-Regular.ttf') format('truetype'),
+        url('../fonts/AkzidenzGroteskPro-Regular/AkzidenzGroteskPro-Regular.svg#AkzidenzGroteskPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AkzidenzGroteskProMd';
+    src: url('../fonts/AkzidenzGroteskPro-Md/AkzidenzGroteskPro-Md.eot');
+    src:
+        url('../fonts/AkzidenzGroteskPro-Md/AkzidenzGroteskPro-Md.woff') format('woff'),
+        url('../fonts/AkzidenzGroteskPro-Md/AkzidenzGroteskPro-Md.ttf') format('truetype'),
+        url('../fonts/AkzidenzGroteskPro-Md/AkzidenzGroteskPro-Md.svg#AkzidenzGroteskPro-Md') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AkzidenzGroteskProExt';
+    src: url('../fonts/AkzidenzGroteskPro-Ext/AkzidenzGroteskPro-Ext.eot');
+    src:
+        url('../fonts/AkzidenzGroteskPro-Ext/AkzidenzGroteskPro-Ext.woff') format('woff'),
+        url('../fonts/AkzidenzGroteskPro-Ext/AkzidenzGroteskPro-Ext.ttf') format('truetype'),
+        url('../fonts/AkzidenzGroteskPro-Ext/AkzidenzGroteskPro-Ext.svg#AkzidenzGroteskPro-Ext') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
