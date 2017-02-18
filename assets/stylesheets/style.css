@@ -78,7 +78,7 @@ a:hover {
 }
 
 .header_brand {
-    margin: 0 20px 0 0;
+    margin: 0 25px 0 0;
     font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
     font-size: 15px;
     text-transform: uppercase;
@@ -86,7 +86,7 @@ a:hover {
 }
 
 .header_phone {
-    margin: 0 0 0 20px;
+    margin: 0 0 0 25px;
     color: #fc642a;
     font-size: 15px;
     letter-spacing: 0;
