@@ -23,6 +23,7 @@ body {
 }
 
 h1 {
+    margin: 0;
     color: #fff;
     font-family: "BorkDisplayRegilar", Helvetica, Arial, sans-serif;
     font-size: 24px;
@@ -30,6 +31,7 @@ h1 {
 }
 
 h2 {
+    margin: 0;
     color: #fff;
     font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif;
     font-size: 24px;
@@ -37,6 +39,7 @@ h2 {
 }
 
 h3 {
+    margin: 0;
     color: #fff;
     font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif;
     font-size: 18px;
@@ -70,6 +73,7 @@ a:hover {
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 998;
     height: 55px;
     padding: 0 25px;
     background: #000;
@@ -106,8 +110,112 @@ a:hover {
 }
 
 .section {
-    padding: 50px 0;
-    text-align: center;
+
+}
+
+.section__index {
+    height: 835px;
+    background-image: url("../images/section-bg-index.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.section__specifications {
+    padding: 30px 0 50px;
+    background-color: #151515;
+    background-image: url("../images/pattern.png");
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.section__boutiques {
+    height: 645px;
+    background-image: url("../images/section-bg-boutiques.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.section__contacts {
+    height: 420px;
+}
+
+.container {
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;*/
+    max-width: 1050px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.model {
+    position: relative;
+    width: 418px;
+    height: 540px;
+    margin: 45px auto 65px;
+}
+
+.model_signature {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 242px;
+    height: 40px;
+}
+
+.specifications {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.specifications_block {
+    flex: 0 1 22%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.specifications_item {
+    position: relative;
+    padding: 0 0 0 40px;
+}
+.specifications_item:not(:last-child) {
+    margin: 0 0 22px;
+}
+
+.specifications_icon {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.specifications_title {
+    margin: 0 0 4px;
+    font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.specifications_description {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+
+.contacts {
+    flex: 0 1 35%;
 }
 
 .footer {
