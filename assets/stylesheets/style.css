@@ -8,6 +8,8 @@
     font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif;
 */
 
+/* Default styles */
+
 html {
     min-height: 100%;
 }
@@ -39,17 +41,23 @@ h2 {
 }
 
 h3 {
-    margin: 0;
+    margin: 0 0 10px;
     color: #fff;
     font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif;
     font-size: 18px;
     line-height: 28px;
 }
 
+p {
+    margin: 0;
+}
+
 a,
 a:hover {
-
+    text-decoration: none;
 }
+
+/* Buttons */
 
 .button {
     display: inline-block;
@@ -66,6 +74,8 @@ a:hover {
     letter-spacing: 1.3px;
     cursor: pointer;
 }
+
+/* Header */
 
 .header {
     position: fixed;
@@ -105,9 +115,13 @@ a:hover {
     line-height: 17px;
 }
 
+/* Main */
+
 .main {
     padding: 55px 0 0;
 }
+
+/* Sections */
 
 .section {
 
@@ -153,7 +167,7 @@ a:hover {
     flex-wrap: nowrap;
     align-content: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 /* Specifications section */
@@ -222,13 +236,50 @@ a:hover {
 /* Boutiques section */
 
 .boutiques {
-    text-align: center;
     width: 50%;
+    text-align: center;
 }
 
+/* Contacts section */
+
 .contacts {
-    flex: 0 1 35%;
+    flex: 0 1 39%;
+    text-align: center;
 }
+
+.contacts__phone {
+    padding: 4px 0 0; /* Compensations different icon height */
+}
+
+.contacts_icon {
+    margin: 0 0 27px;
+}
+
+.contacts_order {
+    display: inline-block;
+    margin: 25px 0 0;
+    color: #e6e6e6;
+    font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    vertical-align: top;
+    letter-spacing: 1.3px;
+}
+
+.contacts_phone {
+    display: inline-block;
+    margin: 25px 0 0;
+    color: #e6e6e6;
+    font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    vertical-align: top;
+    letter-spacing: 1.4px;
+}
+
+/* Footer */
 
 .footer {
     padding: 30px 0;
