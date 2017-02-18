@@ -1,0 +1,429 @@
+/*
+    Font family:
+
+    font-family: "BorkDisplayRegilar", Helvetica, Arial, sans-serif;
+    font-family: "AkzidenzGroteskProLight", Helvetica, Arial, sans-serif;
+    font-family: "AkzidenzGroteskProRegular", Helvetica, Arial, sans-serif;
+    font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
+    font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif;
+*/
+
+/* Default style */
+
+html {
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+    background: #1b1b1b;
+    color: #fff;
+    font-family: "AkzidenzGroteskProLight", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .4px;
+}
+
+h1 {
+    margin: 0 0 18px;
+    color: #fff;
+    font-family: "BorkDisplayRegilar", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    word-spacing: 15px;
+}
+
+h2 {
+    margin: 0 0 23px;
+    color: #fff;
+    font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h3 {
+    margin: 0 0 10px;
+    color: #fff;
+    font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+p {
+    margin: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+/* Button */
+
+.button {
+    display: inline-block;
+    height: 25px;
+    padding: 0 20px;
+    border: 2px solid #FC642A;
+    border-radius: 26px;
+    background: transparent;
+    color: #e6e6e6;
+    font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    vertical-align: baseline;
+    letter-spacing: 1.3px;
+    cursor: pointer;
+}
+
+/* Header */
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 998;
+    height: 55px;
+    padding: 0 25px;
+    background: #000;
+    line-height: 55px;
+    text-align: right;
+}
+
+.header_logo {
+    position: absolute;
+    top: 19px;
+    left: 25px;
+    width: 83px;
+    height: 17px;
+    line-height: 17px;
+}
+
+.header_brand {
+    margin: 0 25px 0 0;
+    font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header_phone {
+    margin: 0 0 0 25px;
+    color: #fc642a;
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+/* Main */
+
+.main {
+    padding: 55px 0 0;
+}
+
+/* Section */
+
+.section {
+    padding: 0 75px;
+}
+
+.section__index {
+    height: 835px;
+    background: red;
+}
+
+.section__intro {
+    height: 950px;
+    background: green;
+}
+
+.section__masterpiece {
+    height: 775px;
+    background: red;
+}
+
+.section__video {
+    height: 925px;
+    background: green;
+}
+
+.section__quick-result {
+    height: 1020px;
+    background: red;
+}
+
+.section__choose-coffee {
+    height: 1295px;
+    background: green;
+}
+
+.section__frothing {
+    height: 925px;
+    background: red;
+}
+
+.section__specifications {
+    padding: 30px 0 50px;
+    background-color: #151515;
+    background-image: url("../images/pattern.png");
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.section__boutiques {
+    height: 645px;
+    background-image: url("../images/section-bg-boutiques.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.section__contacts {
+    height: 420px;
+}
+
+/* Index section */
+
+.index {
+    position: relative;
+    top: 160px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.index_content {
+    flex: 0 1 50%;
+}
+
+/* Intro section */
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.intro_content {
+    flex: 0 1 50%;
+    text-align: center;
+}
+
+/* Masterpiece section */
+
+.masterpiece {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.masterpiece_content {
+    flex: 0 1 40%;
+}
+
+/* Video section */
+
+.video {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.video_content {
+    flex: 0 1 auto
+    text-align: center;
+}
+
+/* Quick Result section */
+
+.quick-result {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.quick-result_content {
+    flex: 0 1 30%;
+    text-align: center;
+}
+
+/* Choose Coffee section */
+
+.choose-coffee {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.choose-coffee_content {
+    flex: 0 1 45%;
+    text-align: center;
+}
+
+/* Frothing section */
+
+.frothing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.frothing_content {
+    flex: 0 1 50%;
+    text-align: center;
+}
+
+/* Specifications section */
+
+.model {
+    position: relative;
+    width: 418px;
+    height: 540px;
+    margin: 45px auto 65px;
+}
+
+.model_signature {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 242px;
+    height: 40px;
+}
+
+.specifications {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.specifications_content {
+    flex: 0 1 22%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.specifications_item {
+    position: relative;
+    padding: 0 0 0 40px;
+}
+.specifications_item:not(:last-child) {
+    margin: 0 0 22px;
+}
+
+.specifications_icon {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.specifications_title {
+    margin: 0 0 4px;
+    font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.specifications_description {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+
+/* Boutiques section */
+
+.boutiques {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.boutiques_content {
+    width: 50%;
+    text-align: center;
+}
+
+/* Contacts section */
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contacts_content {
+    flex: 0 1 39%;
+    text-align: center;
+}
+
+.contacts_content__phone {
+    padding: 4px 0 0; /* Compensations different icon height */
+}
+
+.contacts_icon {
+    margin: 0 0 27px;
+}
+
+.contacts_order {
+    display: inline-block;
+    margin: 26px 0 0;
+    color: #e6e6e6;
+    font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    vertical-align: top;
+    letter-spacing: 1.3px;
+}
+
+.contacts_phone {
+    display: inline-block;
+    margin: 25px 0 0;
+    color: #e6e6e6;
+    font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    vertical-align: top;
+    letter-spacing: 1.4px;
+}
+
+/* Container */
+
+.container {
+    max-width: 1050px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* Footer */
+
+.footer {
+    padding: 30px 0;
+    text-align: center;
+    opacity: .5;
+}

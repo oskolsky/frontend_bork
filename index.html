@@ -5,24 +5,8 @@
 
         <link rel="stylesheet" href="assets/stylesheets/normalize.css">
         <link rel="stylesheet" href="assets/stylesheets/fonts.css">
-        <link rel="stylesheet" href="assets/stylesheets/base.css">
         <link rel="stylesheet" href="assets/stylesheets/icons.css">
-        <link rel="stylesheet" href="assets/stylesheets/common.css">
-        <link rel="stylesheet" href="assets/stylesheets/header.css">
-        <link rel="stylesheet" href="assets/stylesheets/main.css">
-        <link rel="stylesheet" href="assets/stylesheets/section.css">
-        <link rel="stylesheet" href="assets/stylesheets/container.css">
-
-        <link rel="stylesheet" href="assets/stylesheets/index.css">
-        <link rel="stylesheet" href="assets/stylesheets/quick-result.css">
-        <link rel="stylesheet" href="assets/stylesheets/choose-coffee.css">
-        <link rel="stylesheet" href="assets/stylesheets/frothing.css">
-        <link rel="stylesheet" href="assets/stylesheets/specifications.css">
-        <link rel="stylesheet" href="assets/stylesheets/boutiques.css">
-        <link rel="stylesheet" href="assets/stylesheets/contacts.css">
-
-        <link rel="stylesheet" href="assets/stylesheets/footer.css">
-
+        <link rel="stylesheet" href="assets/stylesheets/style.css">
         <script type="text/javascript" src="assets/javascripts/jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="assets/javascripts/script.js"></script>
         <title>Bork</title>
@@ -30,7 +14,7 @@
     <body>
 
         <header class="header" role="banner">
-            <a href="#" class="logo">
+            <a href="#" class="header_logo">
                 <img src="assets/images/logo.svg" width="83" height="17" alt="Bork">
             </a>
             <span class="header_brand">BORK Nespresso C830</span>
@@ -49,18 +33,30 @@
                 </div>
             </section>
 
-            <section class="section" role="region" aria-label="Intro">
-                <h2>Произведение  современного искусства</h2>
-                <p>Изящная кофемашина BORK C830 Creatista Plus станет прекрасным дополнением вашего интерьера и&nbsp;стильной коллекции техники BORK</p>
+            <section class="section section__intro" role="region" aria-label="Intro">
+                <div class="container intro">
+                    <div class="intro_content">
+                        <h2>Произведение  современного искусства</h2>
+                        <p>Изящная кофемашина BORK C830 Creatista Plus станет прекрасным дополнением вашего интерьера и&nbsp;стильной коллекции техники BORK</p>
+                    </div>
+                </div>
             </section>
 
-            <section class="section" role="region" aria-label="Masterpiece">
-                <h2>Два бренда&nbsp;&mdash;  один шедевр</h2>
-                <p>BORK C830 Creatista Plus с&nbsp;запатентованной системой заваривания Nespresso подарит богатый вкус любимого кофе в&nbsp;каждой чашке</p>
+            <section class="section section__masterpiece" role="region" aria-label="Masterpiece">
+                <div class="container masterpiece">
+                    <div class="masterpiece_content">
+                        <h2>Два бренда&nbsp;&mdash;  один шедевр</h2>
+                        <p>BORK C830 Creatista Plus с&nbsp;запатентованной системой заваривания Nespresso подарит богатый вкус любимого кофе в&nbsp;каждой чашке</p>
+                    </div>
+                </div>
             </section>
 
-            <section class="section" role="region" aria-label="Video">
-                <h2>Интуитивное управление и&nbsp;безупречный результат</h2>
+            <section class="section section__video" role="region" aria-label="Video">
+                <div class="container video">
+                    <div class="video_content">
+                        <h2>Интуитивное управление и&nbsp;безупречный результат</h2>
+                    </div>
+                </div>
             </section>
 
             <section class="section section__quick-result" role="region" aria-label="Quick Result">
@@ -101,7 +97,7 @@
                         <img src="assets/images/signature.svg" width="242" height="40" class="model_signature" alt="BORK Nespresso C830">
                     </div>
                     <div class="specifications">
-                        <ul class="specifications_block">
+                        <ul class="specifications_content">
                             <li class="specifications_item">
                                 <i class="icon icon__designer specifications_icon"></i>
                                 <dl>
@@ -124,7 +120,7 @@
                                 </dl>
                             </li>
                         </ul>
-                        <ul class="specifications_block">
+                        <ul class="specifications_content">
                             <li class="specifications_item">
                                 <i class="icon icon__capsules specifications_icon"></i>
                                 <dl>
@@ -153,7 +149,7 @@
                                 </dl>
                             </li>
                         </ul>
-                        <ul class="specifications_block">
+                        <ul class="specifications_content">
                             <li class="specifications_item">
                                 <i class="icon icon__jar specifications_icon"></i>
                                 <dl>
@@ -182,7 +178,7 @@
                                 </dl>
                             </li>
                         </ul>
-                        <ul class="specifications_block">
+                        <ul class="specifications_content">
                             <li class="specifications_item">
                                 <i class="icon icon__plug specifications_icon"></i>
                                 <dl>
@@ -218,6 +214,7 @@
 
             <section class="section section__boutiques" role="region" aria-label="Boutiques">
                 <div class="container boutiques">
+                <div class="container boutiques">
                     <div class="boutiques_content">
                         <h2>В&nbsp;атмосфере роскоши</h2>
                         <p>Оцените все возможности бытовой техники для красивой  и комфортной жизни в&nbsp;бутиках BORK</p>
@@ -227,18 +224,18 @@
 
             <section class="section section__contacts" role="region" aria-label="Contacts">
                 <div class="container contacts">
-                    <div class="contact">
-                        <i class="icon icon__delivery contact_icon"></i>
+                    <div class="contacts_content">
+                        <i class="icon icon__delivery contacts_icon"></i>
                         <h3>Бесплатная доставка</h3>
                         <p>Мы&nbsp;бесплатно осуществляем экспресс доставку покупок по&nbsp;более чем 7&nbsp;000 направлений в&nbsp;России</p>
-                        <a href="#" class="contact_order">Сделать заказ</a>
+                        <a href="#" class="contacts_order">Сделать заказ</a>
                     </div>
 
-                    <div class="contact contact__phone">
-                        <i class="icon icon__phone contact_icon"></i>
+                    <div class="contacts_content contacts_content__phone">
+                        <i class="icon icon__phone contacts_icon"></i>
                         <h3>Интернет-бутик</h3>
                         <p>Квалифицированные эксперты интернет-бутика всегда с&nbsp;радостью проконсультируют вас по&nbsp;всем вопросам</p>
-                        <span class="contact_phone">8 800 500 88 99</span>
+                        <span class="contacts_phone">8 800 500 88 99</span>
                     </div>
                 </div>
             </section>
