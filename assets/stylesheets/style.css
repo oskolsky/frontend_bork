@@ -228,6 +228,12 @@ a:hover {
     flex: 0 1 40%;
 }
 
+.masterpiece_creatista {
+    display: inline-block;
+    margin: 65px 0 0;
+    vertical-align: top;
+}
+
 /* Video section */
 
 .video {
