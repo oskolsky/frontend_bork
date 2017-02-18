@@ -1,0 +1,12 @@
+.quick-result {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.quick-result_content {
+    flex: 0 1 30%;
+    text-align: center;
+}

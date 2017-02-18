@@ -1,0 +1,47 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+    background: #1b1b1b;
+    color: #fff;
+    font-family: "AkzidenzGroteskProLight", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .4px;
+}
+
+h1 {
+    margin: 0 0 18px;
+    color: #fff;
+    font-family: "BorkDisplayRegilar", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    word-spacing: 15px;
+}
+
+h2 {
+    margin: 0 0 23px;
+    color: #fff;
+    font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h3 {
+    margin: 0 0 10px;
+    color: #fff;
+    font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+p {
+    margin: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}

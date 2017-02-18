@@ -1,0 +1,27 @@
+/*
+    Font family:
+
+    font-family: "BorkDisplayRegilar", Helvetica, Arial, sans-serif;
+    font-family: "AkzidenzGroteskProLight", Helvetica, Arial, sans-serif;
+    font-family: "AkzidenzGroteskProRegular", Helvetica, Arial, sans-serif;
+    font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
+    font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif;
+*/
+
+/* Buttons */
+
+.button {
+    display: inline-block;
+    height: 25px;
+    padding: 0 20px;
+    border: 2px solid #FC642A;
+    border-radius: 26px;
+    background: transparent;
+    color: #e6e6e6;
+    font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    vertical-align: baseline;
+    letter-spacing: 1.3px;
+    cursor: pointer;
+}
