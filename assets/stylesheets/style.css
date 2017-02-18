@@ -31,7 +31,7 @@ h1 {
 }
 
 h2 {
-    margin: 0;
+    margin: 0 0 23px;
     color: #fff;
     font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif;
     font-size: 24px;
@@ -142,16 +142,21 @@ a:hover {
 }
 
 .container {
-    /*display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-    justify-content: center;*/
     max-width: 1050px;
     height: 100%;
     margin: 0 auto;
 }
+
+.container__flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Specifications section */
 
 .model {
     position: relative;
@@ -212,6 +217,13 @@ a:hover {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0;
+}
+
+/* Boutiques section */
+
+.boutiques {
+    text-align: center;
+    width: 50%;
 }
 
 .contacts {
