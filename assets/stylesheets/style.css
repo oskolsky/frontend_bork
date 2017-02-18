@@ -53,27 +53,49 @@ p {
     margin: 0;
 }
 
-a,
-a:hover {
+a {
+    color: #fff;
     text-decoration: none;
+}
+
+a:hover {
+    color: #ccc;
+    text-decoration: none;
+}
+
+button:focus {
+    outline: none;
 }
 
 /* Button */
 
 .button {
     display: inline-block;
-    height: 25px;
-    padding: 0 20px;
     border: 2px solid #FC642A;
-    border-radius: 26px;
     background: transparent;
-    color: #e6e6e6;
+    color: #fff;
     font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
     font-size: 13px;
     text-transform: uppercase;
     vertical-align: baseline;
     letter-spacing: 1.3px;
     cursor: pointer;
+}
+
+.button:hover {
+    background: #fc642a;
+}
+
+.button__small {
+    height: 35px;
+    padding: 0 20px;
+    border-radius: 26px;
+}
+
+.button__large {
+    height: 54px;
+    padding: 0 30px;
+    border-radius: 37px;
 }
 
 /* Header */
@@ -145,7 +167,9 @@ a:hover {
 
 .section__video {
     height: 925px;
-    background: green;
+    background-image: url("../images/section-bg-video.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .section__quick-result {
@@ -199,6 +223,18 @@ a:hover {
     flex: 0 1 50%;
 }
 
+.order {
+    margin: 32px 0 0;
+}
+
+.order_price {
+    display: inline-block;
+    margin: 0 0 0 20px;
+    font-size: 18px;
+    line-height: 27px;
+    vertical-align: baseline;
+}
+
 /* Intro section */
 
 .intro {
@@ -245,8 +281,26 @@ a:hover {
 }
 
 .video_content {
-    flex: 0 1 auto
+    flex: 0 1 auto;
     text-align: center;
+}
+
+.video_play {
+    display: inline-block;
+    width: 96px;
+    height: 96px;
+    margin: 10px 0 0;
+    border: none;
+    background-color: transparent;
+    background-image: url("../images/play-video.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.video_play:hover {
+    background-position: -96px 0;
 }
 
 /* Quick Result section */
@@ -394,27 +448,24 @@ a:hover {
     margin: 0 0 27px;
 }
 
-.contacts_order {
+.contacts_link {
     display: inline-block;
-    margin: 26px 0 0;
-    color: #e6e6e6;
     font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
-    font-size: 13px;
     line-height: 16px;
     text-transform: uppercase;
     vertical-align: top;
     letter-spacing: 1.3px;
 }
 
-.contacts_phone {
-    display: inline-block;
+.contacts_link__order {
+    margin: 26px 0 0;
+    font-size: 13px;
+    letter-spacing: 1.3px;
+}
+
+.contacts_link__phone {
     margin: 25px 0 0;
-    color: #e6e6e6;
-    font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
     font-size: 14px;
-    line-height: 16px;
-    text-transform: uppercase;
-    vertical-align: top;
     letter-spacing: 1.4px;
 }
 
