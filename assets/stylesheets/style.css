@@ -135,6 +135,18 @@ a:hover {
     background-size: cover;
 }
 
+.section__quick-result {
+    height: 926px;
+}
+
+.section__choose-coffee {
+    height: 926px;
+}
+
+.section__froathing {
+    height: 926px;
+}
+
 .section__specifications {
     padding: 30px 0 50px;
     background-color: #151515;
@@ -168,6 +180,27 @@ a:hover {
     align-content: center;
     align-items: center;
     justify-content: space-around;
+}
+
+/* Quick Result section */
+
+.quick-result {
+    flex: 0 1 30%;
+    text-align: center;
+}
+
+/* Choose Coffee section */
+
+.choose-coffee {
+    flex: 0 1 45%;
+    text-align: center;
+}
+
+/* Froathing section */
+
+.froathing {
+    flex: 0 1 50%;
+    text-align: center;
 }
 
 /* Specifications section */
