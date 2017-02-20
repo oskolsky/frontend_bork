@@ -19,6 +19,30 @@
         height: 35px;
         padding: 0 20px;
         border-radius: 26px;
+
+        @include mq('phone') {
+            height: 32px;
+            font-size: 11px;
+            letter-spacing: .6px;
+        }
+
+        @include mq('tablet') {
+            height: 35px;
+            font-size: 11px;
+            letter-spacing: 1.3px;
+        }
+
+        @include mq('desktop') {
+            height: 35px;
+            font-size: 13px;
+            letter-spacing: 1.3px;
+        }
+
+        @include mq('extra-desktop') {
+            height: 35px;
+            font-size: 13px;
+            letter-spacing: 1.3px;
+        }
     }
 
     &__large {

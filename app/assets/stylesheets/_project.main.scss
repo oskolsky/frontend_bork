@@ -1,3 +1,17 @@
 .main {
-    padding: 55px 0 0;
+    @include mq('phone') {
+        padding: 43px 0 0;
+    }
+
+    @include mq('tablet') {
+        padding: 55px 0 0;
+    }
+
+    @include mq('desktop') {
+        padding: 55px 0 0;
+    }
+
+    @include mq('extra-desktop') {
+        padding: 55px 0 0;
+    }
 }

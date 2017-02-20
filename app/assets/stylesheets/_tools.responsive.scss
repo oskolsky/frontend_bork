@@ -1,0 +1,23 @@
+@include mq("phone") {
+    .hidden-phone,
+    .visible-tablet,
+    .visible-desktop {display: none !important;}
+}
+
+@include mq("tablet") {
+    .visible-phone,
+    .hidden-tablet,
+    .visible-desktop {display: none !important;}
+}
+
+@include mq("desktop") {
+    .visible-phone,
+    .visible-tablet,
+    .hidden-desktop {display: none !important;}
+}
+
+@include mq("extra-desktop") {
+    .visible-phone,
+    .visible-tablet,
+    .hidden-desktop {display: none !important;}
+}

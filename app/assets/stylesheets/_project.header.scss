@@ -5,33 +5,123 @@
     bottom: 0;
     left: 0;
     z-index: 998;
-    height: 55px;
-    padding: 0 25px;
     background: #000;
-    line-height: 55px;
     text-align: right;
+
+    @include mq('phone') {
+        height: 43px;
+        padding: 0 10px;
+        line-height: 43px;
+    }
+
+    @include mq('tablet') {
+        height: 55px;
+        padding: 0 25px;
+        line-height: 55px;
+    }
+
+    @include mq('desktop') {
+        height: 55px;
+        padding: 0 25px;
+        line-height: 55px;
+    }
+
+    @include mq('extra-desktop') {
+        height: 55px;
+        padding: 0 25px;
+        line-height: 55px;
+    }
 
     &_logo {
         position: absolute;
-        top: 19px;
-        left: 25px;
         width: 83px;
         height: 17px;
         line-height: 17px;
+
+        @include mq('phone') {
+            top: 14px;
+            left: 10px;
+            width: 71px;
+            height: 15px;
+        }
+
+        @include mq('tablet') {
+            top: 19px;
+            left: 25px;
+            width: 83px;
+            height: 17px;
+        }
+
+        @include mq('desktop') {
+            top: 19px;
+            left: 25px;
+            width: 83px;
+            height: 17px;
+        }
+
+        @include mq('extra-desktop') {
+            top: 19px;
+            left: 25px;
+            width: 83px;
+            height: 17px;
+        }
     }
 
     &_brand {
-        margin: 0 25px 0 0;
         font-family: $font-AkzidenzGroteskProMd;
-        font-size: 15px;
         text-transform: uppercase;
         letter-spacing: 1px;
+
+        @include mq('phone') {
+            display: none;
+        }
+
+        @include mq('tablet') {
+            margin: 0 20px 0 0;
+            font-size: 13px;
+        }
+
+        @include mq('desktop') {
+            margin: 0 24px 0 0;
+            font-size: 15px;
+        }
+
+        @include mq('extra-desktop') {
+            margin: 0 24px 0 0;
+            font-size: 15px;
+        }
+    }
+
+    &_button {
+        @include mq('phone') {
+            display: none;
+        }
     }
 
     &_phone {
-        margin: 0 0 0 25px;
-        color: #fc642a;
-        font-size: 15px;
         letter-spacing: 0;
+
+        @include mq('phone') {
+            color: #fff;
+            font-size: 13px;
+        }
+
+        @include mq('tablet') {
+            margin: 0 0 0 20px;
+            color: #fc642a;
+            font-size: 13px;
+        }
+
+        @include mq('desktop') {
+            margin: 0 0 0 24px;
+            color: #fc642a;
+            font-size: 15px;
+        }
+
+        @include mq('extra-desktop') {
+            margin: 0 0 0 24px;
+            color: #fc642a;
+            font-size: 15px;
+        }
     }
 }
