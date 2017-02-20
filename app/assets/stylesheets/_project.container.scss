@@ -7,24 +7,20 @@
     @include mq('phone') {
         margin-right: 10px;
         margin-left: 10px;
-        background: red;
     }
 
     @include mq('tablet') {
         margin-right: 50px;
         margin-left: 50px;
-        background: green;
     }
 
     @include mq('desktop') {
         margin-right: 75px;
         margin-left: 75px;
-        background: blue;
     }
 
     @include mq('extra-desktop') {
         margin-right: 195px;
         margin-left: 195px;
-        background: yellow;
     }
 }

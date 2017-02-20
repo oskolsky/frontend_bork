@@ -5,9 +5,47 @@
     align-items: center;
     justify-content: space-around;
 
+    @include mq('phone') {
+        padding: 50px 0;
+    }
+
+    @include mq('tablet') {
+        padding: 60px 0;
+    }
+
+    @include mq('desktop') {
+        padding: 70px 0;
+    }
+
+    @include mq('extra-desktop') {
+        padding: 130px 0;
+    }
+
     &_content {
-        flex: 0 1 39%;
         text-align: center;
+
+        @include mq('phone') {
+            flex: 0 1 80%;
+        }
+
+        @include mq('tablet') {
+            flex: 0 1 39%;
+        }
+
+        @include mq('desktop') {
+            flex: 0 1 35%;
+        }
+
+        @include mq('extra-desktop') {
+            flex: 0 1 39%;
+        }
+
+        &__delivery {
+
+            @include mq('phone') {
+                margin: 0 0 50px;
+            }
+        }
 
         &__phone {
             padding: 4px 0 0; /* Compensations different icon height */

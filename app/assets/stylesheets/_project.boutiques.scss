@@ -5,8 +5,39 @@
     align-items: center;
     justify-content: space-around;
 
+    @include mq('phone') {
+        height: 485px;
+    }
+
+    @include mq('tablet') {
+        height: 405px;
+    }
+
+    @include mq('desktop') {
+        height: 540px;
+    }
+
+    @include mq('extra-desktop') {
+        height: 645px;
+    }
+
     &_content {
-        width: 50%;
         text-align: center;
+
+        @include mq('phone') {
+            width: 80%;
+        }
+
+        @include mq('tablet') {
+            width: 60%;
+        }
+
+        @include mq('desktop') {
+            width: 40%;
+        }
+
+        @include mq('extra-desktop') {
+            width: 40%;
+        }
     }
 }

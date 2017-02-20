@@ -6,31 +6,92 @@ body {
   background: #1b1b1b;
   color: #fff;
   font-family: "AkzidenzGroteskProLight", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
   letter-spacing: .4px; }
+  @media all and (min-width: 320px) and (max-width: 767px) {
+    body {
+      font-size: 14px;
+      line-height: 20px; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    body {
+      font-size: 15px;
+      line-height: 23px; } }
+  @media all and (min-width: 1024px) and (max-width: 1439px) {
+    body {
+      font-size: 16px;
+      line-height: 24px; } }
+  @media all and (min-width: 1440px) {
+    body {
+      font-size: 16px;
+      line-height: 24px; } }
 
 h1 {
-  margin: 0 0 18px;
   color: #fff;
   font-family: "BorkDisplayRegilar", Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  line-height: 36px;
   word-spacing: 15px; }
+  @media all and (min-width: 320px) and (max-width: 767px) {
+    h1 {
+      font-size: 18px;
+      line-height: 24px; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+      margin: 0 0 18px;
+      font-size: 20px;
+      line-height: 32px; } }
+  @media all and (min-width: 1024px) and (max-width: 1439px) {
+    h1 {
+      margin: 0 0 18px;
+      font-size: 24px;
+      line-height: 36px; } }
+  @media all and (min-width: 1440px) {
+    h1 {
+      margin: 0 0 18px;
+      font-size: 24px;
+      line-height: 36px; } }
 
 h2 {
-  margin: 0 0 23px;
   color: #fff;
-  font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  line-height: 32px; }
+  font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif; }
+  @media all and (min-width: 320px) and (max-width: 767px) {
+    h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      line-height: 26px; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    h2 {
+      margin: 0 0 15px;
+      font-size: 20px;
+      line-height: 26px; } }
+  @media all and (min-width: 1024px) and (max-width: 1439px) {
+    h2 {
+      margin: 0 0 25px;
+      font-size: 24px;
+      line-height: 32px; } }
+  @media all and (min-width: 1440px) {
+    h2 {
+      margin: 0 0 25px;
+      font-size: 24px;
+      line-height: 32px; } }
 
 h3 {
   margin: 0 0 10px;
   color: #fff;
-  font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  line-height: 28px; }
+  font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif; }
+  @media all and (min-width: 320px) and (max-width: 767px) {
+    h3 {
+      font-size: 18px;
+      line-height: 26px; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    h3 {
+      font-size: 18px;
+      line-height: 26px; } }
+  @media all and (min-width: 1024px) and (max-width: 1439px) {
+    h3 {
+      font-size: 18px;
+      line-height: 26px; } }
+  @media all and (min-width: 1440px) {
+    h3 {
+      font-size: 18px;
+      line-height: 26px; } }
 
 p {
   margin: 0; }
@@ -87,9 +148,32 @@ button:focus {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around; }
+  @media all and (min-width: 320px) and (max-width: 767px) {
+    .boutiques {
+      height: 485px; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    .boutiques {
+      height: 405px; } }
+  @media all and (min-width: 1024px) and (max-width: 1439px) {
+    .boutiques {
+      height: 540px; } }
+  @media all and (min-width: 1440px) {
+    .boutiques {
+      height: 645px; } }
   .boutiques_content {
-    width: 50%;
     text-align: center; }
+    @media all and (min-width: 320px) and (max-width: 767px) {
+      .boutiques_content {
+        width: 80%; } }
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+      .boutiques_content {
+        width: 60%; } }
+    @media all and (min-width: 1024px) and (max-width: 1439px) {
+      .boutiques_content {
+        width: 40%; } }
+    @media all and (min-width: 1440px) {
+      .boutiques_content {
+        width: 40%; } }
 
 .button {
   display: inline-block;
@@ -129,9 +213,35 @@ button:focus {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around; }
+  @media all and (min-width: 320px) and (max-width: 767px) {
+    .contacts {
+      padding: 50px 0; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    .contacts {
+      padding: 60px 0; } }
+  @media all and (min-width: 1024px) and (max-width: 1439px) {
+    .contacts {
+      padding: 70px 0; } }
+  @media all and (min-width: 1440px) {
+    .contacts {
+      padding: 130px 0; } }
   .contacts_content {
-    flex: 0 1 39%;
     text-align: center; }
+    @media all and (min-width: 320px) and (max-width: 767px) {
+      .contacts_content {
+        flex: 0 1 80%; } }
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+      .contacts_content {
+        flex: 0 1 39%; } }
+    @media all and (min-width: 1024px) and (max-width: 1439px) {
+      .contacts_content {
+        flex: 0 1 35%; } }
+    @media all and (min-width: 1440px) {
+      .contacts_content {
+        flex: 0 1 39%; } }
+    @media all and (min-width: 320px) and (max-width: 767px) {
+      .contacts_content__delivery {
+        margin: 0 0 50px; } }
     .contacts_content__phone {
       padding: 4px 0 0;
       /* Compensations different icon height */ }
@@ -161,23 +271,19 @@ button:focus {
   @media all and (min-width: 320px) and (max-width: 767px) {
     .container {
       margin-right: 10px;
-      margin-left: 10px;
-      background: red; } }
+      margin-left: 10px; } }
   @media all and (min-width: 768px) and (max-width: 1023px) {
     .container {
       margin-right: 50px;
-      margin-left: 50px;
-      background: green; } }
+      margin-left: 50px; } }
   @media all and (min-width: 1024px) and (max-width: 1439px) {
     .container {
       margin-right: 75px;
-      margin-left: 75px;
-      background: blue; } }
+      margin-left: 75px; } }
   @media all and (min-width: 1440px) {
     .container {
       margin-right: 195px;
-      margin-left: 195px;
-      background: yellow; } }
+      margin-left: 195px; } }
 
 .footer {
   padding: 30px 0;
@@ -224,6 +330,87 @@ button:focus {
     color: #fc642a;
     font-size: 15px;
     letter-spacing: 0; }
+
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: top; }
+  .icon__19bar {
+    width: 72px;
+    height: 72px;
+    margin: 0 0 22px;
+    background-image: url("../images/icons/19bar.svg"); }
+  .icon__4cups {
+    width: 72px;
+    height: 72px;
+    margin: 0 0 22px;
+    background-image: url("../images/icons/4cups.svg"); }
+  .icon__frothing {
+    width: 72px;
+    height: 72px;
+    margin: 0 0 22px;
+    background-image: url("../images/icons/froathing.svg"); }
+  .icon__delivery {
+    width: 44px;
+    height: 50px;
+    background-image: url("../images/icons/delivery.svg"); }
+  .icon__phone {
+    width: 45px;
+    height: 46px;
+    background-image: url("../images/icons/phone.svg"); }
+  .icon__designer {
+    width: 25px;
+    height: 25px;
+    background-image: url("../images/icons/designer.svg"); }
+  .icon__materials {
+    width: 25px;
+    height: 25px;
+    background-image: url("../images/icons/materials.svg"); }
+  .icon__tank-volume {
+    width: 16px;
+    height: 24px;
+    background-image: url("../images/icons/tank-volume.svg"); }
+  .icon__capsules {
+    width: 24px;
+    height: 20px;
+    background-image: url("../images/icons/capsules.svg"); }
+  .icon__cup {
+    width: 26px;
+    height: 22px;
+    background-image: url("../images/icons/cup.svg"); }
+  .icon__cappuccinator {
+    width: 13px;
+    height: 29px;
+    background-image: url("../images/icons/cappuccinator.svg"); }
+  .icon__jar {
+    width: 24px;
+    height: 21px;
+    background-image: url("../images/icons/jar.svg"); }
+  .icon__frequency-range {
+    width: 24px;
+    height: 16px;
+    background-image: url("../images/icons/frequency-range.svg"); }
+  .icon__size {
+    width: 21px;
+    height: 28px;
+    background-image: url("../images/icons/size.svg"); }
+  .icon__plug {
+    width: 20px;
+    height: 28px;
+    background-image: url("../images/icons/plug.svg"); }
+  .icon__weight {
+    width: 16px;
+    height: 30px;
+    background-image: url("../images/icons/weight.svg"); }
+  .icon__warranty {
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/icons/warranty.svg"); }
+  .icon__origin {
+    width: 17px;
+    height: 24px;
+    background-image: url("../images/icons/origin.svg"); }
 
 .index {
   position: relative;
@@ -327,14 +514,10 @@ button:focus {
   background-position: center; }
 
 .section__boutiques {
-  height: 645px;
   background-image: url("../images/section-bg-boutiques.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
-
-.section__contacts {
-  height: 420px; }
 
 .specifications {
   display: flex;
