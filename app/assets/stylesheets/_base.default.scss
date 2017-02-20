@@ -121,11 +121,12 @@ p {
 a {
     color: #fff;
     text-decoration: none;
-}
+    transition: color .2s;
 
-a:hover {
-    color: #ccc;
-    text-decoration: none;
+    &:hover {
+        color: #ccc;
+        text-decoration: none;
+    }
 }
 
 button:focus {

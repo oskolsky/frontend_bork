@@ -98,11 +98,11 @@ p {
 
 a {
   color: #fff;
-  text-decoration: none; }
-
-a:hover {
-  color: #ccc;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: color .2s; }
+  a:hover {
+    color: #ccc;
+    text-decoration: none; }
 
 button:focus {
   outline: none; }
@@ -185,7 +185,8 @@ button:focus {
   text-transform: uppercase;
   vertical-align: baseline;
   letter-spacing: 1.3px;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: background .2s; }
   .button:hover {
     background: #fc642a; }
   .button__small {
@@ -235,7 +236,7 @@ button:focus {
         flex: 0 1 39%; } }
     @media all and (min-width: 1024px) and (max-width: 1439px) {
       .contacts_content {
-        flex: 0 1 35%; } }
+        flex: 0 1 39%; } }
     @media all and (min-width: 1440px) {
       .contacts_content {
         flex: 0 1 39%; } }
