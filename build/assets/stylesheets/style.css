@@ -158,6 +158,26 @@ button:focus {
   max-width: 1200px;
   height: 100%;
   margin: 0 auto; }
+  @media all and (min-width: 320px) and (max-width: 767px) {
+    .container {
+      margin-right: 10px;
+      margin-left: 10px;
+      background: red; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+      margin-right: 50px;
+      margin-left: 50px;
+      background: green; } }
+  @media all and (min-width: 1024px) and (max-width: 1439px) {
+    .container {
+      margin-right: 75px;
+      margin-left: 75px;
+      background: blue; } }
+  @media all and (min-width: 1440px) {
+    .container {
+      margin-right: 195px;
+      margin-left: 195px;
+      background: yellow; } }
 
 .footer {
   padding: 30px 0;
@@ -274,40 +294,47 @@ button:focus {
     flex: 0 1 30%;
     text-align: center; }
 
-.section {
-  padding: 0 75px; }
-  .section__index {
-    height: 835px; }
-  .section__intro {
-    height: 950px;
-    background: #000; }
-  .section__masterpiece {
-    height: 775px; }
-  .section__video {
-    height: 925px; }
-  .section__quick-result {
-    height: 1020px;
-    background: #000; }
-  .section__choose-coffee {
-    height: 1295px;
-    background: #000; }
-  .section__frothing {
-    height: 925px;
-    background: #000; }
-  .section__specifications {
-    padding: 30px 0 50px;
-    background-color: #151515;
-    background-image: url("../images/pattern.png");
-    background-repeat: repeat;
-    background-position: center; }
-  .section__boutiques {
-    height: 645px;
-    background-image: url("../images/section-bg-boutiques.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
-  .section__contacts {
-    height: 420px; }
+.section__index {
+  height: 835px; }
+
+.section__intro {
+  height: 950px;
+  background: #000; }
+
+.section__masterpiece {
+  height: 775px; }
+
+.section__video {
+  height: 925px; }
+
+.section__quick-result {
+  height: 1020px;
+  background: #000; }
+
+.section__choose-coffee {
+  height: 1295px;
+  background: #000; }
+
+.section__frothing {
+  height: 925px;
+  background: #000; }
+
+.section__specifications {
+  padding: 30px 0 50px;
+  background-color: #151515;
+  background-image: url("../images/pattern.png");
+  background-repeat: repeat;
+  background-position: center; }
+
+.section__boutiques {
+  height: 645px;
+  background-image: url("../images/section-bg-boutiques.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.section__contacts {
+  height: 420px; }
 
 .specifications {
   display: flex;
