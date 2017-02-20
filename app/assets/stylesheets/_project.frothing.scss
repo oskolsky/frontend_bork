@@ -1,0 +1,12 @@
+.frothing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    &_content {
+        flex: 0 1 50%;
+        text-align: center;
+    }
+}

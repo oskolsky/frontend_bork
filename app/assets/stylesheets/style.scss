@@ -1,0 +1,48 @@
+@charset 'UTF-8';
+
+//
+// SETTINGS LAYER
+//
+// Settings store all variables, config switches, etc.
+// Split up into logical sections, the smaller and simpler the better.
+
+@import 'settings.default';
+
+//
+// TOOLS LAYER
+//
+// Tools store all programic Sass functionality.
+
+@import 'tools.media-queries';
+
+//
+// BASE LAYER
+//
+// Base rules are project.
+
+@import 'base.default';
+@import 'base.fonts';
+
+//
+// PROJECT LAYER
+//
+// Project rules are project.
+
+@import "project.boutiques";
+@import 'project.button';
+@import "project.choose-coffee";
+@import "project.contacts";
+@import "project.container";
+@import "project.footer";
+@import "project.frothing";
+@import "project.header";
+@import "project.index";
+@import "project.intro";
+@import "project.main";
+@import "project.masterpiece";
+@import "project.model";
+@import "project.order";
+@import "project.quick-result";
+@import "project.section";
+@import "project.specifications";
+@import "project.video";

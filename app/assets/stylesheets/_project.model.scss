@@ -1,0 +1,14 @@
+.model {
+    position: relative;
+    width: 418px;
+    height: 540px;
+    margin: 45px auto 65px;
+
+    &_signature {
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        width: 242px;
+        height: 40px;
+    }
+}

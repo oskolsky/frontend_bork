@@ -1,0 +1,11 @@
+.order {
+    margin: 32px 0 0;
+
+    &_price {
+        display: inline-block;
+        margin: 0 0 0 20px;
+        font-size: 18px;
+        line-height: 27px;
+        vertical-align: baseline;
+    }
+}

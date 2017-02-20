@@ -1,0 +1,55 @@
+.section {
+    padding: 0 75px;
+
+    &__index {
+        height: 835px;
+    }
+
+    &__intro {
+        height: 950px;
+        background: #000;
+    }
+
+    &__masterpiece {
+        height: 775px;
+    }
+
+    &__video {
+        height: 925px;
+    }
+
+    &__quick-result {
+        height: 1020px;
+        background: #000;
+    }
+
+    &__choose-coffee {
+        height: 1295px;
+        background: #000;
+    }
+
+    &__frothing {
+        height: 925px;
+        background: #000;
+    }
+
+    &__specifications {
+        padding: 30px 0 50px;
+        background-color: #151515;
+        background-image: url("../images/pattern.png");
+        background-repeat: repeat;
+        background-position: center;
+    }
+
+    &__boutiques {
+        height: 645px;
+        background-image: url("../images/section-bg-boutiques.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__contacts {
+        height: 420px;
+    }
+}

@@ -1,2 +1,9 @@
-.DS_Store
+.idea
+.sass-cache
+
 .csscomb.json
+
+node_modules
+
+__MACOSX
+.DS_Store

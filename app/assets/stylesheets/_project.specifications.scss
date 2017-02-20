@@ -1,0 +1,45 @@
+.specifications {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    &_content {
+        flex: 0 1 22%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &_item {
+        position: relative;
+        padding: 0 0 0 40px;
+
+        &:not(:last-child) {
+            margin: 0 0 22px;
+        }
+    }
+
+    &_icon {
+        position: absolute;
+        top: 5px;
+        left: 0;
+    }
+
+    &_title {
+        margin: 0 0 4px;
+        font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 23px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    &_description {
+        margin: 0;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0;
+    }
+}

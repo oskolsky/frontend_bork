@@ -1,0 +1,12 @@
+.boutiques {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+
+    &_content {
+        width: 50%;
+        text-align: center;
+    }
+}

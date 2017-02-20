@@ -1,0 +1,28 @@
+.button {
+    display: inline-block;
+    border: 2px solid #FC642A;
+    background: transparent;
+    color: #fff;
+    font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    vertical-align: baseline;
+    letter-spacing: 1.3px;
+    cursor: pointer;
+
+    &:hover {
+        background: #fc642a;
+    }
+
+    &__small {
+        height: 35px;
+        padding: 0 20px;
+        border-radius: 26px;
+    }
+
+    &__large {
+        height: 54px;
+        padding: 0 30px;
+        border-radius: 37px;
+    }
+}

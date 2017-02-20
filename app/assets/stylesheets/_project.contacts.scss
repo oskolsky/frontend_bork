@@ -1,0 +1,41 @@
+.contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    &_content {
+        flex: 0 1 39%;
+        text-align: center;
+
+        &__phone {
+            padding: 4px 0 0; /* Compensations different icon height */
+        }
+    }
+
+    &_icon {
+        margin: 0 0 27px;
+    }
+
+    &_link {
+        display: inline-block;
+        font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
+        line-height: 16px;
+        text-transform: uppercase;
+        vertical-align: top;
+        letter-spacing: 1.3px;
+
+        &__order {
+            margin: 26px 0 0;
+            font-size: 13px;
+            letter-spacing: 1.3px;
+        }
+
+        &__phone {
+            margin: 25px 0 0;
+            font-size: 14px;
+            letter-spacing: 1.4px;
+        }
+    }
+}

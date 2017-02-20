@@ -1,0 +1,17 @@
+.masterpiece {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    &_content {
+        flex: 0 1 40%;
+    }
+
+    &_creatista {
+        display: inline-block;
+        margin: 65px 0 0;
+        vertical-align: top;
+    }
+}

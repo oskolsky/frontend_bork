@@ -1,0 +1,13 @@
+.intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+
+    &_content {
+        flex: 0 1 50%;
+        text-align: center;
+    }
+}
