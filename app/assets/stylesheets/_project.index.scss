@@ -1,13 +1,50 @@
 .index {
-    position: relative;
-    top: 160px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
-    justify-content: flex-end;
+    box-sizing: border-box;
+
+    @include mq('phone') {
+        justify-content: space-around;
+        min-height: 560px;
+        padding: 70px;
+        text-align: center;
+    }
+
+    @include mq('tablet') {
+        justify-content: flex-end;
+        min-height: 585px;
+        padding: 100px;
+    }
+
+    @include mq('desktop') {
+        justify-content: flex-end;
+        min-height: 615px;
+        padding: 105px;
+    }
+
+    @include mq('extra-desktop') {
+        justify-content: flex-end;
+        min-height: 835px;
+        padding: 160px;
+    }
 
     &_content {
-        flex: 0 1 50%;
+        @include mq('phone') {
+            flex: 0 1 100%;
+        }
+
+        @include mq('tablet') {
+            flex: 0 1 50%;
+        }
+
+        @include mq('desktop') {
+            flex: 0 1 50%;
+        }
+
+        @include mq('extra-desktop') {
+            flex: 0 1 50%;
+        }
     }
 }

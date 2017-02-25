@@ -160,16 +160,16 @@ button:focus {
   justify-content: space-around; }
   @media all and (min-width: 320px) and (max-width: 767px) {
     .boutiques {
-      height: 485px; } }
+      min-height: 485px; } }
   @media all and (min-width: 768px) and (max-width: 1023px) {
     .boutiques {
-      height: 405px; } }
+      min-height: 405px; } }
   @media all and (min-width: 1024px) and (max-width: 1439px) {
     .boutiques {
-      height: 540px; } }
+      min-height: 540px; } }
   @media all and (min-width: 1440px) {
     .boutiques {
-      height: 645px; } }
+      min-height: 645px; } }
   .boutiques_content {
     text-align: center; }
     @media all and (min-width: 320px) and (max-width: 767px) {
@@ -514,23 +514,51 @@ button:focus {
     background-image: url("/assets/images/icons/origin.svg"); }
 
 .index {
-  position: relative;
-  top: 160px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: flex-start;
-  justify-content: flex-end; }
-  .index_content {
-    flex: 0 1 50%; }
+  box-sizing: border-box; }
+  @media all and (min-width: 320px) and (max-width: 767px) {
+    .index {
+      justify-content: space-around;
+      min-height: 560px;
+      padding: 70px;
+      text-align: center; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    .index {
+      justify-content: flex-end;
+      min-height: 585px;
+      padding: 100px; } }
+  @media all and (min-width: 1024px) and (max-width: 1439px) {
+    .index {
+      justify-content: flex-end;
+      min-height: 615px;
+      padding: 105px; } }
+  @media all and (min-width: 1440px) {
+    .index {
+      justify-content: flex-end;
+      min-height: 835px;
+      padding: 160px; } }
+  @media all and (min-width: 320px) and (max-width: 767px) {
+    .index_content {
+      flex: 0 1 100%; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    .index_content {
+      flex: 0 1 50%; } }
+  @media all and (min-width: 1024px) and (max-width: 1439px) {
+    .index_content {
+      flex: 0 1 50%; } }
+  @media all and (min-width: 1440px) {
+    .index_content {
+      flex: 0 1 50%; } }
 
 .intro {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-around;
-  height: 100%; }
+  justify-content: space-around; }
   .intro_content {
     flex: 0 1 50%;
     text-align: center; }
@@ -557,6 +585,18 @@ button:focus {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-start; }
+  @media all and (min-width: 320px) and (max-width: 767px) {
+    .masterpiece {
+      min-height: 145px; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    .masterpiece {
+      min-height: 440px; } }
+  @media all and (min-width: 1024px) and (max-width: 1439px) {
+    .masterpiece {
+      min-height: 525px; } }
+  @media all and (min-width: 1440px) {
+    .masterpiece {
+      min-height: 640px; } }
   .masterpiece_content {
     flex: 0 1 40%; }
   .masterpiece_creatista {
@@ -576,14 +616,37 @@ button:focus {
     width: 242px;
     height: 40px; }
 
-.order {
-  margin: 32px 0 0; }
-  .order_price {
-    display: inline-block;
-    margin: 0 0 0 20px;
-    font-size: 18px;
-    line-height: 27px;
-    vertical-align: baseline; }
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .order {
+    position: fixed;
+    top: 43px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 42px;
+    padding: 0 10px;
+    background: #151515;
+    line-height: 42px;
+    text-align: right; } }
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .order {
+    margin: 32px 0 0; } }
+
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+  .order {
+    margin: 32px 0 0; } }
+
+@media all and (min-width: 1440px) {
+  .order {
+    margin: 32px 0 0; } }
+
+.order_price {
+  display: inline-block;
+  margin: 0 0 0 20px;
+  font-size: 18px;
+  line-height: 27px;
+  vertical-align: baseline; }
 
 .quick-result {
   display: flex;
@@ -596,28 +659,21 @@ button:focus {
     text-align: center; }
 
 .section__index {
-  height: 835px; }
+  background-image: url("/assets/images/section-bg-index.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
 
 .section__intro {
-  height: 950px;
   background: #000; }
 
-.section__masterpiece {
-  height: 775px; }
-
-.section__video {
-  height: 925px; }
-
 .section__quick-result {
-  height: 1020px;
   background: #000; }
 
 .section__choose-coffee {
-  height: 1295px;
   background: #000; }
 
 .section__frothing {
-  height: 925px;
   background: #000; }
 
 .section__specifications {

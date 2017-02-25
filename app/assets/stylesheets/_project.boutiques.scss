@@ -6,19 +6,19 @@
     justify-content: space-around;
 
     @include mq('phone') {
-        height: 485px;
+        min-height: 485px;
     }
 
     @include mq('tablet') {
-        height: 405px;
+        min-height: 405px;
     }
 
     @include mq('desktop') {
-        height: 540px;
+        min-height: 540px;
     }
 
     @include mq('extra-desktop') {
-        height: 645px;
+        min-height: 645px;
     }
 
     &_content {

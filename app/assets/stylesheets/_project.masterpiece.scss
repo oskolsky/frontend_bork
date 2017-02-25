@@ -5,6 +5,34 @@
     align-items: center;
     justify-content: flex-start;
 
+    @include mq('phone') {
+        min-height: 145px;
+    }
+
+    @include mq('tablet') {
+        min-height: 440px;
+        // margin: 110px 0;
+        // background-image: url("/assets/images/section-bg-masterpiece.jpg");
+        // background-repeat: no-repeat;
+        // background-position: center right;
+    }
+
+    @include mq('desktop') {
+        min-height: 525px;
+        // margin: 120px 0;
+        // background-image: url("/assets/images/section-bg-masterpiece.jpg");
+        // background-repeat: no-repeat;
+        // background-position: center right;
+    }
+
+    @include mq('extra-desktop') {
+        min-height: 640px;
+        // margin: 130px 0;
+        // background-image: url("/assets/images/section-bg-masterpiece.jpg");
+        // background-repeat: no-repeat;
+        // background-position: center right;
+    }
+
     &_content {
         flex: 0 1 40%;
     }
