@@ -4,22 +4,22 @@
     margin: 0 auto;
 
     @include mq('phone') {
-        margin-right: 10px;
-        margin-left: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 
     @include mq('tablet') {
-        margin-right: 50px;
-        margin-left: 50px;
+        padding-right: 50px;
+        padding-left: 50px;
     }
 
     @include mq('desktop') {
-        margin-right: 75px;
-        margin-left: 75px;
+        padding-right: 75px;
+        padding-left: 75px;
     }
 
     @include mq('extra-desktop') {
-        margin-right: 195px;
-        margin-left: 195px;
+        padding-right: 195px;
+        padding-left: 195px;
     }
 }
