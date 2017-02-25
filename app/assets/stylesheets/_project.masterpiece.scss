@@ -6,28 +6,32 @@
     justify-content: space-around;
 
     @include mq('phone') {
-        min-height: 145px;
-        padding: 60px 0;
+        min-height: 150px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     @include mq('tablet') {
-        height: 350px;
-        padding: 160px 0;
+        height: 435px;
+        padding-top: 160px;
+        padding-bottom: 160px;
     }
 
     @include mq('desktop') {
-        height: 420px;
-        padding: 128px 0;
+        height: 525px;
+        padding-top: 128px;
+        padding-bottom: 128px;
     }
 
     @include mq('extra-desktop') {
-        height: 510px;
-        padding: 128px 0;
+        height: 637px;
+        padding-top: 128px;
+        padding-bottom: 128px;
     }
 
     &_content {
         @include mq('phone') {
-            flex: 0 1 80%;
+            flex: 0 1 100%;
         }
 
         @include mq('tablet') {

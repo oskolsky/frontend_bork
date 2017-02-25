@@ -2,11 +2,6 @@
 
 (c) Irbis
 
-1) 320 ...767 - mobile
-2) 768 ... 1023 - tablet
-3) 1024 ...1439 - desktop
-4) 1440 ... infinite - extra desktop
-
 ### Setup Environment
 
 ```

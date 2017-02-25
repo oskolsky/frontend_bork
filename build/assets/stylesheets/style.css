@@ -1,4 +1,4 @@
-@media all and (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .hidden-phone,
   .visible-tablet,
   .visible-desktop {
@@ -27,12 +27,13 @@ html {
 
 body {
   box-sizing: border-box;
+  min-width: 320px;
   height: 100%;
   background: #1b1b1b;
   color: #fff;
   font-family: "AkzidenzGroteskProLight", Helvetica, Arial, sans-serif;
   letter-spacing: .4px; }
-  @media all and (min-width: 320px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     body {
       font-size: 14px;
       line-height: 20px; } }
@@ -53,7 +54,7 @@ h1 {
   color: #fff;
   font-family: "BorkDisplayRegilar", Helvetica, Arial, sans-serif;
   word-spacing: 15px; }
-  @media all and (min-width: 320px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     h1 {
       font-size: 18px;
       line-height: 24px; } }
@@ -76,7 +77,7 @@ h1 {
 h2 {
   color: #fff;
   font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif; }
-  @media all and (min-width: 320px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     h2 {
       margin: 0 0 12px;
       font-size: 18px;
@@ -159,7 +160,7 @@ button:focus {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around; }
-  @media all and (min-width: 320px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     .boutiques {
       min-height: 485px; } }
   @media all and (min-width: 768px) and (max-width: 1023px) {
@@ -173,9 +174,9 @@ button:focus {
       min-height: 645px; } }
   .boutiques_content {
     text-align: center; }
-    @media all and (min-width: 320px) and (max-width: 767px) {
+    @media (max-width: 767px) {
       .boutiques_content {
-        width: 80%; } }
+        width: 100%; } }
     @media all and (min-width: 768px) and (max-width: 1023px) {
       .boutiques_content {
         width: 60%; } }
@@ -204,7 +205,7 @@ button:focus {
     height: 35px;
     padding: 0 20px;
     border-radius: 26px; }
-    @media all and (min-width: 320px) and (max-width: 767px) {
+    @media (max-width: 767px) {
       .button__small {
         height: 32px;
         font-size: 11px;
@@ -245,21 +246,25 @@ button:focus {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around; }
-  @media all and (min-width: 320px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     .contacts {
-      padding: 50px 0; } }
+      padding-top: 50px;
+      padding-bottom: 50px; } }
   @media all and (min-width: 768px) and (max-width: 1023px) {
     .contacts {
-      padding: 60px 0; } }
+      padding-top: 60px;
+      padding-bottom: 60px; } }
   @media all and (min-width: 1024px) and (max-width: 1439px) {
     .contacts {
-      padding: 70px 0; } }
+      padding-top: 70px;
+      padding-bottom: 70px; } }
   @media all and (min-width: 1440px) {
     .contacts {
-      padding: 130px 0; } }
+      padding-top: 130px;
+      padding-bottom: 130px; } }
   .contacts_content {
     text-align: center; }
-    @media all and (min-width: 320px) and (max-width: 767px) {
+    @media (max-width: 767px) {
       .contacts_content {
         flex: 0 1 80%; } }
     @media all and (min-width: 768px) and (max-width: 1023px) {
@@ -271,7 +276,7 @@ button:focus {
     @media all and (min-width: 1440px) {
       .contacts_content {
         flex: 0 1 39%; } }
-    @media all and (min-width: 320px) and (max-width: 767px) {
+    @media (max-width: 767px) {
       .contacts_content__delivery {
         margin: 0 0 50px; } }
     .contacts_content__phone {
@@ -299,7 +304,7 @@ button:focus {
   min-width: 320px;
   max-width: 1200px;
   margin: 0 auto; }
-  @media all and (min-width: 320px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     .container {
       padding-right: 10px;
       padding-left: 10px; } }
@@ -340,7 +345,7 @@ button:focus {
   z-index: 998;
   background: #000;
   text-align: right; }
-  @media all and (min-width: 320px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     .header {
       height: 43px;
       padding: 0 10px;
@@ -365,7 +370,7 @@ button:focus {
     width: 83px;
     height: 17px;
     line-height: 17px; }
-    @media all and (min-width: 320px) and (max-width: 767px) {
+    @media (max-width: 767px) {
       .header_logo {
         top: 14px;
         left: 10px;
@@ -393,7 +398,7 @@ button:focus {
     font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px; }
-    @media all and (min-width: 320px) and (max-width: 767px) {
+    @media (max-width: 767px) {
       .header_brand {
         display: none; } }
     @media all and (min-width: 768px) and (max-width: 1023px) {
@@ -408,12 +413,12 @@ button:focus {
       .header_brand {
         margin: 0 24px 0 0;
         font-size: 15px; } }
-  @media all and (min-width: 320px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     .header_button {
       display: none; } }
   .header_phone {
     letter-spacing: 0; }
-    @media all and (min-width: 320px) and (max-width: 767px) {
+    @media (max-width: 767px) {
       .header_phone {
         color: #fff;
         font-size: 13px; } }
@@ -520,7 +525,7 @@ button:focus {
   flex-wrap: nowrap;
   align-items: flex-start;
   box-sizing: border-box; }
-  @media all and (min-width: 320px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     .index {
       justify-content: space-around;
       min-height: 560px;
@@ -541,7 +546,7 @@ button:focus {
       justify-content: flex-end;
       min-height: 835px;
       padding: 160px; } }
-  @media all and (min-width: 320px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     .index_content {
       flex: 0 1 100%; } }
   @media all and (min-width: 768px) and (max-width: 1023px) {
@@ -564,7 +569,7 @@ button:focus {
     flex: 0 1 50%;
     text-align: center; }
 
-@media all and (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .main {
     padding: 43px 0 0; } }
 
@@ -586,25 +591,29 @@ button:focus {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around; }
-  @media all and (min-width: 320px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     .masterpiece {
-      min-height: 145px;
-      padding: 60px 0; } }
+      min-height: 150px;
+      padding-top: 60px;
+      padding-bottom: 60px; } }
   @media all and (min-width: 768px) and (max-width: 1023px) {
     .masterpiece {
-      height: 350px;
-      padding: 160px 0; } }
+      height: 435px;
+      padding-top: 160px;
+      padding-bottom: 160px; } }
   @media all and (min-width: 1024px) and (max-width: 1439px) {
     .masterpiece {
-      height: 420px;
-      padding: 128px 0; } }
+      height: 525px;
+      padding-top: 128px;
+      padding-bottom: 128px; } }
   @media all and (min-width: 1440px) {
     .masterpiece {
-      height: 510px;
-      padding: 128px 0; } }
-  @media all and (min-width: 320px) and (max-width: 767px) {
+      height: 637px;
+      padding-top: 128px;
+      padding-bottom: 128px; } }
+  @media (max-width: 767px) {
     .masterpiece_content {
-      flex: 0 1 80%; } }
+      flex: 0 1 100%; } }
   @media all and (min-width: 768px) and (max-width: 1023px) {
     .masterpiece_content {
       flex: 0 1 39%; } }
@@ -638,7 +647,7 @@ button:focus {
     width: 242px;
     height: 40px; }
 
-@media all and (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .order {
     position: fixed;
     top: 43px;
@@ -673,12 +682,55 @@ button:focus {
 .quick-result {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start; }
+  justify-content: space-around; }
+  @media (max-width: 767px) {
+    .quick-result {
+      min-height: 675px;
+      padding-top: 30px;
+      padding-bottom: 30px; } }
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    .quick-result {
+      height: 365px;
+      padding-top: 80px;
+      padding-bottom: 80px; } }
+  @media all and (min-width: 1024px) and (max-width: 1439px) {
+    .quick-result {
+      height: 500px;
+      padding-top: 80px;
+      padding-bottom: 80px; } }
+  @media all and (min-width: 1440px) {
+    .quick-result {
+      height: 765px;
+      padding-top: 128px;
+      padding-bottom: 128px; } }
   .quick-result_content {
     flex: 0 1 30%;
     text-align: center; }
+    @media (max-width: 767px) {
+      .quick-result_content {
+        flex: 0 1 100%; } }
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+      .quick-result_content {
+        flex: 0 1 39%; } }
+    @media all and (min-width: 1024px) and (max-width: 1439px) {
+      .quick-result_content {
+        flex: 0 1 39%; } }
+    @media all and (min-width: 1440px) {
+      .quick-result_content {
+        flex: 0 1 39%; } }
+    .quick-result_content__photo {
+      height: 100%;
+      text-align: right; }
+      @media (max-width: 767px) {
+        .quick-result_content__photo {
+          height: 340px;
+          text-align: center; } }
+  .quick-result_photo {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%; }
 
 .section__index {
   background-image: url("/assets/images/section-bg-index.jpg");

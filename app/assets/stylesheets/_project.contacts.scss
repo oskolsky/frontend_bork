@@ -6,19 +6,23 @@
     justify-content: space-around;
 
     @include mq('phone') {
-        padding: 50px 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     @include mq('tablet') {
-        padding: 60px 0;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     @include mq('desktop') {
-        padding: 70px 0;
+        padding-top: 70px;
+        padding-bottom: 70px;
     }
 
     @include mq('extra-desktop') {
-        padding: 130px 0;
+        padding-top: 130px;
+        padding-bottom: 130px;
     }
 
     &_content {
