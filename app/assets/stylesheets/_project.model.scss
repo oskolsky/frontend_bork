@@ -1,14 +1,52 @@
 .model {
     position: relative;
-    width: 418px;
-    height: 540px;
     margin: 45px auto 65px;
+    text-align: center;
+
+    &_photo {
+
+        @include mq('phone') {
+            display: none;
+        }
+
+        @include mq('tablet') {
+            width: 330px;
+            height: 426px;
+        }
+
+        @include mq('desktop') {
+            width: 330px;
+            height: 426px;
+        }
+
+        @include mq('extra-desktop') {
+            width: 418px;
+            height: 540px;
+        }
+    }
 
     &_signature {
         position: absolute;
+        right: 0;
         bottom: 0;
-        left: 100%;
-        width: 242px;
-        height: 40px;
+
+        @include mq('phone') {
+            display: none;
+        }
+
+        @include mq('tablet') {
+            width: 164px;
+            height: 27px;
+        }
+
+        @include mq('desktop') {
+            width: 242px;
+            height: 40px;
+        }
+
+        @include mq('extra-desktop') {
+            width: 242px;
+            height: 40px;
+        }
     }
 }

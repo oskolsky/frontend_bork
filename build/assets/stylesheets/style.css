@@ -648,15 +648,42 @@ button:focus {
 
 .model {
   position: relative;
-  width: 418px;
-  height: 540px;
-  margin: 45px auto 65px; }
+  margin: 45px auto 65px;
+  text-align: center; }
+  @media (max-width: 639px) {
+    .model_photo {
+      display: none; } }
+  @media all and (min-width: 640px) and (max-width: 939px) {
+    .model_photo {
+      width: 330px;
+      height: 426px; } }
+  @media all and (min-width: 940px) and (max-width: 1280px) {
+    .model_photo {
+      width: 330px;
+      height: 426px; } }
+  @media all and (min-width: 1281px) {
+    .model_photo {
+      width: 418px;
+      height: 540px; } }
   .model_signature {
     position: absolute;
-    bottom: 0;
-    left: 100%;
-    width: 242px;
-    height: 40px; }
+    right: 0;
+    bottom: 0; }
+    @media (max-width: 639px) {
+      .model_signature {
+        display: none; } }
+    @media all and (min-width: 640px) and (max-width: 939px) {
+      .model_signature {
+        width: 164px;
+        height: 27px; } }
+    @media all and (min-width: 940px) and (max-width: 1280px) {
+      .model_signature {
+        width: 242px;
+        height: 40px; } }
+    @media all and (min-width: 1281px) {
+      .model_signature {
+        width: 242px;
+        height: 40px; } }
 
 @media (max-width: 639px) {
   .order {
@@ -689,6 +716,20 @@ button:focus {
   font-size: 18px;
   line-height: 27px;
   vertical-align: baseline; }
+
+.owl-dots {
+  width: 50%;
+  height: 2px;
+  margin: 10px auto 0;
+  background: rgba(252, 100, 42, 0.3); }
+
+.owl-dot {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  vertical-align: top; }
+  .owl-dot.active {
+    background: #fc642a; }
 
 .quick-result {
   display: flex;
@@ -761,11 +802,14 @@ button:focus {
   background: #000; }
 
 .section__specifications {
-  padding: 30px 0 50px;
+  padding: 30px 0;
   background-color: #151515;
   background-image: url("/assets/images/pattern.png");
   background-repeat: repeat;
   background-position: center; }
+  @media (max-width: 639px) {
+    .section__specifications {
+      background: none; } }
 
 .section__boutiques {
   background-image: url("/assets/images/section-bg-boutiques.jpg");
@@ -773,38 +817,35 @@ button:focus {
   background-position: center;
   background-size: cover; }
 
-.specifications {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-  justify-content: space-around; }
-  .specifications_content {
-    flex: 0 1 22%;
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-  .specifications_item {
-    position: relative;
-    padding: 0 0 0 40px; }
-    .specifications_item:not(:last-child) {
-      margin: 0 0 22px; }
-  .specifications_icon {
-    position: absolute;
-    top: 5px;
-    left: 0; }
-  .specifications_title {
-    margin: 0 0 4px;
-    font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 23px;
-    text-transform: uppercase;
-    letter-spacing: 1px; }
-  .specifications_description {
-    margin: 0;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0; }
+.specifications_content {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.specifications_item {
+  position: relative;
+  padding: 0 0 0 40px; }
+  .specifications_item:not(:last-child) {
+    margin: 0 0 22px; }
+
+.specifications_icon {
+  position: absolute;
+  top: 5px;
+  left: 0; }
+
+.specifications_title {
+  margin: 0 0 4px;
+  font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.specifications_description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0; }
 
 .video {
   display: flex;

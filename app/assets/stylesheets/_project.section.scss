@@ -33,11 +33,15 @@
     }
 
     &__specifications {
-        padding: 30px 0 50px;
+        padding: 30px 0;
         background-color: #151515;
         background-image: url("/assets/images/pattern.png");
         background-repeat: repeat;
         background-position: center;
+
+        @include mq('phone') {
+            background: none;
+        }
     }
 
     &__boutiques {
