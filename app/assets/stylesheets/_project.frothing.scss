@@ -1,12 +1,53 @@
 .frothing {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-start;
+
+    @include mq('phone') {
+        align-items: flex-start;
+        justify-content: center;
+        box-sizing: border-box;
+        min-height: 540px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    @include mq('tablet') {
+        align-items: center;
+        justify-content: space-between;
+        height: 655px;
+    }
+
+    @include mq('desktop') {
+        align-items: center;
+        justify-content: space-between;
+        height: 765px;
+    }
+
+    @include mq('extra-desktop') {
+        align-items: center;
+        justify-content: space-between;
+        height: 926px;
+    }
 
     &_content {
-        flex: 0 1 50%;
         text-align: center;
+
+        @include mq('phone') {
+            flex: 0 1 90%;
+        }
+
+        @include mq('tablet') {
+            flex: 0 1 50%;
+        }
+
+        @include mq('desktop') {
+            flex: 0 1 39%;
+        }
+
+        @include mq('extra-desktop') {
+            flex: 0 1 39%;
+        }
     }
 }

@@ -179,7 +179,7 @@ button:focus {
     text-align: center; }
     @media (max-width: 639px) {
       .boutiques_content {
-        width: 100%; } }
+        width: 70%; } }
     @media all and (min-width: 640px) and (max-width: 939px) {
       .boutiques_content {
         width: 60%; } }
@@ -337,14 +337,47 @@ button:focus {
   opacity: .5; }
 
 .frothing {
+  position: relative;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: flex-start; }
+  flex-wrap: nowrap; }
+  @media (max-width: 639px) {
+    .frothing {
+      align-items: flex-start;
+      justify-content: center;
+      box-sizing: border-box;
+      min-height: 540px;
+      padding-top: 30px;
+      padding-bottom: 30px; } }
+  @media all and (min-width: 640px) and (max-width: 939px) {
+    .frothing {
+      align-items: center;
+      justify-content: space-between;
+      height: 655px; } }
+  @media all and (min-width: 940px) and (max-width: 1280px) {
+    .frothing {
+      align-items: center;
+      justify-content: space-between;
+      height: 765px; } }
+  @media all and (min-width: 1281px) {
+    .frothing {
+      align-items: center;
+      justify-content: space-between;
+      height: 926px; } }
   .frothing_content {
-    flex: 0 1 50%;
     text-align: center; }
+    @media (max-width: 639px) {
+      .frothing_content {
+        flex: 0 1 90%; } }
+    @media all and (min-width: 640px) and (max-width: 939px) {
+      .frothing_content {
+        flex: 0 1 50%; } }
+    @media all and (min-width: 940px) and (max-width: 1280px) {
+      .frothing_content {
+        flex: 0 1 39%; } }
+    @media all and (min-width: 1281px) {
+      .frothing_content {
+        flex: 0 1 39%; } }
 
 .header {
   position: fixed;
@@ -626,7 +659,7 @@ button:focus {
       flex: 0 1 100%; } }
   @media all and (min-width: 640px) and (max-width: 939px) {
     .masterpiece_content {
-      flex: 0 1 39%; } }
+      flex: 0 1 35%; } }
   @media all and (min-width: 940px) and (max-width: 1280px) {
     .masterpiece_content {
       flex: 0 1 39%; } }
@@ -799,7 +832,24 @@ button:focus {
   background: #000; }
 
 .section__frothing {
-  background: #000; }
+  background-color: #000;
+  background-repeat: no-repeat; }
+  @media (max-width: 639px) {
+    .section__frothing {
+      background-image: url("/assets/images/frothing-phone.png");
+      background-position: center 95%; } }
+  @media all and (min-width: 640px) and (max-width: 939px) {
+    .section__frothing {
+      background-image: url("/assets/images/frothing-tablet.png");
+      background-position: center; } }
+  @media all and (min-width: 940px) and (max-width: 1280px) {
+    .section__frothing {
+      background-image: url("/assets/images/frothing-desktop.png");
+      background-position: center; } }
+  @media all and (min-width: 1281px) {
+    .section__frothing {
+      background-image: url("/assets/images/frothing-extra-desktop.png");
+      background-position: center; } }
 
 .section__specifications {
   padding: 30px 0;
@@ -812,7 +862,7 @@ button:focus {
       background: none; } }
 
 .section__boutiques {
-  background-image: url("/assets/images/section-bg-boutiques.jpg");
+  background-image: url("/assets/images/boutiques.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
