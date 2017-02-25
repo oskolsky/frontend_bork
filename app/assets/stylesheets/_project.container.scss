@@ -1,25 +1,32 @@
 .container {
-    min-width: 320px;
-    max-width: 1200px;
+    box-sizing: border-box;
     margin: 0 auto;
 
     @include mq('phone') {
+        min-width: 320px;
+        max-width: 639px;
         padding-right: 10px;
         padding-left: 10px;
     }
 
     @include mq('tablet') {
-        padding-right: 50px;
-        padding-left: 50px;
+        min-width: 640px;
+        max-width: 939px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     @include mq('desktop') {
-        padding-right: 75px;
-        padding-left: 75px;
+        min-width: 940px;
+        max-width: 1280px;
+        padding-right: 30px;
+        padding-left: 30px;
     }
 
     @include mq('extra-desktop') {
-        padding-right: 195px;
-        padding-left: 195px;
+        min-width: 1281px;
+        max-width: 1440px;
+        padding-right: 40px;
+        padding-left: 40px;
     }
 }

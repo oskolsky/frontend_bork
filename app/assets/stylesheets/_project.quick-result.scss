@@ -6,7 +6,7 @@
     justify-content: space-around;
 
     @include mq('phone') {
-        min-height: 675px;
+        min-height: 650px;
         padding-top: 30px;
         padding-bottom: 30px;
     }
@@ -30,7 +30,6 @@
     }
 
     &_content {
-        flex: 0 1 30%;
         text-align: center;
 
         @include mq('phone') {

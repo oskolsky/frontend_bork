@@ -4,7 +4,6 @@ html {
 
 body {
     box-sizing: border-box;
-    min-width: 320px;
     height: 100%;
     background: #1b1b1b;
     color: #fff;
@@ -12,21 +11,25 @@ body {
     letter-spacing: .4px;
 
     @include mq('phone') {
+        min-width: 320px;
         font-size: 14px;
         line-height: 20px;
     }
 
     @include mq('tablet') {
+        min-width: 640px;
         font-size: 15px;
         line-height: 23px;
     }
 
     @include mq('desktop') {
+        min-width: 940px;
         font-size: 16px;
         line-height: 24px;
     }
 
     @include mq('extra-desktop') {
+        min-width: 1281px;
         font-size: 16px;
         line-height: 24px;
     }

@@ -1,22 +1,22 @@
-@media (max-width: 767px) {
+@media (max-width: 639px) {
   .hidden-phone,
   .visible-tablet,
   .visible-desktop {
     display: none !important; } }
 
-@media all and (min-width: 768px) and (max-width: 1023px) {
+@media all and (min-width: 640px) and (max-width: 939px) {
   .visible-phone,
   .hidden-tablet,
   .visible-desktop {
     display: none !important; } }
 
-@media all and (min-width: 1024px) and (max-width: 1439px) {
+@media all and (min-width: 940px) and (max-width: 1280px) {
   .visible-phone,
   .visible-tablet,
   .hidden-desktop {
     display: none !important; } }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: 1281px) {
   .visible-phone,
   .visible-tablet,
   .hidden-desktop {
@@ -27,26 +27,29 @@ html {
 
 body {
   box-sizing: border-box;
-  min-width: 320px;
   height: 100%;
   background: #1b1b1b;
   color: #fff;
   font-family: "AkzidenzGroteskProLight", Helvetica, Arial, sans-serif;
   letter-spacing: .4px; }
-  @media (max-width: 767px) {
+  @media (max-width: 639px) {
     body {
+      min-width: 320px;
       font-size: 14px;
       line-height: 20px; } }
-  @media all and (min-width: 768px) and (max-width: 1023px) {
+  @media all and (min-width: 640px) and (max-width: 939px) {
     body {
+      min-width: 640px;
       font-size: 15px;
       line-height: 23px; } }
-  @media all and (min-width: 1024px) and (max-width: 1439px) {
+  @media all and (min-width: 940px) and (max-width: 1280px) {
     body {
+      min-width: 940px;
       font-size: 16px;
       line-height: 24px; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1281px) {
     body {
+      min-width: 1281px;
       font-size: 16px;
       line-height: 24px; } }
 
@@ -54,21 +57,21 @@ h1 {
   color: #fff;
   font-family: "BorkDisplayRegilar", Helvetica, Arial, sans-serif;
   word-spacing: 15px; }
-  @media (max-width: 767px) {
+  @media (max-width: 639px) {
     h1 {
       font-size: 18px;
       line-height: 24px; } }
-  @media all and (min-width: 768px) and (max-width: 1023px) {
+  @media all and (min-width: 640px) and (max-width: 939px) {
     h1 {
       margin: 0 0 18px;
       font-size: 20px;
       line-height: 32px; } }
-  @media all and (min-width: 1024px) and (max-width: 1439px) {
+  @media all and (min-width: 940px) and (max-width: 1280px) {
     h1 {
       margin: 0 0 18px;
       font-size: 24px;
       line-height: 36px; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1281px) {
     h1 {
       margin: 0 0 18px;
       font-size: 24px;
@@ -77,22 +80,22 @@ h1 {
 h2 {
   color: #fff;
   font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif; }
-  @media (max-width: 767px) {
+  @media (max-width: 639px) {
     h2 {
       margin: 0 0 12px;
       font-size: 18px;
       line-height: 25px; } }
-  @media all and (min-width: 768px) and (max-width: 1023px) {
+  @media all and (min-width: 640px) and (max-width: 939px) {
     h2 {
       margin: 0 0 16px;
       font-size: 20px;
       line-height: 26px; } }
-  @media all and (min-width: 1024px) and (max-width: 1439px) {
+  @media all and (min-width: 940px) and (max-width: 1280px) {
     h2 {
       margin: 0 0 23px;
       font-size: 24px;
       line-height: 32px; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1281px) {
     h2 {
       margin: 0 0 23px;
       font-size: 24px;
@@ -160,30 +163,30 @@ button:focus {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around; }
-  @media (max-width: 767px) {
+  @media (max-width: 639px) {
     .boutiques {
       min-height: 485px; } }
-  @media all and (min-width: 768px) and (max-width: 1023px) {
+  @media all and (min-width: 640px) and (max-width: 939px) {
     .boutiques {
       min-height: 405px; } }
-  @media all and (min-width: 1024px) and (max-width: 1439px) {
+  @media all and (min-width: 940px) and (max-width: 1280px) {
     .boutiques {
       min-height: 540px; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1281px) {
     .boutiques {
       min-height: 645px; } }
   .boutiques_content {
     text-align: center; }
-    @media (max-width: 767px) {
+    @media (max-width: 639px) {
       .boutiques_content {
         width: 100%; } }
-    @media all and (min-width: 768px) and (max-width: 1023px) {
+    @media all and (min-width: 640px) and (max-width: 939px) {
       .boutiques_content {
         width: 60%; } }
-    @media all and (min-width: 1024px) and (max-width: 1439px) {
+    @media all and (min-width: 940px) and (max-width: 1280px) {
       .boutiques_content {
         width: 40%; } }
-    @media all and (min-width: 1440px) {
+    @media all and (min-width: 1281px) {
       .boutiques_content {
         width: 40%; } }
 
@@ -205,22 +208,22 @@ button:focus {
     height: 35px;
     padding: 0 20px;
     border-radius: 26px; }
-    @media (max-width: 767px) {
+    @media (max-width: 639px) {
       .button__small {
         height: 32px;
         font-size: 11px;
         letter-spacing: .6px; } }
-    @media all and (min-width: 768px) and (max-width: 1023px) {
+    @media all and (min-width: 640px) and (max-width: 939px) {
       .button__small {
         height: 35px;
         font-size: 11px;
         letter-spacing: 1.3px; } }
-    @media all and (min-width: 1024px) and (max-width: 1439px) {
+    @media all and (min-width: 940px) and (max-width: 1280px) {
       .button__small {
         height: 35px;
         font-size: 13px;
         letter-spacing: 1.3px; } }
-    @media all and (min-width: 1440px) {
+    @media all and (min-width: 1281px) {
       .button__small {
         height: 35px;
         font-size: 13px;
@@ -246,37 +249,37 @@ button:focus {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around; }
-  @media (max-width: 767px) {
+  @media (max-width: 639px) {
     .contacts {
       padding-top: 50px;
       padding-bottom: 50px; } }
-  @media all and (min-width: 768px) and (max-width: 1023px) {
+  @media all and (min-width: 640px) and (max-width: 939px) {
     .contacts {
       padding-top: 60px;
       padding-bottom: 60px; } }
-  @media all and (min-width: 1024px) and (max-width: 1439px) {
+  @media all and (min-width: 940px) and (max-width: 1280px) {
     .contacts {
       padding-top: 70px;
       padding-bottom: 70px; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1281px) {
     .contacts {
       padding-top: 130px;
       padding-bottom: 130px; } }
   .contacts_content {
     text-align: center; }
-    @media (max-width: 767px) {
+    @media (max-width: 639px) {
       .contacts_content {
         flex: 0 1 80%; } }
-    @media all and (min-width: 768px) and (max-width: 1023px) {
+    @media all and (min-width: 640px) and (max-width: 939px) {
       .contacts_content {
         flex: 0 1 39%; } }
-    @media all and (min-width: 1024px) and (max-width: 1439px) {
+    @media all and (min-width: 940px) and (max-width: 1280px) {
       .contacts_content {
         flex: 0 1 39%; } }
-    @media all and (min-width: 1440px) {
+    @media all and (min-width: 1281px) {
       .contacts_content {
         flex: 0 1 39%; } }
-    @media (max-width: 767px) {
+    @media (max-width: 639px) {
       .contacts_content__delivery {
         margin: 0 0 50px; } }
     .contacts_content__phone {
@@ -301,25 +304,32 @@ button:focus {
       letter-spacing: 1.4px; }
 
 .container {
-  min-width: 320px;
-  max-width: 1200px;
+  box-sizing: border-box;
   margin: 0 auto; }
-  @media (max-width: 767px) {
+  @media (max-width: 639px) {
     .container {
+      min-width: 320px;
+      max-width: 639px;
       padding-right: 10px;
       padding-left: 10px; } }
-  @media all and (min-width: 768px) and (max-width: 1023px) {
+  @media all and (min-width: 640px) and (max-width: 939px) {
     .container {
-      padding-right: 50px;
-      padding-left: 50px; } }
-  @media all and (min-width: 1024px) and (max-width: 1439px) {
+      min-width: 640px;
+      max-width: 939px;
+      padding-right: 20px;
+      padding-left: 20px; } }
+  @media all and (min-width: 940px) and (max-width: 1280px) {
     .container {
-      padding-right: 75px;
-      padding-left: 75px; } }
-  @media all and (min-width: 1440px) {
+      min-width: 940px;
+      max-width: 1280px;
+      padding-right: 30px;
+      padding-left: 30px; } }
+  @media all and (min-width: 1281px) {
     .container {
-      padding-right: 195px;
-      padding-left: 195px; } }
+      min-width: 1281px;
+      max-width: 1440px;
+      padding-right: 40px;
+      padding-left: 40px; } }
 
 .footer {
   padding: 30px 0;
@@ -345,22 +355,22 @@ button:focus {
   z-index: 998;
   background: #000;
   text-align: right; }
-  @media (max-width: 767px) {
+  @media (max-width: 639px) {
     .header {
       height: 43px;
       padding: 0 10px;
       line-height: 43px; } }
-  @media all and (min-width: 768px) and (max-width: 1023px) {
+  @media all and (min-width: 640px) and (max-width: 939px) {
     .header {
       height: 55px;
       padding: 0 25px;
       line-height: 55px; } }
-  @media all and (min-width: 1024px) and (max-width: 1439px) {
+  @media all and (min-width: 940px) and (max-width: 1280px) {
     .header {
       height: 55px;
       padding: 0 25px;
       line-height: 55px; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1281px) {
     .header {
       height: 55px;
       padding: 0 25px;
@@ -370,25 +380,25 @@ button:focus {
     width: 83px;
     height: 17px;
     line-height: 17px; }
-    @media (max-width: 767px) {
+    @media (max-width: 639px) {
       .header_logo {
         top: 14px;
         left: 10px;
         width: 71px;
         height: 15px; } }
-    @media all and (min-width: 768px) and (max-width: 1023px) {
+    @media all and (min-width: 640px) and (max-width: 939px) {
       .header_logo {
         top: 19px;
         left: 25px;
         width: 83px;
         height: 17px; } }
-    @media all and (min-width: 1024px) and (max-width: 1439px) {
+    @media all and (min-width: 940px) and (max-width: 1280px) {
       .header_logo {
         top: 19px;
         left: 25px;
         width: 83px;
         height: 17px; } }
-    @media all and (min-width: 1440px) {
+    @media all and (min-width: 1281px) {
       .header_logo {
         top: 19px;
         left: 25px;
@@ -398,41 +408,41 @@ button:focus {
     font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px; }
-    @media (max-width: 767px) {
+    @media (max-width: 639px) {
       .header_brand {
         display: none; } }
-    @media all and (min-width: 768px) and (max-width: 1023px) {
+    @media all and (min-width: 640px) and (max-width: 939px) {
       .header_brand {
         margin: 0 20px 0 0;
         font-size: 13px; } }
-    @media all and (min-width: 1024px) and (max-width: 1439px) {
+    @media all and (min-width: 940px) and (max-width: 1280px) {
       .header_brand {
         margin: 0 24px 0 0;
         font-size: 15px; } }
-    @media all and (min-width: 1440px) {
+    @media all and (min-width: 1281px) {
       .header_brand {
         margin: 0 24px 0 0;
         font-size: 15px; } }
-  @media (max-width: 767px) {
+  @media (max-width: 639px) {
     .header_button {
       display: none; } }
   .header_phone {
     letter-spacing: 0; }
-    @media (max-width: 767px) {
+    @media (max-width: 639px) {
       .header_phone {
         color: #fff;
         font-size: 13px; } }
-    @media all and (min-width: 768px) and (max-width: 1023px) {
+    @media all and (min-width: 640px) and (max-width: 939px) {
       .header_phone {
         margin: 0 0 0 20px;
         color: #fc642a;
         font-size: 13px; } }
-    @media all and (min-width: 1024px) and (max-width: 1439px) {
+    @media all and (min-width: 940px) and (max-width: 1280px) {
       .header_phone {
         margin: 0 0 0 24px;
         color: #fc642a;
         font-size: 15px; } }
-    @media all and (min-width: 1440px) {
+    @media all and (min-width: 1281px) {
       .header_phone {
         margin: 0 0 0 24px;
         color: #fc642a;
@@ -525,37 +535,37 @@ button:focus {
   flex-wrap: nowrap;
   align-items: flex-start;
   box-sizing: border-box; }
-  @media (max-width: 767px) {
+  @media (max-width: 639px) {
     .index {
       justify-content: space-around;
       min-height: 560px;
       padding: 70px;
       text-align: center; } }
-  @media all and (min-width: 768px) and (max-width: 1023px) {
+  @media all and (min-width: 640px) and (max-width: 939px) {
     .index {
       justify-content: flex-end;
       min-height: 585px;
       padding: 100px; } }
-  @media all and (min-width: 1024px) and (max-width: 1439px) {
+  @media all and (min-width: 940px) and (max-width: 1280px) {
     .index {
       justify-content: flex-end;
       min-height: 615px;
       padding: 105px; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1281px) {
     .index {
       justify-content: flex-end;
       min-height: 835px;
       padding: 160px; } }
-  @media (max-width: 767px) {
+  @media (max-width: 639px) {
     .index_content {
       flex: 0 1 100%; } }
-  @media all and (min-width: 768px) and (max-width: 1023px) {
+  @media all and (min-width: 640px) and (max-width: 939px) {
     .index_content {
       flex: 0 1 50%; } }
-  @media all and (min-width: 1024px) and (max-width: 1439px) {
+  @media all and (min-width: 940px) and (max-width: 1280px) {
     .index_content {
       flex: 0 1 50%; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1281px) {
     .index_content {
       flex: 0 1 50%; } }
 
@@ -569,19 +579,19 @@ button:focus {
     flex: 0 1 50%;
     text-align: center; }
 
-@media (max-width: 767px) {
+@media (max-width: 639px) {
   .main {
     padding: 43px 0 0; } }
 
-@media all and (min-width: 768px) and (max-width: 1023px) {
+@media all and (min-width: 640px) and (max-width: 939px) {
   .main {
     padding: 55px 0 0; } }
 
-@media all and (min-width: 1024px) and (max-width: 1439px) {
+@media all and (min-width: 940px) and (max-width: 1280px) {
   .main {
     padding: 55px 0 0; } }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: 1281px) {
   .main {
     padding: 55px 0 0; } }
 
@@ -591,36 +601,36 @@ button:focus {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around; }
-  @media (max-width: 767px) {
+  @media (max-width: 639px) {
     .masterpiece {
       min-height: 150px;
       padding-top: 60px;
       padding-bottom: 60px; } }
-  @media all and (min-width: 768px) and (max-width: 1023px) {
+  @media all and (min-width: 640px) and (max-width: 939px) {
     .masterpiece {
-      height: 435px;
+      height: 365px;
       padding-top: 160px;
       padding-bottom: 160px; } }
-  @media all and (min-width: 1024px) and (max-width: 1439px) {
+  @media all and (min-width: 940px) and (max-width: 1280px) {
     .masterpiece {
       height: 525px;
       padding-top: 128px;
       padding-bottom: 128px; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1281px) {
     .masterpiece {
       height: 637px;
       padding-top: 128px;
       padding-bottom: 128px; } }
-  @media (max-width: 767px) {
+  @media (max-width: 639px) {
     .masterpiece_content {
       flex: 0 1 100%; } }
-  @media all and (min-width: 768px) and (max-width: 1023px) {
+  @media all and (min-width: 640px) and (max-width: 939px) {
     .masterpiece_content {
       flex: 0 1 39%; } }
-  @media all and (min-width: 1024px) and (max-width: 1439px) {
+  @media all and (min-width: 940px) and (max-width: 1280px) {
     .masterpiece_content {
       flex: 0 1 39%; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1281px) {
     .masterpiece_content {
       flex: 0 1 39%; } }
   .masterpiece_content__photo {
@@ -632,6 +642,7 @@ button:focus {
     height: 100%; }
   .masterpiece_creatista {
     display: inline-block;
+    max-width: 330px;
     margin: 65px 0 0;
     vertical-align: top; }
 
@@ -647,7 +658,7 @@ button:focus {
     width: 242px;
     height: 40px; }
 
-@media (max-width: 767px) {
+@media (max-width: 639px) {
   .order {
     position: fixed;
     top: 43px;
@@ -660,15 +671,15 @@ button:focus {
     line-height: 42px;
     text-align: right; } }
 
-@media all and (min-width: 768px) and (max-width: 1023px) {
+@media all and (min-width: 640px) and (max-width: 939px) {
   .order {
     margin: 32px 0 0; } }
 
-@media all and (min-width: 1024px) and (max-width: 1439px) {
+@media all and (min-width: 940px) and (max-width: 1280px) {
   .order {
     margin: 32px 0 0; } }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: 1281px) {
   .order {
     margin: 32px 0 0; } }
 
@@ -685,45 +696,44 @@ button:focus {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around; }
-  @media (max-width: 767px) {
+  @media (max-width: 639px) {
     .quick-result {
-      min-height: 675px;
+      min-height: 650px;
       padding-top: 30px;
       padding-bottom: 30px; } }
-  @media all and (min-width: 768px) and (max-width: 1023px) {
+  @media all and (min-width: 640px) and (max-width: 939px) {
     .quick-result {
       height: 365px;
       padding-top: 80px;
       padding-bottom: 80px; } }
-  @media all and (min-width: 1024px) and (max-width: 1439px) {
+  @media all and (min-width: 940px) and (max-width: 1280px) {
     .quick-result {
       height: 500px;
       padding-top: 80px;
       padding-bottom: 80px; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1281px) {
     .quick-result {
       height: 765px;
       padding-top: 128px;
       padding-bottom: 128px; } }
   .quick-result_content {
-    flex: 0 1 30%;
     text-align: center; }
-    @media (max-width: 767px) {
+    @media (max-width: 639px) {
       .quick-result_content {
         flex: 0 1 100%; } }
-    @media all and (min-width: 768px) and (max-width: 1023px) {
+    @media all and (min-width: 640px) and (max-width: 939px) {
       .quick-result_content {
         flex: 0 1 39%; } }
-    @media all and (min-width: 1024px) and (max-width: 1439px) {
+    @media all and (min-width: 940px) and (max-width: 1280px) {
       .quick-result_content {
         flex: 0 1 39%; } }
-    @media all and (min-width: 1440px) {
+    @media all and (min-width: 1281px) {
       .quick-result_content {
         flex: 0 1 39%; } }
     .quick-result_content__photo {
       height: 100%;
       text-align: right; }
-      @media (max-width: 767px) {
+      @media (max-width: 639px) {
         .quick-result_content__photo {
           height: 340px;
           text-align: center; } }

@@ -12,7 +12,7 @@
     }
 
     @include mq('tablet') {
-        height: 435px;
+        height: 365px;
         padding-top: 160px;
         padding-bottom: 160px;
     }
@@ -60,6 +60,7 @@
 
     &_creatista {
         display: inline-block;
+        max-width: 330px;
         margin: 65px 0 0;
         vertical-align: top;
     }
