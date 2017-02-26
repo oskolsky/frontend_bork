@@ -1,0 +1,13 @@
+.order-complete {
+    display: none;
+    padding: 65px 0;
+    text-align: center;
+
+    &__visible {
+        display: block;
+    }
+
+    &_icon {
+        margin: 0 0 35px;
+    }
+}

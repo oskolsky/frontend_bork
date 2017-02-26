@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-updated" transform="translate(-594.000000, -1881.000000)" fill="#FFFFFF">
+            <g id="bying-pop-up" transform="translate(0.000000, 916.000000)">
+                <g id="thank-you-page">
+                    <g id="Group" transform="translate(594.000000, 931.000000)">
+                        <g id="socials" transform="translate(0.000000, 34.000000)">
+                            <path d="M31.9991284,30.2331663 C31.9991284,31.2085422 31.2085422,32 30.2331663,32 L22.0788843,32 L22.0788843,19.6077577 L26.2383962,19.6077577 L26.8616256,14.7788189 L22.0788843,14.7788189 L22.0788843,11.6949226 C22.0788843,10.2967967 22.46764,9.34408368 24.4724341,9.34408368 L27.029854,9.34321203 L27.029854,5.02331663 C26.587056,4.9649161 25.0695141,4.83329701 23.303552,4.83329701 C19.6164742,4.83329701 17.0921769,7.08389627 17.0921769,11.2172587 L17.0921769,14.7788189 L12.9222053,14.7788189 L12.9222053,19.6077577 L17.0921769,19.6077577 L17.0921769,32 L1.76596208,32 C0.790586184,32 0,31.2085422 0,30.2331663 L0,1.76683373 C0,0.790586184 0.790586184,0 1.76596208,0 L30.2331663,0 C31.2085422,0 31.9991284,0.790586184 31.9991284,1.76683373 L31.9991284,30.2331663" id="Facebook"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

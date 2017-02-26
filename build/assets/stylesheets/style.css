@@ -335,10 +335,72 @@ button:focus {
       padding-right: 40px;
       padding-left: 40px; } }
 
+.dialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+  overflow-y: auto; }
+  .dialog__visible {
+    display: block; }
+  .dialog_container {
+    width: 100%;
+    height: 100%; }
+  .dialog_inner {
+    height: 100%;
+    padding: 50px 0;
+    text-align: center;
+    vertical-align: middle; }
+  .dialog_modal {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 510px;
+    margin: 0 auto;
+    padding: 0 65px;
+    background: #262626;
+    text-align: left;
+    vertical-align: top; }
+  .dialog_close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 13px;
+    height: 12px;
+    background: url("/assets/images/dialog-close.png") center no-repeat;
+    cursor: pointer; }
+
 .footer {
   padding: 30px 0;
   text-align: center;
   opacity: .5; }
+
+.form_item:not(:last-child) {
+  margin: 0 0 32px; }
+
+.form_label {
+  display: block;
+  margin: 0 0 14px; }
+
+.form_input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  padding: 0 24px;
+  border: none;
+  background: #1b1b1b;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px; }
+  .form_input:focus {
+    outline: none; }
+
+.form_submit {
+  margin: 64px 0 0;
+  text-align: center; }
 
 .frothing {
   display: flex;
@@ -393,7 +455,7 @@ button:focus {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 998;
+  z-index: 997;
   background: #000;
   text-align: right; }
   @media (max-width: 639px) {
@@ -506,6 +568,10 @@ button:focus {
     width: 72px;
     height: 72px;
     background-image: url("/assets/images/icons/froathing.svg"); }
+  .icon__complete {
+    width: 72px;
+    height: 72px;
+    background-image: url("/assets/images/icons/complete.svg"); }
   .icon__delivery {
     width: 44px;
     height: 50px;
@@ -566,6 +632,26 @@ button:focus {
     width: 17px;
     height: 24px;
     background-image: url("/assets/images/icons/origin.svg"); }
+  .icon__card {
+    width: 30px;
+    height: 20px;
+    background-image: url("/assets/images/icons/card.svg"); }
+  .icon__social-fb {
+    width: 32px;
+    height: 32px;
+    background-image: url("/assets/images/icons/social-fb.svg"); }
+  .icon__social-youtube {
+    width: 28px;
+    height: 32px;
+    background-image: url("/assets/images/icons/social-youtube.svg"); }
+  .icon__social-instagram {
+    width: 32px;
+    height: 32px;
+    background-image: url("/assets/images/icons/social-instagram.svg"); }
+  .icon__social-vk {
+    width: 40px;
+    height: 23px;
+    background-image: url("/assets/images/icons/social-vk.svg"); }
 
 .index {
   display: flex;
@@ -744,6 +830,56 @@ button:focus {
   line-height: 27px;
   vertical-align: baseline; }
 
+.order-complete {
+  display: none;
+  padding: 65px 0;
+  text-align: center; }
+  .order-complete__visible {
+    display: block; }
+  .order-complete_icon {
+    margin: 0 0 35px; }
+
+.order-info {
+  position: relative;
+  padding: 0 0 0 55px;
+  font-family: "AkzidenzGroteskProLight", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .35px; }
+  .order-info_icon {
+    position: absolute;
+    top: 5px;
+    left: 0; }
+  .order-info_link {
+    font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif; }
+
+.order {
+  display: none;
+  padding: 50px 0 30px; }
+  .order__visible {
+    display: block; }
+  .order_title {
+    margin: 0 0 50px;
+    font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: .4px; }
+  .order_form {
+    margin: 0 0 40px; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 998;
+  display: none;
+  background: rgba(0, 0, 0, 0.75); }
+  .overlay__visible {
+    display: block; }
+
 .owl-dots {
   width: 50%;
   height: 2px;
@@ -863,6 +999,18 @@ button:focus {
 @media all and (min-width: 1281px) {
   .section_icon {
     margin: 0 0 25px; } }
+
+.social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 255px;
+  height: 100px;
+  margin: 42px auto 48px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12); }
 
 .specifications_content {
   margin: 0;

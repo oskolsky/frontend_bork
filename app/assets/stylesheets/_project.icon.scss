@@ -22,6 +22,12 @@
         background-image: url("/assets/images/icons/froathing.svg");
     }
 
+    &__complete {
+        width: 72px;
+        height: 72px;
+        background-image: url("/assets/images/icons/complete.svg");
+    }
+
     &__delivery {
         width: 44px;
         height: 50px;
@@ -110,5 +116,35 @@
         width: 17px;
         height: 24px;
         background-image: url("/assets/images/icons/origin.svg");
+    }
+
+    &__card {
+        width: 30px;
+        height: 20px;
+        background-image: url("/assets/images/icons/card.svg");
+    }
+
+    &__social-fb {
+        width: 32px;
+        height: 32px;
+        background-image: url("/assets/images/icons/social-fb.svg");
+    }
+
+    &__social-youtube {
+        width: 28px;
+        height: 32px;
+        background-image: url("/assets/images/icons/social-youtube.svg");
+    }
+
+    &__social-instagram {
+        width: 32px;
+        height: 32px;
+        background-image: url("/assets/images/icons/social-instagram.svg");
+    }
+
+    &__social-vk {
+        width: 40px;
+        height: 23px;
+        background-image: url("/assets/images/icons/social-vk.svg");
     }
 }

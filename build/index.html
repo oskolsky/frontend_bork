@@ -7,17 +7,19 @@
         <link rel="stylesheet" href="/assets/stylesheets/vendor/owl.carousel.css">
         <link rel="stylesheet" href="/assets/stylesheets/style.css">
         <script type="text/javascript" src="/assets/javascripts/vendor/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="/assets/javascripts/vendor/jquery.maskedinput.min.js"></script>
         <script type="text/javascript" src="/assets/javascripts/vendor/owl.carousel.min.js"></script>
         <script type="text/javascript" src="/assets/javascripts/script.js"></script>
+        <script type="text/javascript" src="/assets/javascripts/order.js"></script>
         <title>Bork</title>
 </head>
-    <body>
+    <body class=js-body>
         <header class="header" role="banner">
             <a href="#" class="header_logo">
                 <img src="/assets/images/logo.svg" alt="Bork">
             </a>
             <span class="header_brand">BORK Nespresso C830</span>
-            <button class="button button__small header_button">Купить</button>
+            <button class="header_button button button__small js-order-open">Купить</button>
             <span class="header_phone">8 800 500 88 99</span>
         </header>
 
@@ -84,7 +86,7 @@
                 <div class="container">
                     <div class="quick-result">
                         <div class="quick-result_content quick-result_content__text">
-                            <i class="icon icon__19bar section_icon"></i>
+                            <i class="section_icon icon icon__19bar"></i>
                             <h2>Моментальный  результат</h2>
                             <p>Инновационный заварочный узел  с давлением 19&nbsp;бар приготовит любимый  кофе за&nbsp;считанные секунды</p>
                         </div>
@@ -99,7 +101,7 @@
             <!-- <section class="section section__choose-coffee" role="region" aria-label="Choose Coffee">
                 <div class="container choose-coffee">
                     <div class="choose-coffee_content">
-                        <i class="icon icon__4cups section_icon"></i>
+                        <i class="section_icon icon icon__4cups"></i>
                         <h2>Коллекция  неповторимых вкусов</h2>
                         <p>Бодрящий эспрессо, нежный латте макиато или напиток по&nbsp;собственному рецепту&nbsp;&mdash; BORK C830 Creatista Plus исполнит любой каприз благодаря встроенным рецептам 7&nbsp;кофейных коктейлей и&nbsp;персонализированному режиму Barista</p>
                     </div>
@@ -110,7 +112,7 @@
                 <div class="container">
                     <div class="frothing">
                         <div class="frothing_content frothing_content__text">
-                            <i class="icon icon__frothing section_icon"></i>
+                            <i class="section_icon icon icon__frothing"></i>
                             <h2>Инновационная система вспенивания</h2>
                             <p>Благодаря интеллектуальной 11-уровневой технологии взбивания молочной пенки вы&nbsp;сможете приготовить идеальный капучино и&nbsp;попробовать свои силы в&nbsp;создании Latte Art</p>
                         </div>
@@ -129,24 +131,24 @@
                         <img src="/assets/images/specifications.svg" class="model_photo" alt="BORK Nespresso C830">
                         <img src="/assets/images/signature.svg" class="model_signature" alt="BORK Nespresso C830">
                     </div>
-                    <div class="specifications js-owl-carousel-specifications owl-carousel">
+                    <div class="specifications owl-carousel js-owl-carousel-specifications">
                         <ul class="specifications_content">
                             <li class="specifications_item">
-                                <i class="icon icon__designer specifications_icon"></i>
+                                <i class="specifications_icon icon icon__designer"></i>
                                 <dl>
                                     <dt class="specifications_title">Дизайнер</dt>
                                     <dd class="specifications_description">Richard Hoarep</dd>
                                 </dl>
                             </li>
                             <li class="specifications_item">
-                                <i class="icon icon__materials specifications_icon"></i>
+                                <i class="specifications_icon icon icon__materials"></i>
                                 <dl>
                                     <dt class="specifications_title">Материалы</dt>
                                     <dd class="specifications_description">Корпус, подставка для чашки, сетка для капель&nbsp;&mdash; нержавеющая сталь. Рычаг для капсул&nbsp;&mdash; металл/хром. Контейнер для капсул, контейнер для капель&nbsp;&mdash; пластик/металл. Контейнер для воды&nbsp;&mdash; акрил (SMMA).</dd>
                                 </dl>
                             </li>
                             <li class="specifications_item">
-                                <i class="icon icon__tank-volume specifications_icon"></i>
+                                <i class="specifications_icon icon icon__tank-volume"></i>
                                 <dl>
                                     <dt class="specifications_title">Объем резервуара  для воды</dt>
                                     <dd class="specifications_description">1,5 литра</dd>
@@ -155,21 +157,21 @@
                         </ul>
                         <ul class="specifications_content">
                             <li class="specifications_item">
-                                <i class="icon icon__capsules specifications_icon"></i>
+                                <i class="specifications_icon icon icon__capsules"></i>
                                 <dl>
                                     <dt class="specifications_title">Емкость контейнера  для капсул</dt>
                                     <dd class="specifications_description">8-12 капсул</dd>
                                 </dl>
                             </li>
                             <li class="specifications_item">
-                                <i class="icon icon__cup specifications_icon"></i>
+                                <i class="specifications_icon icon icon__cup"></i>
                                 <dl>
                                     <dt class="specifications_title">Программирование  размера порций</dt>
                                     <dd class="specifications_description">25-150 мл</dd>
                                 </dl>
                             </li>
                             <li class="specifications_item">
-                                <i class="icon icon__cappuccinator specifications_icon"></i>
+                                <i class="specifications_icon icon icon__cappuccinator"></i>
                                 <dl>
                                     <dt class="specifications_title">Система взбивания  молока</dt>
                                     <dd class="specifications_description">
@@ -184,14 +186,14 @@
                         </ul>
                         <ul class="specifications_content">
                             <li class="specifications_item">
-                                <i class="icon icon__jar specifications_icon"></i>
+                                <i class="specifications_icon icon icon__jar"></i>
                                 <dl>
                                     <dt class="specifications_title">Кувшин для молока</dt>
                                     <dd class="specifications_description">Стальной кувшин объемом 460&nbsp;мл. Мин. объем молока в&nbsp;кувшине&nbsp;&mdash; 150&nbsp;мл. Макс. объем молока в&nbsp;кувшине&nbsp;&mdash; 250&nbsp;мл.</dd>
                                 </dl>
                             </li>
                             <li class="specifications_item">
-                                <i class="icon icon__frequency-range specifications_icon"></i>
+                                <i class="specifications_icon icon icon__frequency-range"></i>
                                 <dl>
                                     <dt class="specifications_title">Электрические  характеристики</dt>
                                     <dd class="specifications_description">
@@ -204,7 +206,7 @@
                                 </dl>
                             </li>
                             <li class="specifications_item">
-                                <i class="icon icon__size specifications_icon"></i>
+                                <i class="specifications_icon icon icon__size"></i>
                                 <dl>
                                     <dt class="specifications_title">Комплектация</dt>
                                     <dd class="specifications_description">Капсульная кофемашина &middot; Игла для чистки &middot; Кувшин для вспенивания молока &middot; Тестер жесткости воды &middot; Комплект капсул &middot; Руководство по&nbsp;эксплуатации с&nbsp;гарантийным талоном</dd>
@@ -213,28 +215,28 @@
                         </ul>
                         <ul class="specifications_content">
                             <li class="specifications_item">
-                                <i class="icon icon__plug specifications_icon"></i>
+                                <i class="specifications_icon icon icon__plug"></i>
                                 <dl>
                                     <dt class="specifications_title">Длина сетевого шнура</dt>
                                     <dd class="specifications_description">1.2 м</dd>
                                 </dl>
                             </li>
                             <li class="specifications_item">
-                                <i class="icon icon__weight specifications_icon"></i>
+                                <i class="specifications_icon icon icon__weight"></i>
                                 <dl>
                                     <dt class="specifications_title">Вес</dt>
                                     <dd class="specifications_description">5.2 кг</dd>
                                 </dl>
                             </li>
                             <li class="specifications_item">
-                                <i class="icon icon__warranty specifications_icon"></i>
+                                <i class="specifications_icon icon icon__warranty"></i>
                                 <dl>
                                     <dt class="specifications_title">Срок гарантии</dt>
                                     <dd class="specifications_description">2 года</dd>
                                 </dl>
                             </li>
                             <li class="specifications_item">
-                                <i class="icon icon__origin specifications_icon"></i>
+                                <i class="specifications_icon icon icon__origin"></i>
                                 <dl>
                                     <dt class="specifications_title">Страна производства</dt>
                                     <dd class="specifications_description">Китай</dd>
@@ -260,14 +262,14 @@
                 <div class="container">
                     <div class="contacts">
                         <div class="contacts_content contacts_content__delivery">
-                            <i class="icon icon__delivery contacts_icon"></i>
+                            <i class="contacts_icon icon icon__delivery"></i>
                             <h3>Бесплатная доставка</h3>
                             <p>Мы&nbsp;бесплатно осуществляем экспресс доставку покупок по&nbsp;более чем 7&nbsp;000 направлений в&nbsp;России</p>
                             <a href="#" class="contacts_link contacts_link__order">Сделать заказ</a>
                         </div>
 
                         <div class="contacts_content contacts_content__phone">
-                            <i class="icon icon__phone contacts_icon"></i>
+                            <i class="contacts_icon icon icon__phone"></i>
                             <h3>Интернет-бутик</h3>
                             <p>Квалифицированные эксперты интернет-бутика всегда с&nbsp;радостью проконсультируют вас по&nbsp;всем вопросам</p>
                             <a href="#" class="contacts_link contacts_link__phone">8 800 500 88 99</a>
@@ -275,6 +277,59 @@
                     </div>
                 </div>
             </section>
+
+            <div class="dialog js-dialog">
+                <table class="dialog_container">
+                    <tbody>
+                        <tr>
+                            <td class="dialog_inner">
+                                <div class="dialog_modal js-dialog-order">
+                                    <div class="dialog_close js-dialog-close"></div>
+                                    <div class="order order__visible js-order">
+                                        <div class="order_title">Оформление заказа</div>
+                                        <form class="order_form form" action="#">
+                                            <div class="form_item">
+                                                <label class="form_label">Имя</label>
+                                                <input type="text" name="name" class="form_input" autofocus>
+                                            </div>
+                                            <div class="form_item">
+                                                <label class="form_label">Телефон</label>
+                                                <input type="text" name="phone" class="form_input js-data-phone">
+                                            </div>
+                                            <div class="form_item">
+                                                <label class="form_label">Email</label>
+                                                <input type="text" name="email" class="form_input">
+                                            </div>
+                                            <div class="form_submit">
+                                                <button type="submit" class="button button__large js-order-complete-button">Оформить</button>
+                                            </div>
+                                        </form>
+                                        <div class="order-info">
+                                            <i class="order-info_icon icon icon__card"></i>
+                                            Если вы&nbsp;хотите оплатить заказ банковской картой на&nbsp;сайте BORK, перейдите по&nbsp;<a href="#" class="order-info_link">ссылке</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="order-complete js-order-complete">
+                                        <i class="order-complete_icon icon icon__complete"></i>
+                                        <h2>Заказ оформлен</h2>
+                                        <p>Персональный эксперт интернет-бутика  свяжется с&nbsp;Вами в&nbsp;ближайшее время</p>
+                                        <div class="social">
+                                            <i class="icon icon__social-fb"></i>
+                                            <i class="icon icon__social-youtube"></i>
+                                            <i class="icon icon__social-instagram"></i>
+                                            <i class="icon icon__social-vk"></i>
+                                        </div>
+                                        <button class="button button__large js-dialog-close">Ок</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="overlay js-overlay"></div>
         </main>
 
         <footer class="footer" role="contentinfo">&copy;&nbsp;2017&nbsp;BORK Все права защищены</footer>

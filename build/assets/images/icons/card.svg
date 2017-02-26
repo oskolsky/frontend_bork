@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="20px" viewBox="0 0 30 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>card</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-updated" transform="translate(-529.000000, -2158.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="bying-pop-up" transform="translate(0.000000, 916.000000)">
+                <g transform="translate(1.000000, 9.000000)" id="Group-5">
+                    <g transform="translate(528.000000, 1228.000000)">
+                        <g id="card" transform="translate(0.000000, 5.000000)">
+                            <g id="Layer_2">
+                                <g>
+                                    <g id="Layer_1-2">
+                                        <path d="M30,4 L30,2 C30,0.8954305 29.1045695,6.76353751e-17 28,0 L2,0 C0.8954305,-6.76353751e-17 1.3527075e-16,0.8954305 0,2 L0,4 L30,4 Z" id="Shape"></path>
+                                        <path d="M0,7 L0,18 C1.3527075e-16,19.1045695 0.8954305,20 2,20 L28,20 C29.1045695,20 30,19.1045695 30,18 L30,7 L0,7 Z M3,11 L9,11 L9,13 L3,13 L3,11 Z M15,17 L3,17 L3,15 L15,15 L15,17 Z M27,17 L23,17 L23,15 L27,15 L27,17 Z" id="Shape"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,34 @@
+.form {
+
+    &_item {
+        &:not(:last-child) {
+            margin: 0 0 32px;
+        }
+    }
+
+    &_label {
+        display: block;
+        margin: 0 0 14px;
+    }
+
+    &_input {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50px;
+        padding: 0 24px;
+        border: none;
+        background: #1b1b1b;
+        color: rgba(255, 255, 255, .5);
+        font-size: 16px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &_submit {
+        margin: 64px 0 0;
+        text-align: center;
+    }
+}
