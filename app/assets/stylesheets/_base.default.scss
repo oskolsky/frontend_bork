@@ -116,6 +116,11 @@ a {
     }
 }
 
+img {
+    display: inline-block;
+    vertical-align: top;
+}
+
 button:focus {
     outline: none;
 }

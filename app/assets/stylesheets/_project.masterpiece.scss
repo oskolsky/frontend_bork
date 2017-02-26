@@ -6,36 +6,32 @@
     justify-content: space-around;
 
     @include mq('phone') {
-        min-height: 150px;
         padding-top: 60px;
         padding-bottom: 60px;
     }
 
     @include mq('tablet') {
-        height: 365px;
-        padding-top: 160px;
-        padding-bottom: 160px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     @include mq('desktop') {
-        height: 525px;
-        padding-top: 128px;
-        padding-bottom: 128px;
+        padding-top: 130px;
+        padding-bottom: 130px;
     }
 
     @include mq('extra-desktop') {
-        height: 637px;
-        padding-top: 128px;
-        padding-bottom: 128px;
+        padding-top: 130px;
+        padding-bottom: 130px;
     }
 
     &_content {
         @include mq('phone') {
-            flex: 0 1 100%;
+            flex: 0 1 90%;
         }
 
         @include mq('tablet') {
-            flex: 0 1 35%;
+            flex: 0 1 39%;
         }
 
         @include mq('desktop') {
@@ -45,23 +41,14 @@
         @include mq('extra-desktop') {
             flex: 0 1 39%;
         }
-
-        &__photo {
-            height: 100%;
-            text-align: right;
-        }
     }
 
     &_photo {
-        display: inline-block;
-        vertical-align: top;
-        height: 100%;
+        width: 100%;
     }
 
     &_creatista {
-        display: inline-block;
         max-width: 330px;
         margin: 65px 0 0;
-        vertical-align: top;
     }
 }

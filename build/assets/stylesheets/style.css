@@ -119,6 +119,10 @@ a {
     color: #ccc;
     text-decoration: none; }
 
+img {
+  display: inline-block;
+  vertical-align: top; }
+
 button:focus {
   outline: none; }
 
@@ -337,33 +341,31 @@ button:focus {
   opacity: .5; }
 
 .frothing {
-  position: relative;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap; }
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box; }
   @media (max-width: 639px) {
     .frothing {
-      align-items: flex-start;
-      justify-content: center;
-      box-sizing: border-box;
-      min-height: 540px;
       padding-top: 30px;
       padding-bottom: 30px; } }
   @media all and (min-width: 640px) and (max-width: 939px) {
     .frothing {
-      align-items: center;
-      justify-content: space-between;
-      height: 655px; } }
+      height: 655px;
+      padding-top: 50px;
+      padding-bottom: 50px; } }
   @media all and (min-width: 940px) and (max-width: 1280px) {
     .frothing {
-      align-items: center;
-      justify-content: space-between;
-      height: 765px; } }
+      height: 770px;
+      padding-top: 70px;
+      padding-bottom: 70px; } }
   @media all and (min-width: 1281px) {
     .frothing {
-      align-items: center;
-      justify-content: space-between;
-      height: 926px; } }
+      height: 930px;
+      padding-top: 70px;
+      padding-bottom: 70px; } }
   .frothing_content {
     text-align: center; }
     @media (max-width: 639px) {
@@ -371,13 +373,19 @@ button:focus {
         flex: 0 1 90%; } }
     @media all and (min-width: 640px) and (max-width: 939px) {
       .frothing_content {
-        flex: 0 1 50%; } }
+        flex: 0 1 39%; } }
     @media all and (min-width: 940px) and (max-width: 1280px) {
       .frothing_content {
         flex: 0 1 39%; } }
     @media all and (min-width: 1281px) {
       .frothing_content {
         flex: 0 1 39%; } }
+    @media (max-width: 639px) {
+      .frothing_content__text {
+        margin: 0 0 60px; } }
+  @media (max-width: 639px) {
+    .frothing_photo {
+      width: 100%; } }
 
 .header {
   position: fixed;
@@ -489,17 +497,14 @@ button:focus {
   .icon__19bar {
     width: 72px;
     height: 72px;
-    margin: 0 0 22px;
     background-image: url("/assets/images/icons/19bar.svg"); }
   .icon__4cups {
     width: 72px;
     height: 72px;
-    margin: 0 0 22px;
     background-image: url("/assets/images/icons/4cups.svg"); }
   .icon__frothing {
     width: 72px;
     height: 72px;
-    margin: 0 0 22px;
     background-image: url("/assets/images/icons/froathing.svg"); }
   .icon__delivery {
     width: 44px;
@@ -636,48 +641,37 @@ button:focus {
   justify-content: space-around; }
   @media (max-width: 639px) {
     .masterpiece {
-      min-height: 150px;
       padding-top: 60px;
       padding-bottom: 60px; } }
   @media all and (min-width: 640px) and (max-width: 939px) {
     .masterpiece {
-      height: 365px;
-      padding-top: 160px;
-      padding-bottom: 160px; } }
+      padding-top: 100px;
+      padding-bottom: 100px; } }
   @media all and (min-width: 940px) and (max-width: 1280px) {
     .masterpiece {
-      height: 525px;
-      padding-top: 128px;
-      padding-bottom: 128px; } }
+      padding-top: 130px;
+      padding-bottom: 130px; } }
   @media all and (min-width: 1281px) {
     .masterpiece {
-      height: 637px;
-      padding-top: 128px;
-      padding-bottom: 128px; } }
+      padding-top: 130px;
+      padding-bottom: 130px; } }
   @media (max-width: 639px) {
     .masterpiece_content {
-      flex: 0 1 100%; } }
+      flex: 0 1 90%; } }
   @media all and (min-width: 640px) and (max-width: 939px) {
     .masterpiece_content {
-      flex: 0 1 35%; } }
+      flex: 0 1 39%; } }
   @media all and (min-width: 940px) and (max-width: 1280px) {
     .masterpiece_content {
       flex: 0 1 39%; } }
   @media all and (min-width: 1281px) {
     .masterpiece_content {
       flex: 0 1 39%; } }
-  .masterpiece_content__photo {
-    height: 100%;
-    text-align: right; }
   .masterpiece_photo {
-    display: inline-block;
-    vertical-align: top;
-    height: 100%; }
+    width: 100%; }
   .masterpiece_creatista {
-    display: inline-block;
     max-width: 330px;
-    margin: 65px 0 0;
-    vertical-align: top; }
+    margin: 65px 0 0; }
 
 .model {
   position: relative;
@@ -769,32 +763,29 @@ button:focus {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+  box-sizing: border-box; }
   @media (max-width: 639px) {
     .quick-result {
-      min-height: 650px;
-      padding-top: 30px;
-      padding-bottom: 30px; } }
+      padding-top: 60px;
+      padding-bottom: 60px; } }
   @media all and (min-width: 640px) and (max-width: 939px) {
     .quick-result {
-      height: 365px;
-      padding-top: 80px;
-      padding-bottom: 80px; } }
+      padding-top: 100px;
+      padding-bottom: 100px; } }
   @media all and (min-width: 940px) and (max-width: 1280px) {
     .quick-result {
-      height: 500px;
-      padding-top: 80px;
-      padding-bottom: 80px; } }
+      padding-top: 130px;
+      padding-bottom: 130px; } }
   @media all and (min-width: 1281px) {
     .quick-result {
-      height: 765px;
-      padding-top: 128px;
-      padding-bottom: 128px; } }
+      padding-top: 130px;
+      padding-bottom: 130px; } }
   .quick-result_content {
     text-align: center; }
     @media (max-width: 639px) {
       .quick-result_content {
-        flex: 0 1 100%; } }
+        flex: 0 1 90%; } }
     @media all and (min-width: 640px) and (max-width: 939px) {
       .quick-result_content {
         flex: 0 1 39%; } }
@@ -804,17 +795,11 @@ button:focus {
     @media all and (min-width: 1281px) {
       .quick-result_content {
         flex: 0 1 39%; } }
-    .quick-result_content__photo {
-      height: 100%;
-      text-align: right; }
-      @media (max-width: 639px) {
-        .quick-result_content__photo {
-          height: 340px;
-          text-align: center; } }
+    @media (max-width: 639px) {
+      .quick-result_content__text {
+        margin: 0 0 60px; } }
   .quick-result_photo {
-    display: inline-block;
-    vertical-align: top;
-    height: 100%; }
+    width: 100%; }
 
 .section__index {
   background-image: url("/assets/images/section-bg-index.jpg");
@@ -834,10 +819,6 @@ button:focus {
 .section__frothing {
   background-color: #000;
   background-repeat: no-repeat; }
-  @media (max-width: 639px) {
-    .section__frothing {
-      background-image: url("/assets/images/frothing-phone.png");
-      background-position: center 95%; } }
   @media all and (min-width: 640px) and (max-width: 939px) {
     .section__frothing {
       background-image: url("/assets/images/frothing-tablet.png");
@@ -866,6 +847,22 @@ button:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
+
+@media (max-width: 639px) {
+  .section_icon {
+    margin: 0 0 15px; } }
+
+@media all and (min-width: 640px) and (max-width: 939px) {
+  .section_icon {
+    margin: 0 0 20px; } }
+
+@media all and (min-width: 940px) and (max-width: 1280px) {
+  .section_icon {
+    margin: 0 0 25px; } }
+
+@media all and (min-width: 1281px) {
+  .section_icon {
+    margin: 0 0 25px; } }
 
 .specifications_content {
   margin: 0;

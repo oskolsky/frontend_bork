@@ -4,36 +4,33 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    box-sizing: border-box;
 
     @include mq('phone') {
-        min-height: 650px;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     @include mq('tablet') {
-        height: 365px;
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     @include mq('desktop') {
-        height: 500px;
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 130px;
+        padding-bottom: 130px;
     }
 
     @include mq('extra-desktop') {
-        height: 765px;
-        padding-top: 128px;
-        padding-bottom: 128px;
+        padding-top: 130px;
+        padding-bottom: 130px;
     }
 
     &_content {
         text-align: center;
 
         @include mq('phone') {
-            flex: 0 1 100%;
+            flex: 0 1 90%;
         }
 
         @include mq('tablet') {
@@ -48,20 +45,18 @@
             flex: 0 1 39%;
         }
 
-        &__photo {
-            height: 100%;
-            text-align: right;
-
+        &__text {
             @include mq('phone') {
-                height: 340px;
-                text-align: center;
+                margin: 0 0 60px;
             }
+        }
+
+        &__photo {
+
         }
     }
 
     &_photo {
-        display: inline-block;
-        vertical-align: top;
-        height: 100%;
+        width: 100%;
     }
 }
