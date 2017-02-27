@@ -493,6 +493,56 @@ button:focus {
     .frothing_photo {
       width: 100%; } }
 
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  box-sizing: border-box; }
+  @media (max-width: 639px) {
+    .gallery {
+      height: 380px;
+      padding: 65px 0 0; } }
+  @media all and (min-width: 640px) and (max-width: 939px) {
+    .gallery {
+      height: 480px;
+      padding: 95px 0 0; } }
+  @media all and (min-width: 940px) and (max-width: 1280px) {
+    .gallery {
+      height: 520px;
+      padding: 130px 0 0; } }
+  @media all and (min-width: 1281px) {
+    .gallery {
+      height: 600px;
+      padding: 150px 0 0; } }
+  .gallery_content {
+    text-align: center; }
+    @media (max-width: 639px) {
+      .gallery_content {
+        flex: 0 1 90%; } }
+    @media all and (min-width: 640px) and (max-width: 939px) {
+      .gallery_content {
+        flex: 0 1 39%; } }
+    @media all and (min-width: 940px) and (max-width: 1280px) {
+      .gallery_content {
+        flex: 0 1 39%; } }
+    @media all and (min-width: 1281px) {
+      .gallery_content {
+        flex: 0 1 39%; } }
+  @media (max-width: 639px) {
+    .gallery_carousel {
+      margin: 60px 0 0; } }
+  @media all and (min-width: 640px) and (max-width: 939px) {
+    .gallery_carousel {
+      margin: 95px 0 0; } }
+  @media all and (min-width: 940px) and (max-width: 1280px) {
+    .gallery_carousel {
+      margin: 65px 0 0; } }
+  @media all and (min-width: 1281px) {
+    .gallery_carousel {
+      margin: 70px 0 0; } }
+
 .header {
   position: fixed;
   top: 0;
@@ -747,16 +797,6 @@ button:focus {
     .index_content__text {
       align-self: flex-end; } }
 
-.intro {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-around; }
-  .intro_content {
-    flex: 0 1 50%;
-    text-align: center; }
-
 @media (max-width: 639px) {
   .main {
     padding: 43px 0 0; } }
@@ -859,6 +899,7 @@ button:focus {
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 997;
     height: 42px;
     padding: 0 10px;
     background: #151515;
@@ -957,6 +998,15 @@ button:focus {
   .overlay__visible {
     display: block; }
 
+.owl-item {
+  height: 353px;
+  margin: 16px 0; }
+  .owl-item.center {
+    height: 385px;
+    margin: 0; }
+  .owl-item img {
+    height: 100%; }
+
 .owl-dots {
   width: 50%;
   height: 2px;
@@ -1024,7 +1074,7 @@ button:focus {
       background-image: url("/assets/images/index-phone.jpg");
       background-size: auto; } }
 
-.section__intro {
+.section__gallery {
   background: #000; }
 
 .section__quick-result {

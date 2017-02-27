@@ -29,8 +29,9 @@ $(function() {
     $('.js-owl-carousel').owlCarousel({
         center: true,
         items: 2,
-        loop: true
-        // margin: '8,3%'
+        loop: true,
+        dots: false,
+        margin: 150
     });
 
 })

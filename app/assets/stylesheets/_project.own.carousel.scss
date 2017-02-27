@@ -1,3 +1,17 @@
+.owl-item {
+    height: 353px;
+    margin: 16px 0;
+
+    &.center {
+        height: 385px;
+        margin: 0;
+    }
+
+    img {
+        height: 100%;
+    }
+}
+
 .owl-dots {
     width: 50%;
     height: 2px;
