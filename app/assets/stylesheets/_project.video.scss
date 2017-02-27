@@ -5,9 +5,30 @@
     align-items: center;
     justify-content: space-around;
     height: 100%;
-    background-image: url("/assets/images/video-bg.jpg");
+    background-image: url("/assets/images/video.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+
+    @include mq('phone') {
+        height: 375px;
+        margin: 0 0 30px;
+    }
+
+    @include mq('tablet') {
+        height: 370px;
+        margin: 0 0 95px;
+    }
+
+    @include mq('desktop') {
+        height: 495px;
+        margin: 0 0 130px;
+    }
+
+    @include mq('extra-desktop') {
+        height: 665px;
+        margin: 0 0 130px;
+    }
 
     &_content {
         flex: 0 1 auto;

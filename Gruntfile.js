@@ -29,6 +29,12 @@ module.exports = function(grunt) {
                 src: ['**/*.{gif,jpg,png,svg}'],
                 dest: 'build/assets/images/'
             },
+            video: {
+                expand: true,
+                cwd: 'app/assets/video/',
+                src: ['**/*.{mp4,webm}'],
+                dest: 'build/assets/video/'
+            },
             html: {
                 expand: true,
                 cwd: 'app/',
@@ -86,6 +92,10 @@ module.exports = function(grunt) {
             images: {
                 files: 'app/assets/images/**/*.{gif,jpg,png,svg}',
                 tasks: ['copy:images']
+            },
+            video: {
+                files: 'app/assets/images/**/*.{mp4,webm}',
+                tasks: ['copy:video']
             },
             html: {
                 files: 'app/*.html',

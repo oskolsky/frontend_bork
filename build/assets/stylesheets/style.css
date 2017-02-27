@@ -1113,10 +1113,19 @@ button:focus {
       background: none; } }
 
 .section__boutiques {
-  background-image: url("/assets/images/boutiques.jpg");
+  position: relative;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
+  .section__boutiques::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.5);
+    content: ''; }
 
 @media (max-width: 639px) {
   .section_icon {
@@ -1133,6 +1142,14 @@ button:focus {
 @media all and (min-width: 1281px) {
   .section_icon {
     margin: 0 0 25px; } }
+
+.section_video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1; }
 
 .social {
   display: flex;
@@ -1183,9 +1200,26 @@ button:focus {
   align-items: center;
   justify-content: space-around;
   height: 100%;
-  background-image: url("/assets/images/video-bg.jpg");
+  background-image: url("/assets/images/video.jpg");
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  background-size: cover; }
+  @media (max-width: 639px) {
+    .video {
+      height: 375px;
+      margin: 0 0 30px; } }
+  @media all and (min-width: 640px) and (max-width: 939px) {
+    .video {
+      height: 370px;
+      margin: 0 0 95px; } }
+  @media all and (min-width: 940px) and (max-width: 1280px) {
+    .video {
+      height: 495px;
+      margin: 0 0 130px; } }
+  @media all and (min-width: 1281px) {
+    .video {
+      height: 665px;
+      margin: 0 0 130px; } }
   .video_content {
     flex: 0 1 auto;
     text-align: center; }
