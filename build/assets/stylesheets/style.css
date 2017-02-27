@@ -357,6 +357,9 @@ button:focus {
     padding: 50px 0;
     text-align: center;
     vertical-align: middle; }
+    @media (max-width: 639px) {
+      .dialog_inner {
+        padding: 0; } }
   .dialog_modal {
     position: relative;
     display: inline-block;
@@ -367,6 +370,23 @@ button:focus {
     background: #262626;
     text-align: left;
     vertical-align: top; }
+    @media (max-width: 639px) {
+      .dialog_modal {
+        width: 100%;
+        min-height: 100%;
+        padding: 0 25px; } }
+  .dialog_header {
+    position: relative;
+    height: 42px;
+    margin: 0 -25px;
+    padding: 0 25px;
+    background: #000;
+    color: #e6e6e6;
+    font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    line-height: 42px;
+    text-transform: uppercase;
+    letter-spacing: .6px; }
   .dialog_close {
     position: absolute;
     top: 25px;
@@ -375,6 +395,10 @@ button:focus {
     height: 12px;
     background: url("/assets/images/dialog-close.png") center no-repeat;
     cursor: pointer; }
+    @media (max-width: 639px) {
+      .dialog_close {
+        top: 15px;
+        right: 15px; } }
 
 .footer {
   padding: 30px 0;
@@ -383,10 +407,16 @@ button:focus {
 
 .form_item:not(:last-child) {
   margin: 0 0 32px; }
+  @media (max-width: 639px) {
+    .form_item:not(:last-child) {
+      margin: 0 0 15px; } }
 
 .form_label {
   display: block;
   margin: 0 0 14px; }
+  @media (max-width: 639px) {
+    .form_label {
+      margin: 0 0 8px; } }
 
 .form_input {
   display: block;
@@ -399,6 +429,12 @@ button:focus {
   color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
   transition: background .2s; }
+  @media (max-width: 639px) {
+    .form_input {
+      height: 40px;
+      padding: 0 16px;
+      font-size: 14px;
+      letter-spacing: .4px; } }
   .form_input:focus {
     outline: none;
     background: #151515; }
@@ -406,6 +442,9 @@ button:focus {
 .form_submit {
   margin: 64px 0 0;
   text-align: center; }
+  @media (max-width: 639px) {
+    .form_submit {
+      margin: 32px 0 0; } }
 
 .frothing {
   display: flex;
@@ -857,18 +896,28 @@ button:focus {
   display: none;
   padding: 65px 0;
   text-align: center; }
+  @media (max-width: 639px) {
+    .order-complete {
+      padding: 40px 0; } }
   .order-complete__visible {
     display: block; }
   .order-complete_icon {
     margin: 0 0 35px; }
+    @media (max-width: 639px) {
+      .order-complete_icon {
+        margin: 0 0 28px; } }
 
 .order-info {
   position: relative;
   padding: 0 0 0 55px;
-  font-family: "AkzidenzGroteskProLight", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: .35px; }
+  @media (max-width: 639px) {
+    .order-info {
+      padding: 0 0 0 45px;
+      font-size: 12px;
+      line-height: 16px; } }
   .order-info_icon {
     position: absolute;
     top: 5px;
@@ -879,17 +928,22 @@ button:focus {
 .order {
   display: none;
   padding: 50px 0 30px; }
+  @media (max-width: 639px) {
+    .order {
+      padding: 30px 0 40px; } }
   .order__visible {
     display: block; }
   .order_title {
     margin: 0 0 50px;
-    font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-    letter-spacing: .4px; }
+    text-align: center; }
+    @media (max-width: 639px) {
+      .order_title {
+        margin: 0 0 25px; } }
   .order_form {
     margin: 0 0 40px; }
+    @media (max-width: 639px) {
+      .order_form {
+        margin: 0 0 25px; } }
 
 .overlay {
   position: fixed;

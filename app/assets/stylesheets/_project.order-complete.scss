@@ -3,11 +3,19 @@
     padding: 65px 0;
     text-align: center;
 
+    @include mq('phone') {
+        padding: 40px 0;
+    }
+
     &__visible {
         display: block;
     }
 
     &_icon {
         margin: 0 0 35px;
+
+        @include mq('phone') {
+            margin: 0 0 28px;
+        }
     }
 }

@@ -3,12 +3,20 @@
     &_item {
         &:not(:last-child) {
             margin: 0 0 32px;
+
+            @include mq('phone') {
+                margin: 0 0 15px;
+            }
         }
     }
 
     &_label {
         display: block;
         margin: 0 0 14px;
+
+        @include mq('phone') {
+            margin: 0 0 8px;
+        }
     }
 
     &_input {
@@ -23,6 +31,13 @@
         font-size: 16px;
         transition: background .2s;
 
+        @include mq('phone') {
+            height: 40px;
+            padding: 0 16px;
+            font-size: 14px;
+            letter-spacing: .4px;
+        }
+
         &:focus {
             outline: none;
             background: #151515;
@@ -32,5 +47,9 @@
     &_submit {
         margin: 64px 0 0;
         text-align: center;
+
+        @include mq('phone') {
+            margin: 32px 0 0;
+        }
     }
 }

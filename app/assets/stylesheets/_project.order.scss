@@ -2,20 +2,28 @@
     display: none;
     padding: 50px 0 30px;
 
+    @include mq('phone') {
+        padding: 30px 0 40px;
+    }
+
     &__visible {
         display: block;
     }
 
     &_title {
         margin: 0 0 50px;
-        font-family: $font-AkzidenzGroteskProExt;
-        font-size: 24px;
-        line-height: 32px;
         text-align: center;
-        letter-spacing: .4px;
+
+        @include mq('phone') {
+            margin: 0 0 25px;
+        }
     }
 
     &_form {
         margin: 0 0 40px;
+
+        @include mq('phone') {
+            margin: 0 0 25px;
+        }
     }
 }

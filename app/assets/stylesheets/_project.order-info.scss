@@ -1,10 +1,15 @@
 .order-info {
     position: relative;
     padding: 0 0 0 55px;
-    font-family: $font-AkzidenzGroteskProLight;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: .35px;
+
+    @include mq('phone') {
+        padding: 0 0 0 45px;
+        font-size: 12px;
+        line-height: 16px;
+    }
 
     &_icon {
         position: absolute;

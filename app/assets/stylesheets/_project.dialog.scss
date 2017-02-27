@@ -22,6 +22,10 @@
         padding: 50px 0;
         text-align: center;
         vertical-align: middle;
+
+        @include mq('phone') {
+            padding: 0;
+        }
     }
 
     &_modal {
@@ -34,6 +38,26 @@
         background: #262626;
         text-align: left;
         vertical-align: top;
+
+        @include mq('phone') {
+            width: 100%;
+            min-height: 100%;
+            padding: 0 25px;
+        }
+    }
+
+    &_header {
+        position: relative;
+        height: 42px;
+        margin: 0 -25px;
+        padding: 0 25px;
+        background: #000;
+        color: #e6e6e6;
+        font-family: $font-AkzidenzGroteskProMd;
+        font-size: 11px;
+        line-height: 42px;
+        text-transform: uppercase;
+        letter-spacing: .6px;
     }
 
     &_close {
@@ -44,5 +68,10 @@
         height: 12px;
         background: url("/assets/images/dialog-close.png") center no-repeat;
         cursor: pointer;
+
+        @include mq('phone') {
+            top: 15px;
+            right: 15px;
+        }
     }
 }
