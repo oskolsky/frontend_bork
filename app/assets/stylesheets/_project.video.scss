@@ -1,14 +1,11 @@
 .video {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
     height: 100%;
-    background-image: url("/assets/images/video.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 
     @include mq('phone') {
         height: 375px;
@@ -33,6 +30,14 @@
     &_content {
         flex: 0 1 auto;
         text-align: center;
+    }
+
+    &_video {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
     }
 
     &_play {

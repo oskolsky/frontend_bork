@@ -1173,22 +1173,6 @@ button:focus {
   .section_icon {
     margin: 0 0 25px; } }
 
-.section_video {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; }
-  .section_video::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    background: rgba(0, 0, 0, 0.5);
-    content: ''; }
-
 .social {
   display: flex;
   flex-direction: row;
@@ -1231,17 +1215,30 @@ button:focus {
   line-height: 20px;
   letter-spacing: 0; }
 
+.video-preview {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .video-preview::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.5);
+    content: ''; }
+
 .video {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around;
-  height: 100%;
-  background-image: url("/assets/images/video.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
+  height: 100%; }
   @media (max-width: 639px) {
     .video {
       height: 375px;
@@ -1261,6 +1258,12 @@ button:focus {
   .video_content {
     flex: 0 1 auto;
     text-align: center; }
+  .video_video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; }
   .video_play {
     display: inline-block;
     width: 96px;
