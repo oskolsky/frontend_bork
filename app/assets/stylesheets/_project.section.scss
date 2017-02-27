@@ -1,10 +1,15 @@
 .section {
 
     &__index {
-        background-image: url("/assets/images/section-bg-index.jpg");
+        background-image: url("/assets/images/index.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+
+        @include mq('phone') {
+            background-image: url("/assets/images/index-phone.jpg");
+            background-size: auto;
+        }
     }
 
     &__intro {
@@ -26,6 +31,10 @@
         background-color: #000;
         background-repeat: no-repeat;
 
+        @include mq('phone') {
+            background: none;
+        }
+
         @include mq('tablet') {
             background-image: url("/assets/images/frothing-tablet.png");
             background-position: center;
@@ -45,7 +54,7 @@
     &__specifications {
         padding: 30px 0;
         background-color: #151515;
-        background-image: url("/assets/images/pattern.png");
+        background-image: url("/assets/images/specifications.png");
         background-repeat: repeat;
         background-position: center;
 

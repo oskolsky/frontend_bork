@@ -55,27 +55,30 @@ body {
 
 h1 {
   color: #fff;
-  font-family: "BorkDisplayRegilar", Helvetica, Arial, sans-serif;
-  word-spacing: 15px; }
+  font-family: "BorkDisplayRegilar", Helvetica, Arial, sans-serif; }
   @media (max-width: 639px) {
     h1 {
       font-size: 18px;
-      line-height: 24px; } }
+      line-height: 24px;
+      word-spacing: 5px; } }
   @media all and (min-width: 640px) and (max-width: 939px) {
     h1 {
       margin: 0 0 18px;
       font-size: 20px;
-      line-height: 32px; } }
+      line-height: 32px;
+      word-spacing: 15px; } }
   @media all and (min-width: 940px) and (max-width: 1280px) {
     h1 {
       margin: 0 0 18px;
       font-size: 24px;
-      line-height: 36px; } }
+      line-height: 36px;
+      word-spacing: 15px; } }
   @media all and (min-width: 1281px) {
     h1 {
       margin: 0 0 18px;
       font-size: 24px;
-      line-height: 36px; } }
+      line-height: 36px;
+      word-spacing: 15px; } }
 
 h2 {
   color: #fff;
@@ -394,9 +397,11 @@ button:focus {
   border: none;
   background: #1b1b1b;
   color: rgba(255, 255, 255, 0.5);
-  font-size: 16px; }
+  font-size: 16px;
+  transition: background .2s; }
   .form_input:focus {
-    outline: none; }
+    outline: none;
+    background: #151515; }
 
 .form_submit {
   margin: 64px 0 0;
@@ -656,33 +661,34 @@ button:focus {
 .index {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: flex-start;
   box-sizing: border-box; }
   @media (max-width: 639px) {
     .index {
       justify-content: space-around;
-      min-height: 560px;
-      padding: 70px;
+      height: 560px;
+      margin: 43px 0 0;
+      padding: 30px 0 40px;
       text-align: center; } }
   @media all and (min-width: 640px) and (max-width: 939px) {
     .index {
       justify-content: flex-end;
-      min-height: 585px;
-      padding: 100px; } }
+      height: 585px;
+      padding: 100px 0 0; } }
   @media all and (min-width: 940px) and (max-width: 1280px) {
     .index {
       justify-content: flex-end;
-      min-height: 615px;
-      padding: 105px; } }
+      height: 615px;
+      padding: 105px 120px 0; } }
   @media all and (min-width: 1281px) {
     .index {
       justify-content: flex-end;
-      min-height: 835px;
-      padding: 160px; } }
+      height: 835px;
+      padding: 160px 190px 0; } }
   @media (max-width: 639px) {
     .index_content {
-      flex: 0 1 100%; } }
+      flex: 0 1 70%; } }
   @media all and (min-width: 640px) and (max-width: 939px) {
     .index_content {
       flex: 0 1 50%; } }
@@ -692,6 +698,15 @@ button:focus {
   @media all and (min-width: 1281px) {
     .index_content {
       flex: 0 1 50%; } }
+  @media (max-width: 639px) {
+    .index_content__title {
+      align-self: flex-start; } }
+  @media all and (min-width: 640px) and (max-width: 939px) {
+    .index_content__title {
+      align-self: flex-start; } }
+  @media (max-width: 639px) {
+    .index_content__text {
+      align-self: flex-end; } }
 
 .intro {
   display: flex;
@@ -799,7 +814,7 @@ button:focus {
         height: 40px; } }
 
 @media (max-width: 639px) {
-  .order {
+  .order-block {
     position: fixed;
     top: 43px;
     right: 0;
@@ -812,23 +827,31 @@ button:focus {
     text-align: right; } }
 
 @media all and (min-width: 640px) and (max-width: 939px) {
-  .order {
+  .order-block {
     margin: 32px 0 0; } }
 
 @media all and (min-width: 940px) and (max-width: 1280px) {
-  .order {
+  .order-block {
     margin: 32px 0 0; } }
 
 @media all and (min-width: 1281px) {
-  .order {
+  .order-block {
     margin: 32px 0 0; } }
 
-.order_price {
+.order-block_price {
   display: inline-block;
-  margin: 0 0 0 20px;
   font-size: 18px;
   line-height: 27px;
   vertical-align: baseline; }
+  @media all and (min-width: 640px) and (max-width: 939px) {
+    .order-block_price {
+      margin: 0 0 0 25px; } }
+  @media all and (min-width: 940px) and (max-width: 1280px) {
+    .order-block_price {
+      margin: 0 0 0 25px; } }
+  @media all and (min-width: 1281px) {
+    .order-block_price {
+      margin: 0 0 0 25px; } }
 
 .order-complete {
   display: none;
@@ -938,10 +961,14 @@ button:focus {
     width: 100%; }
 
 .section__index {
-  background-image: url("/assets/images/section-bg-index.jpg");
+  background-image: url("/assets/images/index.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
+  @media (max-width: 639px) {
+    .section__index {
+      background-image: url("/assets/images/index-phone.jpg");
+      background-size: auto; } }
 
 .section__intro {
   background: #000; }
@@ -955,6 +982,9 @@ button:focus {
 .section__frothing {
   background-color: #000;
   background-repeat: no-repeat; }
+  @media (max-width: 639px) {
+    .section__frothing {
+      background: none; } }
   @media all and (min-width: 640px) and (max-width: 939px) {
     .section__frothing {
       background-image: url("/assets/images/frothing-tablet.png");
@@ -971,7 +1001,7 @@ button:focus {
 .section__specifications {
   padding: 30px 0;
   background-color: #151515;
-  background-image: url("/assets/images/pattern.png");
+  background-image: url("/assets/images/specifications.png");
   background-repeat: repeat;
   background-position: center; }
   @media (max-width: 639px) {

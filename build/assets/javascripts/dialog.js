@@ -1,5 +1,0 @@
-$(function() {
-
-    $('js-order-button')
-
-});

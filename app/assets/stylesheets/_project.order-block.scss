@@ -1,4 +1,4 @@
-.order {
+.order-block {
     @include mq('phone') {
         position: fixed;
         top: 43px;
@@ -26,7 +26,6 @@
 
     &_price {
         display: inline-block;
-        margin: 0 0 0 20px;
         font-size: 18px;
         line-height: 27px;
         vertical-align: baseline;
@@ -36,15 +35,15 @@
         }
 
         @include mq('tablet') {
-
+            margin: 0 0 0 25px;
         }
 
         @include mq('desktop') {
-
+            margin: 0 0 0 25px;
         }
 
         @include mq('extra-desktop') {
-
+            margin: 0 0 0 25px;
         }
     }
 }
