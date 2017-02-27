@@ -281,7 +281,7 @@ button:focus {
         flex: 0 1 39%; } }
     @media all and (min-width: 1281px) {
       .contacts_content {
-        flex: 0 1 39%; } }
+        flex: 0 1 35%; } }
     @media (max-width: 639px) {
       .contacts_content__delivery {
         margin: 0 0 50px; } }
