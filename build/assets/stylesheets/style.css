@@ -193,37 +193,6 @@ button:focus {
     @media all and (min-width: 1281px) {
       .boutiques_content {
         width: 40%; } }
-  .boutiques_video {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0; }
-    @media (max-width: 639px) {
-      .boutiques_video {
-        right: -20px;
-        left: -20px; } }
-    @media all and (min-width: 640px) and (max-width: 939px) {
-      .boutiques_video {
-        right: -30px;
-        left: -30px; } }
-    @media all and (min-width: 940px) and (max-width: 1280px) {
-      .boutiques_video {
-        right: -30px;
-        left: -30px; } }
-    @media all and (min-width: 1281px) {
-      .boutiques_video {
-        right: -40px;
-        left: -40px; } }
-    .boutiques_video::after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: -1;
-      background: rgba(0, 0, 0, 0.5);
-      content: ''; }
 
 .button {
   display: inline-block;
@@ -1176,7 +1145,7 @@ button:focus {
       background-position: center; } }
 
 .section__specifications {
-  padding: 30px 0;
+  padding: 30px 0 94px;
   background-color: #151515;
   background-image: url("/assets/images/specifications.png");
   background-repeat: repeat;
@@ -1184,6 +1153,9 @@ button:focus {
   @media (max-width: 639px) {
     .section__specifications {
       background: none; } }
+
+.section__boutiques {
+  position: relative; }
 
 @media (max-width: 639px) {
   .section_icon {
@@ -1200,6 +1172,22 @@ button:focus {
 @media all and (min-width: 1281px) {
   .section_icon {
     margin: 0 0 25px; } }
+
+.section_video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .section_video::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.5);
+    content: ''; }
 
 .social {
   display: flex;
