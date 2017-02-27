@@ -502,19 +502,15 @@ button:focus {
   box-sizing: border-box; }
   @media (max-width: 639px) {
     .gallery {
-      height: 380px;
       padding: 65px 0 0; } }
   @media all and (min-width: 640px) and (max-width: 939px) {
     .gallery {
-      height: 480px;
       padding: 95px 0 0; } }
   @media all and (min-width: 940px) and (max-width: 1280px) {
     .gallery {
-      height: 520px;
       padding: 130px 0 0; } }
   @media all and (min-width: 1281px) {
     .gallery {
-      height: 600px;
       padding: 150px 0 0; } }
   .gallery_content {
     text-align: center; }
@@ -998,14 +994,43 @@ button:focus {
   .overlay__visible {
     display: block; }
 
-.owl-item {
-  height: 353px;
-  margin: 16px 0; }
-  .owl-item.center {
-    height: 385px;
-    margin: 0; }
-  .owl-item img {
-    height: 100%; }
+@media (max-width: 639px) {
+  .owl-carousel-gallery .owl-item {
+    height: 197px;
+    margin: 8px 0; } }
+
+@media all and (min-width: 640px) and (max-width: 939px) {
+  .owl-carousel-gallery .owl-item {
+    height: 264px;
+    margin: 12px 0; } }
+
+@media all and (min-width: 940px) and (max-width: 1280px) {
+  .owl-carousel-gallery .owl-item {
+    height: 353px;
+    margin: 16px 0; } }
+
+@media all and (min-width: 1281px) {
+  .owl-carousel-gallery .owl-item {
+    height: 492px;
+    margin: 24px 0; } }
+
+.owl-carousel-gallery .owl-item.center {
+  margin: 0; }
+  @media (max-width: 639px) {
+    .owl-carousel-gallery .owl-item.center {
+      height: 213px; } }
+  @media all and (min-width: 640px) and (max-width: 939px) {
+    .owl-carousel-gallery .owl-item.center {
+      height: 288px; } }
+  @media all and (min-width: 940px) and (max-width: 1280px) {
+    .owl-carousel-gallery .owl-item.center {
+      height: 385px; } }
+  @media all and (min-width: 1281px) {
+    .owl-carousel-gallery .owl-item.center {
+      height: 540px; } }
+
+.owl-carousel-gallery .owl-item img {
+  height: 100%; }
 
 .owl-dots {
   width: 50%;
@@ -1075,7 +1100,27 @@ button:focus {
       background-size: auto; } }
 
 .section__gallery {
-  background: #000; }
+  position: relative; }
+  .section__gallery::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background: #000;
+    content: ''; }
+    @media (max-width: 639px) {
+      .section__gallery::after {
+        height: 380px; } }
+    @media all and (min-width: 640px) and (max-width: 939px) {
+      .section__gallery::after {
+        height: 480px; } }
+    @media all and (min-width: 940px) and (max-width: 1280px) {
+      .section__gallery::after {
+        height: 520px; } }
+    @media all and (min-width: 1281px) {
+      .section__gallery::after {
+        height: 600px; } }
 
 .section__quick-result {
   background: #000; }

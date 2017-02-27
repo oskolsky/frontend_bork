@@ -1,14 +1,54 @@
-.owl-item {
-    height: 353px;
-    margin: 16px 0;
+.owl-carousel-gallery  {
 
-    &.center {
-        height: 385px;
-        margin: 0;
+    .own-nav {
+    
     }
 
-    img {
-        height: 100%;
+    .owl-item {
+
+        @include mq('phone') {
+            height: 197px;
+            margin: 8px 0;
+        }
+
+        @include mq('tablet') {
+            height: 264px;
+            margin: 12px 0;
+        }
+
+        @include mq('desktop') {
+            height: 353px;
+            margin: 16px 0;
+        }
+
+        @include mq('extra-desktop') {
+            height: 492px;
+            margin: 24px 0;
+        }
+
+        &.center {
+            margin: 0;
+
+            @include mq('phone') {
+                height: 213px;
+            }
+
+            @include mq('tablet') {
+                height: 288px;
+            }
+
+            @include mq('desktop') {
+                height: 385px;
+            }
+
+            @include mq('extra-desktop') {
+                height: 540px;
+            }
+        }
+
+        img {
+            height: 100%;
+        }
     }
 }
 

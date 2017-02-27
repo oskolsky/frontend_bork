@@ -31,7 +31,9 @@ $(function() {
         items: 2,
         loop: true,
         dots: false,
-        margin: 150
+        margin: 150,
+        nav: true,
+        navText: ['', '']
     });
 
 })

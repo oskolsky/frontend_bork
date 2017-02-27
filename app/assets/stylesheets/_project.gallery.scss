@@ -7,22 +7,18 @@
     box-sizing: border-box;
 
     @include mq('phone') {
-        height: 380px;
         padding: 65px 0 0;
     }
 
     @include mq('tablet') {
-        height: 480px;
         padding: 95px 0 0;
     }
 
     @include mq('desktop') {
-        height: 520px;
         padding: 130px 0 0;
     }
 
     @include mq('extra-desktop') {
-        height: 600px;
         padding: 150px 0 0;
     }
 

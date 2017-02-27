@@ -13,10 +13,37 @@
     }
 
     &__gallery {
-        background: #000;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: -1;
+            background: #000;
+            content: '';
+
+            @include mq('phone') {
+                height: 380px;
+            }
+
+            @include mq('tablet') {
+                height: 480px;
+            }
+
+            @include mq('desktop') {
+                height: 520px;
+            }
+
+            @include mq('extra-desktop') {
+                height: 600px;
+            }
+        }
     }
 
     &__video {
+
     }
 
     &__quick-result {
