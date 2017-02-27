@@ -5,11 +5,14 @@
     bottom: 0;
     left: 0;
     z-index: 999;
-    display: none;
+    // display: none;
     overflow-y: auto;
+    transition: transform .5s;
+    transform: translateY(100%);
 
     &__visible {
-        display: block;
+        transform: translateY(0);
+        // display: block;
     }
 
     &_container {
