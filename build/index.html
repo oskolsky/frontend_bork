@@ -292,13 +292,13 @@
                     <tbody>
                         <tr>
                             <td class="dialog_inner">
-                                <div class="dialog_modal js-dialog-order">
+                                <div class="dialog_modal dialog_modal__visible js-order">
                                     <div class="dialog_header visible-phone">
                                         Кофемашина C830
                                         <div class="dialog_close js-dialog-close"></div>
                                     </div>
                                     <div class="dialog_close hidden-phone js-dialog-close"></div>
-                                    <div class="order order__visible js-order">
+                                    <div class="order">
                                         <h2 class="order_title">Оформление заказа</h2>
                                         <form class="order_form form" action="#">
                                             <div class="form_item">
@@ -322,8 +322,11 @@
                                             Если вы&nbsp;хотите оплатить заказ банковской картой на&nbsp;сайте BORK, перейдите по&nbsp;<a href="#" class="order-info_link">ссылке</a>
                                         </div>
                                     </div>
+                                </div>
 
-                                    <div class="order-complete js-order-complete">
+                                <div class="dialog_modal js-order-complete">
+                                    <div class="dialog_header visible-phone">Кофемашина C830</div>
+                                    <div class="order-complete">
                                         <i class="order-complete_icon icon icon__complete"></i>
                                         <h2>Заказ оформлен</h2>
                                         <p>Персональный эксперт интернет-бутика  свяжется с&nbsp;Вами в&nbsp;ближайшее время</p>
@@ -333,7 +336,7 @@
                                             <a href="#"><i class="icon icon__social-instagram"></i></a>
                                             <a href="#"><i class="icon icon__social-vk"></i></a>
                                         </div>
-                                        <button class="button button__large js-dialog-close">Ок</button>
+                                        <button class="button button__extra-large js-dialog-close">Ок</button>
                                     </div>
                                 </div>
                             </td>

@@ -30,7 +30,7 @@
 
     &_modal {
         position: relative;
-        display: inline-block;
+        display: none;
         box-sizing: border-box;
         width: 510px;
         margin: 0 auto;
@@ -38,6 +38,10 @@
         background: #262626;
         text-align: left;
         vertical-align: top;
+
+        &__visible {
+            display: inline-block;
+        }
 
         @include mq('phone') {
             width: 100%;

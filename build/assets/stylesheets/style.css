@@ -235,6 +235,10 @@ button:focus {
     height: 54px;
     padding: 0 30px;
     border-radius: 37px; }
+  .button__extra-large {
+    height: 54px;
+    padding: 0 64px;
+    border-radius: 37px; }
 
 .choose-coffee {
   display: flex;
@@ -358,7 +362,7 @@ button:focus {
         padding: 0; } }
   .dialog_modal {
     position: relative;
-    display: inline-block;
+    display: none;
     box-sizing: border-box;
     width: 510px;
     margin: 0 auto;
@@ -366,6 +370,8 @@ button:focus {
     background: #262626;
     text-align: left;
     vertical-align: top; }
+    .dialog_modal__visible {
+      display: inline-block; }
     @media (max-width: 639px) {
       .dialog_modal {
         width: 100%;
@@ -926,14 +932,11 @@ button:focus {
       margin: 0 0 0 25px; } }
 
 .order-complete {
-  display: none;
   padding: 65px 0;
   text-align: center; }
   @media (max-width: 639px) {
     .order-complete {
       padding: 40px 0; } }
-  .order-complete__visible {
-    display: block; }
   .order-complete_icon {
     margin: 0 0 35px; }
     @media (max-width: 639px) {
@@ -959,13 +962,10 @@ button:focus {
     font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif; }
 
 .order {
-  display: none;
   padding: 50px 0 30px; }
   @media (max-width: 639px) {
     .order {
       padding: 30px 0 40px; } }
-  .order__visible {
-    display: block; }
   .order_title {
     margin: 0 0 50px;
     text-align: center; }
@@ -1197,7 +1197,7 @@ button:focus {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 255px;
   height: 100px;
   margin: 42px auto 48px;

@@ -11,8 +11,7 @@ $(function() {
     const OVERLAY_VSIBLE_CLASS = 'overlay__visible';
     const DIALOG_VSIBLE_CLASS = 'dialog__visible';
 
-    const ORDER_VSIBLE_CLASS = 'order__visible';
-    const ORDER_COMPLETE_VSIBLE_CLASS = 'order-complete__visible';
+    const DIALOG_MODAL_VISIBLE_CLASS = 'dialog_modal__visible';
 
     function dialogOpen() {
         $overlay.addClass(OVERLAY_VSIBLE_CLASS);
@@ -39,8 +38,8 @@ $(function() {
     });
 
     $('.js-order-complete-button').on('click', function() {
-        $order.removeClass(ORDER_VSIBLE_CLASS);
-        $orderComplete.addClass(ORDER_COMPLETE_VSIBLE_CLASS);
+        $order.removeClass(DIALOG_MODAL_VISIBLE_CLASS);
+        $orderComplete.addClass(DIALOG_MODAL_VISIBLE_CLASS);
         event.preventDefault();
     });
 
