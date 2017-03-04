@@ -8,8 +8,9 @@
         <link rel="stylesheet" href="/assets/stylesheets/style.css">
         <script type="text/javascript" src="/assets/javascripts/vendor/jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="/assets/javascripts/vendor/jquery.maskedinput.min.js"></script>
-        <script type="text/javascript" src="/assets/javascripts/vendor/owl.carousel.min.js"></script>
         <script type="text/javascript" src="/assets/javascripts/vendor/jquery.vide.min.js"></script>
+        <script type="text/javascript" src="/assets/javascripts/vendor/jquery.waypoints.min.js"></script>
+        <script type="text/javascript" src="/assets/javascripts/vendor/owl.carousel.min.js"></script>
         <script type="text/javascript" src="/assets/javascripts/script.js"></script>
         <script type="text/javascript" src="/assets/javascripts/order.js"></script>
         <title>Bork</title>
@@ -25,7 +26,7 @@
         </header>
 
         <main class="main">
-            <section class="section section__index" aria-label="Index">
+            <section class="section section__index js-section" aria-label="Index">
                 <div class="container index">
                     <div class="index_content index_content__title">
                         <h1>BORK&nbsp;C830 Nespresso  Creatista&nbsp;Plus</h1>
@@ -42,42 +43,47 @@
                 </div>
             </section>
 
-            <section class="section section__gallery" aria-label="Intro">
+            <section class="section section__gallery js-section" aria-label="Gallery">
                 <div class="gallery">
+                    <div class="gallery_line gallery_line__left"></div>
+                    <div class="gallery_line gallery_line__right"></div>
                     <div class="gallery_content">
-                        <h2>Произведение  современного&nbsp;искусства</h2>
-                        <p>Изящная кофемашина BORK C830 Creatista Plus станет прекрасным дополнением вашего интерьера и&nbsp;стильной коллекции техники BORK</p>
+                        <div class="animation animation__fade">
+                            <h2>Произведение  современного&nbsp;искусства</h2>
+                            <p>Изящная кофемашина BORK C830 Creatista Plus станет прекрасным дополнением вашего интерьера и&nbsp;стильной коллекции техники BORK</p>
+                        </div>
                     </div>
 
-                    <div class="gallery_carousel owl-carousel owl-carousel-gallery js-owl-carousel">
-                        <img src="/assets/images/gallery/photo-1.jpg" alt="BORK C830 Creatista Plus">
-                        <img src="/assets/images/gallery/photo-2.jpg" alt="BORK C830 Creatista Plus">
-                        <img src="/assets/images/gallery/photo-3.jpg" alt="BORK C830 Creatista Plus">
-                        <img src="/assets/images/gallery/photo-4.jpg" alt="BORK C830 Creatista Plus">
-                        <img src="/assets/images/gallery/photo-5.jpg" alt="BORK C830 Creatista Plus">
-                        <img src="/assets/images/gallery/photo-6.jpg" alt="BORK C830 Creatista Plus">
-                        <img src="/assets/images/gallery/photo-7.jpg" alt="BORK C830 Creatista Plus">
+                    <div class="gallery_carousel carousel owl-carousel js-owl-carousel">
+                        <div class="carousel_item carousel_item__photo-1"></div>
+                        <div class="carousel_item carousel_item__photo-2"></div>
+                        <div class="carousel_item carousel_item__photo-3"></div>
+                        <div class="carousel_item carousel_item__photo-4"></div>
+                        <div class="carousel_item carousel_item__photo-5"></div>
+                        <div class="carousel_item carousel_item__photo-6"></div>
                     </div>
                 </div>
             </section>
 
-            <section class="section" aria-label="Masterpiece">
+            <section class="section section__masterpiece js-section" aria-label="Masterpiece">
                 <div class="container">
                     <div class="masterpiece">
                         <div class="masterpiece_content">
-                            <h2>Два бренда&nbsp;&mdash;  один шедевр</h2>
-                            <p>BORK C830 Creatista Plus с&nbsp;запатентованной системой заваривания Nespresso подарит богатый вкус любимого кофе в&nbsp;каждой чашке</p>
-                            <img src="/assets/images/creatista.svg" class="masterpiece_creatista hidden-phone" alt="Creatista">
+                            <div class="animation animation__fade">
+                                <h2>Два бренда&nbsp;&mdash;  один шедевр</h2>
+                                <p>BORK C830 Creatista Plus с&nbsp;запатентованной системой заваривания Nespresso подарит богатый вкус любимого кофе в&nbsp;каждой чашке</p>
+                                <img src="/assets/images/creatista.svg" class="masterpiece_creatista hidden-phone" alt="Creatista">
+                            </div>
                         </div>
 
-                        <div class="masterpiece_content hidden-phone">
+                        <div class="masterpiece_content animation animation__slide-left hidden-phone">
                             <img src="/assets/images/masterpiece.jpg" class="masterpiece_photo" alt="BORK C830 Creatista Plus">
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section section__video" aria-label="Video">
+            <section class="section section__video js-section" aria-label="Video">
                 <div class="container">
                     <div class="video">
                         <div class="video-preview"
@@ -86,45 +92,89 @@
                          </div>
                         <div class="video_content">
                             <h2>Интуитивное управление и&nbsp;безупречный результат</h2>
-                            <button class="video_play"></button>
+                            <button class="video_play js-video-play"></button>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section section__quick-result" aria-label="Quick Result">
+            <section class="section section__quick-result js-section" aria-label="Quick Result">
                 <div class="container">
                     <div class="quick-result">
                         <div class="quick-result_content quick-result_content__text">
-                            <i class="section_icon icon icon__19bar"></i>
-                            <h2>Моментальный  результат</h2>
-                            <p>Инновационный заварочный узел  с давлением 19&nbsp;бар приготовит любимый  кофе за&nbsp;считанные секунды</p>
+                            <div class="animation animation__fade">
+                                <i class="section_icon icon icon__19bar"></i>
+                                <h2>Моментальный  результат</h2>
+                                <p>Инновационный заварочный узел  с давлением 19&nbsp;бар приготовит любимый  кофе за&nbsp;считанные секунды</p>
+                            </div>
                         </div>
 
-                        <div class="quick-result_content quick-result_contents__photo">
+                        <div class="quick-result_content quick-result_content__photo animation animation__slide-left">
                             <img src="/assets/images/quick-result.jpg" class="quick-result_photo" alt="BORK C830 Creatista Plus">
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- <section class="section section__choose-coffee" aria-label="Choose Coffee">
-                <div class="container choose-coffee">
-                    <div class="choose-coffee_content">
-                        <i class="section_icon icon icon__4cups"></i>
-                        <h2>Коллекция  неповторимых вкусов</h2>
-                        <p>Бодрящий эспрессо, нежный латте макиато или напиток по&nbsp;собственному рецепту&nbsp;&mdash; BORK C830 Creatista Plus исполнит любой каприз благодаря встроенным рецептам 7&nbsp;кофейных коктейлей и&nbsp;персонализированному режиму Barista</p>
+            <section class="section section__choose-coffee js-section" aria-label="Choose Coffee">
+                <div class="container">
+                    <div class="choose-coffee">
+                        <div class="choose-coffee_content choose-coffee_content__photo"></div>
+
+                        <div class="choose-coffee_content choose-coffee_content__text">
+                            <div class="animation animation__fade">
+                                <i class="section_icon icon icon__4cups"></i>
+                                <h2>Коллекция  неповторимых вкусов</h2>
+                                <p>Бодрящий эспрессо, нежный латте макиато или напиток по&nbsp;собственному рецепту&nbsp;&mdash; BORK C830 Creatista Plus исполнит любой каприз благодаря встроенным рецептам 7&nbsp;кофейных коктейлей и&nbsp;персонализированному режиму Barista</p>
+                            </div>
+                            <div class="coffee hidden-phone">
+                                <img src="/assets/images/coffee/preview-cappuccino.png" class="coffee_preview" alt="">
+                                <div class="coffee_name">Латте</div>
+                            </div>
+                        </div>
+                        <div class="owl-carousel owl-carousel-coffee visible-phone js-owl-carousel-coffee">
+                            <div class="coffee">
+                                <img src="/assets/images/coffee/preview-cappuccino.png" class="coffee_preview" alt="">
+                                <div class="coffee_name">Cappuccino</div>
+                            </div>
+                            <div class="coffee">
+                                <img src="/assets/images/coffee/preview-espresso.png" class="coffee_preview" alt="">
+                                <div class="coffee_name">Espresso</div>
+                            </div>
+                            <div class="coffee">
+                                <img src="/assets/images/coffee/preview-flat-white.png" class="coffee_preview" alt="">
+                                <div class="coffee_name">Flat White</div>
+                            </div>
+                            <div class="coffee">
+                                <img src="/assets/images/coffee/preview-latte-macchiato.png" class="coffee_preview" alt="">
+                                <div class="coffee_name">Latte Macchiato</div>
+                            </div>
+                            <div class="coffee">
+                                <img src="/assets/images/coffee/preview-latte.png" class="coffee_preview" alt="">
+                                <div class="coffee_name">Latte</div>
+                            </div>
+                            <div class="coffee">
+                                <img src="/assets/images/coffee/preview-lungo.png" class="coffee_preview" alt="">
+                                <div class="coffee_name">Lungo</div>
+                            </div>
+                            <div class="coffee">
+                                <img src="/assets/images/coffee/preview-ristretto.png" class="coffee_preview" alt="">
+                                <div class="coffee_name">Ristretto</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
 
-            <section class="section section__frothing" aria-label="Frothing System">
+            <section class="section section__frothing js-section" aria-label="Frothing System">
                 <div class="container">
                     <div class="frothing">
                         <div class="frothing_content frothing_content__text">
-                            <i class="section_icon icon icon__frothing"></i>
-                            <h2>Инновационная система&nbsp;вспенивания</h2>
-                            <p>Благодаря интеллектуальной 11-уровневой технологии взбивания молочной пенки вы&nbsp;сможете приготовить идеальный капучино и&nbsp;попробовать свои силы в&nbsp;создании Latte Art</p>
+                            <div class="animation animation__fade">
+                                <i class="section_icon icon icon__frothing"></i>
+                                <h2>Инновационная система&nbsp;вспенивания</h2>
+                                <p>Благодаря интеллектуальной 11-уровневой технологии взбивания молочной пенки вы&nbsp;сможете приготовить идеальный капучино и&nbsp;попробовать свои силы в&nbsp;создании Latte Art</p>
+                            </div>
                         </div>
 
                         <div class="frothing_content frothing_content__photo">
@@ -134,14 +184,14 @@
                 </div>
             </section>
 
-            <section class="section section__specifications" aria-label="Specifications">
+            <section class="section section__specifications js-section" aria-label="Specifications">
                 <div class="container">
                     <h2 class="hidden-phone">Спецификации</h2>
                     <div class="model hidden-phone">
                         <img src="/assets/images/specifications.svg" class="model_photo" alt="BORK Nespresso C830">
                         <img src="/assets/images/signature.svg" class="model_signature" alt="BORK Nespresso C830">
                     </div>
-                    <div class="specifications owl-carousel js-owl-carousel-specifications">
+                    <div class="specifications owl-carousel owl-carousel-specifications js-owl-carousel-specifications">
                         <ul class="specifications_content">
                             <li class="specifications_item">
                                 <i class="specifications_icon icon icon__designer"></i>
@@ -257,7 +307,7 @@
                 </div>
             </section>
 
-            <section class="section section__boutiques" aria-label="Boutiques">
+            <section class="section section__boutiques js-section" aria-label="Boutiques">
                 <div class="video-preview"
                      data-vide-bg="/assets/video/boutiques"
                      data-vide-options="loop: true, muted: false, position: 50% 50%, autoplay: true, resizing: true, muted: true">
@@ -265,14 +315,16 @@
                 <div class="container">
                     <div class="boutiques">
                         <div class="boutiques_content">
-                            <h2>В&nbsp;атмосфере роскоши</h2>
-                            <p>Оцените все возможности бытовой техники для красивой  и комфортной жизни в&nbsp;бутиках BORK</p>
+                            <div class="animation animation__fade">
+                                <h2>В&nbsp;атмосфере роскоши</h2>
+                                <p>Оцените все возможности бытовой техники для красивой  и комфортной жизни в&nbsp;бутиках BORK</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section" aria-label="Contacts">
+            <section class="section section__contacts js-section" aria-label="Contacts">
                 <div class="container">
                     <div class="contacts">
                         <div class="contacts_content contacts_content__delivery">
@@ -291,6 +343,11 @@
                     </div>
                 </div>
             </section>
+
+            <div class="video-dialog js-video-dialog">
+                <a href="#" class="video-dialog_close js-video-dialog-close"><img src="/assets/images/video-dialog-close.png" width="30" height="30" alt=""></a>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WrJ6px1dBzQ" frameborder="0" allowfullscreen></iframe>
+            </div>
 
             <div class="dialog js-dialog">
                 <table class="dialog_container">

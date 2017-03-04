@@ -41,6 +41,8 @@
     }
 
     &_play {
+        position: relative;
+        z-index: 997;
         display: inline-block;
         width: 96px;
         height: 96px;

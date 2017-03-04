@@ -1,0 +1,22 @@
+.animation {
+
+    &__fade {
+        opacity: 0;
+        transition: opacity 1s;
+
+        .animation-start & {
+            opacity: 1;
+        }
+    }
+
+    &__slide-left {
+        opacity: 0;
+        transition: opacity 1s, transform 1s;
+        transform: translateX(30%);
+
+        .animation-start & {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}

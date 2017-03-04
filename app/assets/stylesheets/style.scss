@@ -29,9 +29,12 @@
 //
 // Project rules are project.
 
+@import "project.animation";
 @import "project.boutiques";
 @import 'project.button';
+@import 'project.carousel';
 @import "project.choose-coffee";
+@import "project.coffee";
 @import "project.contacts";
 @import "project.container";
 @import "project.dialog";
@@ -50,10 +53,11 @@
 @import "project.order-info";
 @import "project.order";
 @import "project.overlay";
-@import "project.own.carousel";
+@import "project.owl.carousel";
 @import "project.quick-result";
 @import "project.section";
 @import "project.social";
 @import "project.specifications";
+@import "project.video-dialog";
 @import "project.video-preview";
 @import "project.video";

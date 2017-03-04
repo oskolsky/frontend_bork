@@ -1,12 +1,78 @@
 .choose-coffee {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-around;
+    box-sizing: border-box;
+
+    @include mq('phone') {
+        padding: 0 0 30px;
+    }
+
+    @include mq('tablet') {
+        height: 870px
+    }
+
+    @include mq('desktop') {
+        height: 920px
+    }
+
+    @include mq('extra-desktop') {
+        height: 1295px
+    }
 
     &_content {
-        flex: 0 1 45%;
         text-align: center;
+
+        @include mq('phone') {
+            flex: 0 1 90%;
+        }
+
+        @include mq('tablet') {
+            flex: 0 1 39%;
+        }
+
+        @include mq('desktop') {
+            flex: 0 1 39%;
+        }
+
+        @include mq('extra-desktop') {
+            flex: 0 1 39%;
+        }
+
+        &__text {
+            @include mq('phone') {
+                margin: 0 0 60px;
+            }
+        }
+
+        &__photo {
+            @include mq('phone') {
+                display: none;
+            }
+
+            @include mq('tablet') {
+                width: 302px;
+                height: 788px;
+                background: url('/assets/images/choose-coffee-tablet.png') center no-repeat;
+            }
+
+            @include mq('desktop') {
+                width: 326px;
+                height: 851px;
+                background: url('/assets/images/choose-coffee-desktop.png') center no-repeat;
+            }
+
+            @include mq('extra-desktop') {
+                width: 461px;
+                height: 1204px;
+                background: url('/assets/images/choose-coffee-extra-desktop.png') center no-repeat;
+            }
+        }
+    }
+
+    &_photo {
+        width: 100%;
     }
 }

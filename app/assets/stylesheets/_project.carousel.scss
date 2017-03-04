@@ -1,0 +1,57 @@
+.carousel {
+
+    &_item {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @for $i from 1 through 6 {
+            &__photo-#{$i} {
+                background-image: url('/assets/images/gallery/photo-#{$i}.jpg');
+
+                @include mq('phone') {
+                    background-image: url('/assets/images/gallery/photo-m-#{$i}.jpg');
+                }
+            }
+        }
+    }
+
+    .owl-stage-outer {
+        height: 100%;
+    }
+
+    .owl-stage {
+        box-sizing: border-box;
+
+        @include mq('phone') {
+            height: 212px;
+            padding: 8px 0;
+        }
+
+        @include mq('tablet') {
+            height: 290px;
+            padding: 12px 0;
+        }
+
+        @include mq('desktop') {
+            height: 385px;
+            padding: 16px 0;
+        }
+
+        @include mq('extra-desktop') {
+            height: 540px;
+            padding: 24px 0;
+        }
+    }
+
+    .owl-item {
+        transition: transform .3s;
+        height: 100%;
+
+        &.center {
+            transform: scale(1.1);
+        }
+    }
+}

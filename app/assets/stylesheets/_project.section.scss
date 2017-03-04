@@ -1,4 +1,5 @@
 .section {
+    overflow-x: hidden;
 
     &__index {
         background-image: url("/assets/images/index.jpg");
@@ -8,7 +9,6 @@
 
         @include mq('phone') {
             background-image: url("/assets/images/index-phone.jpg");
-            background-size: auto;
         }
     }
 
@@ -42,10 +42,6 @@
         }
     }
 
-    &__video {
-
-    }
-
     &__quick-result {
         background: #000;
     }
@@ -59,7 +55,7 @@
         background-repeat: no-repeat;
 
         @include mq('phone') {
-            background: none;
+            background: #000;
         }
 
         @include mq('tablet') {

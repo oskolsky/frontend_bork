@@ -1,0 +1,54 @@
+.coffee {
+    margin: 0 auto 30px;
+    text-align: center;
+
+    &_preview {
+        display: inline-block;
+        vertical-align: top;
+
+        @include mq('phone') {
+            height: 195px;
+            margin-bottom: 30px
+        }
+
+        @include mq('tablet') {
+            height: 230px;
+            margin-top: 90px;
+            margin-bottom: 30px
+        }
+
+        @include mq('desktop') {
+            height: 270px;
+            margin-top: 100px;
+            margin-bottom: 30px
+        }
+
+        @include mq('extra-desktop') {
+            height: 330px;
+            margin-top: 200px;
+            margin-bottom: 30px
+        }
+    }
+
+    &_name {
+        @include mq('phone') {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        @include mq('tablet') {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        @include mq('desktop') {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        @include mq('extra-desktop') {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+}
