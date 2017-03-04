@@ -3,22 +3,22 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="/assets/stylesheets/vendor/normalize.css">
-        <link rel="stylesheet" href="/assets/stylesheets/vendor/owl.carousel.css">
-        <link rel="stylesheet" href="/assets/stylesheets/style.css">
-        <script type="text/javascript" src="/assets/javascripts/vendor/jquery-3.1.1.min.js"></script>
-        <script type="text/javascript" src="/assets/javascripts/vendor/jquery.maskedinput.min.js"></script>
-        <script type="text/javascript" src="/assets/javascripts/vendor/jquery.vide.min.js"></script>
-        <script type="text/javascript" src="/assets/javascripts/vendor/jquery.waypoints.min.js"></script>
-        <script type="text/javascript" src="/assets/javascripts/vendor/owl.carousel.min.js"></script>
-        <script type="text/javascript" src="/assets/javascripts/script.js"></script>
-        <script type="text/javascript" src="/assets/javascripts/order.js"></script>
+        <link rel="stylesheet" href="assets/stylesheets/vendor/normalize.css">
+        <link rel="stylesheet" href="assets/stylesheets/vendor/owl.carousel.css">
+        <link rel="stylesheet" href="assets/stylesheets/style.css">
+        <script type="text/javascript" src="assets/javascripts/vendor/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="assets/javascripts/vendor/jquery.maskedinput.min.js"></script>
+        <script type="text/javascript" src="assets/javascripts/vendor/jquery.vide.min.js"></script>
+        <script type="text/javascript" src="assets/javascripts/vendor/jquery.waypoints.min.js"></script>
+        <script type="text/javascript" src="assets/javascripts/vendor/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="assets/javascripts/script.js"></script>
+        <script type="text/javascript" src="assets/javascripts/order.js"></script>
         <title>Bork</title>
 </head>
     <body class=js-body>
         <header class="header">
             <a href="#" class="header_logo">
-                <img src="/assets/images/logo.svg" alt="Bork">
+                <img src="assets/images/logo.svg" alt="Bork">
             </a>
             <span class="header_brand">BORK Nespresso C830</span>
             <button class="header_button button button__small js-order-open">Купить</button>
@@ -31,10 +31,14 @@
                     <div class="index_content index_content__title">
                         <h1>BORK&nbsp;C830 Nespresso  Creatista&nbsp;Plus</h1>
                         <p class="hidden-phone">Эксклюзивная капсульная кофемашина для приготовления идеального напитка за&nbsp;3&nbsp;секунды</p>
-                        <div class="order-block">
+                        <div class="order-block hidden-phone">
                             <button class="button button__large hidden-phone js-order-open">Купить</button>
-                            <button class="button button__small visible-phone js-order-open">Купить</button>
                             <span class="order-block_price">48 880 Р</span>
+                        </div>
+                        <div class="order-block visible-phone">
+                            <div class="order-block_name">Кофемашина C830</div>
+                            <span class="order-block_price">48 880 Р</span>
+                            <button class="button button__small visible-phone js-order-open">Купить</button>
                         </div>
                     </div>
                     <div class="index_content index_content__text visible-phone">
@@ -72,12 +76,12 @@
                             <div class="animation animation__fade">
                                 <h2>Два бренда&nbsp;&mdash;  один шедевр</h2>
                                 <p>BORK C830 Creatista Plus с&nbsp;запатентованной системой заваривания Nespresso подарит богатый вкус любимого кофе в&nbsp;каждой чашке</p>
-                                <img src="/assets/images/creatista.svg" class="masterpiece_creatista hidden-phone" alt="Creatista">
+                                <img src="assets/images/creatista.svg" class="masterpiece_creatista hidden-phone" alt="Creatista">
                             </div>
                         </div>
 
                         <div class="masterpiece_content animation animation__slide-left hidden-phone">
-                            <img src="/assets/images/masterpiece.jpg" class="masterpiece_photo" alt="BORK C830 Creatista Plus">
+                            <img src="assets/images/masterpiece.jpg" class="masterpiece_photo" alt="BORK C830 Creatista Plus">
                         </div>
                     </div>
                 </div>
@@ -87,7 +91,7 @@
                 <div class="container">
                     <div class="video">
                         <div class="video-preview"
-                             data-vide-bg="/assets/video/video"
+                             data-vide-bg="assets/video/video"
                              data-vide-options="loop: true, muted: false, position: 50% 0, autoplay: true, resizing: true, muted: true">
                          </div>
                         <div class="video_content">
@@ -110,7 +114,7 @@
                         </div>
 
                         <div class="quick-result_content quick-result_content__photo animation animation__slide-left">
-                            <img src="/assets/images/quick-result.jpg" class="quick-result_photo" alt="BORK C830 Creatista Plus">
+                            <img src="assets/images/quick-result.jpg" class="quick-result_photo" alt="BORK C830 Creatista Plus">
                         </div>
                     </div>
                 </div>
@@ -128,37 +132,37 @@
                                 <p>Бодрящий эспрессо, нежный латте макиато или напиток по&nbsp;собственному рецепту&nbsp;&mdash; BORK C830 Creatista Plus исполнит любой каприз благодаря встроенным рецептам 7&nbsp;кофейных коктейлей и&nbsp;персонализированному режиму Barista</p>
                             </div>
                             <div class="coffee hidden-phone">
-                                <img src="/assets/images/coffee/preview-cappuccino.png" class="coffee_preview" alt="">
+                                <img src="assets/images/coffee/preview-cappuccino.png" class="coffee_preview" alt="">
                                 <div class="coffee_name">Латте</div>
                             </div>
                         </div>
                         <div class="owl-carousel owl-carousel-coffee visible-phone js-owl-carousel-coffee">
                             <div class="coffee">
-                                <img src="/assets/images/coffee/preview-cappuccino.png" class="coffee_preview" alt="">
+                                <img src="assets/images/coffee/preview-cappuccino.png" class="coffee_preview" alt="">
                                 <div class="coffee_name">Cappuccino</div>
                             </div>
                             <div class="coffee">
-                                <img src="/assets/images/coffee/preview-espresso.png" class="coffee_preview" alt="">
+                                <img src="assets/images/coffee/preview-espresso.png" class="coffee_preview" alt="">
                                 <div class="coffee_name">Espresso</div>
                             </div>
                             <div class="coffee">
-                                <img src="/assets/images/coffee/preview-flat-white.png" class="coffee_preview" alt="">
+                                <img src="assets/images/coffee/preview-flat-white.png" class="coffee_preview" alt="">
                                 <div class="coffee_name">Flat White</div>
                             </div>
                             <div class="coffee">
-                                <img src="/assets/images/coffee/preview-latte-macchiato.png" class="coffee_preview" alt="">
+                                <img src="assets/images/coffee/preview-latte-macchiato.png" class="coffee_preview" alt="">
                                 <div class="coffee_name">Latte Macchiato</div>
                             </div>
                             <div class="coffee">
-                                <img src="/assets/images/coffee/preview-latte.png" class="coffee_preview" alt="">
+                                <img src="assets/images/coffee/preview-latte.png" class="coffee_preview" alt="">
                                 <div class="coffee_name">Latte</div>
                             </div>
                             <div class="coffee">
-                                <img src="/assets/images/coffee/preview-lungo.png" class="coffee_preview" alt="">
+                                <img src="assets/images/coffee/preview-lungo.png" class="coffee_preview" alt="">
                                 <div class="coffee_name">Lungo</div>
                             </div>
                             <div class="coffee">
-                                <img src="/assets/images/coffee/preview-ristretto.png" class="coffee_preview" alt="">
+                                <img src="assets/images/coffee/preview-ristretto.png" class="coffee_preview" alt="">
                                 <div class="coffee_name">Ristretto</div>
                             </div>
                         </div>
@@ -178,7 +182,7 @@
                         </div>
 
                         <div class="frothing_content frothing_content__photo">
-                            <img src="/assets/images/frothing-phone.png" class="frothing_photo visible-phone" alt="BORK C830 Creatista Plus">
+                            <img src="assets/images/frothing-phone.png" class="frothing_photo visible-phone" alt="BORK C830 Creatista Plus">
                         </div>
                     </div>
                 </div>
@@ -188,8 +192,8 @@
                 <div class="container">
                     <h2 class="hidden-phone">Спецификации</h2>
                     <div class="model hidden-phone">
-                        <img src="/assets/images/specifications.svg" class="model_photo" alt="BORK Nespresso C830">
-                        <img src="/assets/images/signature.svg" class="model_signature" alt="BORK Nespresso C830">
+                        <img src="assets/images/specifications.svg" class="model_photo" alt="BORK Nespresso C830">
+                        <img src="assets/images/signature.svg" class="model_signature" alt="BORK Nespresso C830">
                     </div>
                     <div class="specifications owl-carousel owl-carousel-specifications js-owl-carousel-specifications">
                         <ul class="specifications_content">
@@ -309,7 +313,7 @@
 
             <section class="section section__boutiques js-section" aria-label="Boutiques">
                 <div class="video-preview"
-                     data-vide-bg="/assets/video/boutiques"
+                     data-vide-bg="assets/video/boutiques"
                      data-vide-options="loop: true, muted: false, position: 50% 50%, autoplay: true, resizing: true, muted: true">
                  </div>
                 <div class="container">
@@ -345,7 +349,7 @@
             </section>
 
             <div class="video-dialog js-video-dialog">
-                <a href="#" class="video-dialog_close js-video-dialog-close"><img src="/assets/images/video-dialog-close.png" width="30" height="30" alt=""></a>
+                <a href="#" class="video-dialog_close js-video-dialog-close"><img src="assets/images/video-dialog-close.png" width="30" height="30" alt=""></a>
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WrJ6px1dBzQ" frameborder="0" allowfullscreen></iframe>
             </div>
 

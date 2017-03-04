@@ -55,19 +55,19 @@
             @include mq('tablet') {
                 width: 302px;
                 height: 788px;
-                background: url('/assets/images/choose-coffee-tablet.png') center no-repeat;
+                background: url('../images/choose-coffee-tablet.png') center no-repeat;
             }
 
             @include mq('desktop') {
                 width: 326px;
                 height: 851px;
-                background: url('/assets/images/choose-coffee-desktop.png') center no-repeat;
+                background: url('../images/choose-coffee-desktop.png') center no-repeat;
             }
 
             @include mq('extra-desktop') {
                 width: 461px;
                 height: 1204px;
-                background: url('/assets/images/choose-coffee-extra-desktop.png') center no-repeat;
+                background: url('../images/choose-coffee-extra-desktop.png') center no-repeat;
             }
         }
     }

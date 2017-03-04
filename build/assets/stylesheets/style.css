@@ -128,36 +128,36 @@ button:focus {
 
 @font-face {
   font-family: 'BorkDisplayRegilar';
-  src: url("/assets/fonts/Bork-Display-Regilar/Bork-Display-Regilar.eot");
-  src: url("/assets/fonts/Bork-Display-Regilar/Bork-Display-Regilar.woff") format("woff"), url("/assets/fonts/Bork-Display-Regilar/Bork-Display-Regilar.ttf") format("truetype"), url("/assets/fonts/Bork-Display-Regilar/Bork-Display-Regilar.svg#BorkDisplay-Light") format("svg");
+  src: url("../fonts/Bork-Display-Regilar/Bork-Display-Regilar.eot");
+  src: url("../fonts/Bork-Display-Regilar/Bork-Display-Regilar.woff") format("woff"), url("../fonts/Bork-Display-Regilar/Bork-Display-Regilar.ttf") format("truetype"), url("../fonts/Bork-Display-Regilar/Bork-Display-Regilar.svg#BorkDisplay-Light") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'AkzidenzGroteskProLight';
-  src: url("/assets/fonts/AkzidenzGroteskPro-Light/AkzidenzGroteskPro-Light.eot");
-  src: url("/assets/fonts/AkzidenzGroteskPro-Light/AkzidenzGroteskPro-Light.woff") format("woff"), url("/assets/fonts/AkzidenzGroteskPro-Light/AkzidenzGroteskPro-Light.ttf") format("truetype"), url("/assets/fonts/AkzidenzGroteskPro-Light/AkzidenzGroteskPro-Light.svg#AkzidenzGroteskPro-Light") format("svg");
+  src: url("../fonts/AkzidenzGroteskPro-Light/AkzidenzGroteskPro-Light.eot");
+  src: url("../fonts/AkzidenzGroteskPro-Light/AkzidenzGroteskPro-Light.woff") format("woff"), url("../fonts/AkzidenzGroteskPro-Light/AkzidenzGroteskPro-Light.ttf") format("truetype"), url("../fonts/AkzidenzGroteskPro-Light/AkzidenzGroteskPro-Light.svg#AkzidenzGroteskPro-Light") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'AkzidenzGroteskProRegular';
-  src: url("/assets/fonts/AkzidenzGroteskPro-Regular/AkzidenzGroteskPro-Regular.eot");
-  src: url("/assets/fonts/AkzidenzGroteskPro-Regular/AkzidenzGroteskPro-Regular.woff") format("woff"), url("/assets/fonts/AkzidenzGroteskPro-Regular/AkzidenzGroteskPro-Regular.ttf") format("truetype"), url("/assets/fonts/AkzidenzGroteskPro-Regular/AkzidenzGroteskPro-Regular.svg#AkzidenzGroteskPro-Regular") format("svg");
+  src: url("../fonts/AkzidenzGroteskPro-Regular/AkzidenzGroteskPro-Regular.eot");
+  src: url("../fonts/AkzidenzGroteskPro-Regular/AkzidenzGroteskPro-Regular.woff") format("woff"), url("../fonts/AkzidenzGroteskPro-Regular/AkzidenzGroteskPro-Regular.ttf") format("truetype"), url("../fonts/AkzidenzGroteskPro-Regular/AkzidenzGroteskPro-Regular.svg#AkzidenzGroteskPro-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'AkzidenzGroteskProMd';
-  src: url("/assets/fonts/AkzidenzGroteskPro-Md/AkzidenzGroteskPro-Md.eot");
-  src: url("/assets/fonts/AkzidenzGroteskPro-Md/AkzidenzGroteskPro-Md.woff") format("woff"), url("/assets/fonts/AkzidenzGroteskPro-Md/AkzidenzGroteskPro-Md.ttf") format("truetype"), url("/assets/fonts/AkzidenzGroteskPro-Md/AkzidenzGroteskPro-Md.svg#AkzidenzGroteskPro-Md") format("svg");
+  src: url("../fonts/AkzidenzGroteskPro-Md/AkzidenzGroteskPro-Md.eot");
+  src: url("../fonts/AkzidenzGroteskPro-Md/AkzidenzGroteskPro-Md.woff") format("woff"), url("../fonts/AkzidenzGroteskPro-Md/AkzidenzGroteskPro-Md.ttf") format("truetype"), url("../fonts/AkzidenzGroteskPro-Md/AkzidenzGroteskPro-Md.svg#AkzidenzGroteskPro-Md") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'AkzidenzGroteskProExt';
-  src: url("/assets/fonts/AkzidenzGroteskPro-Ext/AkzidenzGroteskPro-Ext.eot");
-  src: url("/assets/fonts/AkzidenzGroteskPro-Ext/AkzidenzGroteskPro-Ext.woff") format("woff"), url("/assets/fonts/AkzidenzGroteskPro-Ext/AkzidenzGroteskPro-Ext.ttf") format("truetype"), url("/assets/fonts/AkzidenzGroteskPro-Ext/AkzidenzGroteskPro-Ext.svg#AkzidenzGroteskPro-Ext") format("svg");
+  src: url("../fonts/AkzidenzGroteskPro-Ext/AkzidenzGroteskPro-Ext.eot");
+  src: url("../fonts/AkzidenzGroteskPro-Ext/AkzidenzGroteskPro-Ext.woff") format("woff"), url("../fonts/AkzidenzGroteskPro-Ext/AkzidenzGroteskPro-Ext.ttf") format("truetype"), url("../fonts/AkzidenzGroteskPro-Ext/AkzidenzGroteskPro-Ext.svg#AkzidenzGroteskPro-Ext") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -263,35 +263,35 @@ button:focus {
   background-position: center;
   background-size: cover; }
   .carousel_item__photo-1 {
-    background-image: url("/assets/images/gallery/photo-1.jpg"); }
+    background-image: url("../images/gallery/photo-1.jpg"); }
     @media (max-width: 639px) {
       .carousel_item__photo-1 {
-        background-image: url("/assets/images/gallery/photo-m-1.jpg"); } }
+        background-image: url("../images/gallery/photo-m-1.jpg"); } }
   .carousel_item__photo-2 {
-    background-image: url("/assets/images/gallery/photo-2.jpg"); }
+    background-image: url("../images/gallery/photo-2.jpg"); }
     @media (max-width: 639px) {
       .carousel_item__photo-2 {
-        background-image: url("/assets/images/gallery/photo-m-2.jpg"); } }
+        background-image: url("../images/gallery/photo-m-2.jpg"); } }
   .carousel_item__photo-3 {
-    background-image: url("/assets/images/gallery/photo-3.jpg"); }
+    background-image: url("../images/gallery/photo-3.jpg"); }
     @media (max-width: 639px) {
       .carousel_item__photo-3 {
-        background-image: url("/assets/images/gallery/photo-m-3.jpg"); } }
+        background-image: url("../images/gallery/photo-m-3.jpg"); } }
   .carousel_item__photo-4 {
-    background-image: url("/assets/images/gallery/photo-4.jpg"); }
+    background-image: url("../images/gallery/photo-4.jpg"); }
     @media (max-width: 639px) {
       .carousel_item__photo-4 {
-        background-image: url("/assets/images/gallery/photo-m-4.jpg"); } }
+        background-image: url("../images/gallery/photo-m-4.jpg"); } }
   .carousel_item__photo-5 {
-    background-image: url("/assets/images/gallery/photo-5.jpg"); }
+    background-image: url("../images/gallery/photo-5.jpg"); }
     @media (max-width: 639px) {
       .carousel_item__photo-5 {
-        background-image: url("/assets/images/gallery/photo-m-5.jpg"); } }
+        background-image: url("../images/gallery/photo-m-5.jpg"); } }
   .carousel_item__photo-6 {
-    background-image: url("/assets/images/gallery/photo-6.jpg"); }
+    background-image: url("../images/gallery/photo-6.jpg"); }
     @media (max-width: 639px) {
       .carousel_item__photo-6 {
-        background-image: url("/assets/images/gallery/photo-m-6.jpg"); } }
+        background-image: url("../images/gallery/photo-m-6.jpg"); } }
 
 .carousel .owl-stage-outer {
   height: 100%; }
@@ -364,17 +364,17 @@ button:focus {
       .choose-coffee_content__photo {
         width: 302px;
         height: 788px;
-        background: url("/assets/images/choose-coffee-tablet.png") center no-repeat; } }
+        background: url("../images/choose-coffee-tablet.png") center no-repeat; } }
     @media all and (min-width: 940px) and (max-width: 1280px) {
       .choose-coffee_content__photo {
         width: 326px;
         height: 851px;
-        background: url("/assets/images/choose-coffee-desktop.png") center no-repeat; } }
+        background: url("../images/choose-coffee-desktop.png") center no-repeat; } }
     @media all and (min-width: 1281px) {
       .choose-coffee_content__photo {
         width: 461px;
         height: 1204px;
-        background: url("/assets/images/choose-coffee-extra-desktop.png") center no-repeat; } }
+        background: url("../images/choose-coffee-extra-desktop.png") center no-repeat; } }
   .choose-coffee_photo {
     width: 100%; }
 
@@ -566,7 +566,7 @@ button:focus {
     right: 25px;
     width: 13px;
     height: 12px;
-    background: url("/assets/images/dialog-close.png") center no-repeat;
+    background: url("../images/dialog-close.png") center no-repeat;
     cursor: pointer; }
     @media (max-width: 639px) {
       .dialog_close {
@@ -901,99 +901,99 @@ button:focus {
   .icon__19bar {
     width: 72px;
     height: 72px;
-    background-image: url("/assets/images/icons/19bar.svg"); }
+    background-image: url("../images/icons/19bar.svg"); }
   .icon__4cups {
     width: 72px;
     height: 72px;
-    background-image: url("/assets/images/icons/4cups.svg"); }
+    background-image: url("../images/icons/4cups.svg"); }
   .icon__frothing {
     width: 72px;
     height: 72px;
-    background-image: url("/assets/images/icons/froathing.svg"); }
+    background-image: url("../images/icons/froathing.svg"); }
   .icon__complete {
     width: 72px;
     height: 72px;
-    background-image: url("/assets/images/icons/complete.svg"); }
+    background-image: url("../images/icons/complete.svg"); }
   .icon__delivery {
     width: 44px;
     height: 50px;
-    background-image: url("/assets/images/icons/delivery.svg"); }
+    background-image: url("../images/icons/delivery.svg"); }
   .icon__phone {
     width: 45px;
     height: 46px;
-    background-image: url("/assets/images/icons/phone.svg"); }
+    background-image: url("../images/icons/phone.svg"); }
   .icon__designer {
     width: 25px;
     height: 25px;
-    background-image: url("/assets/images/icons/designer.svg"); }
+    background-image: url("../images/icons/designer.svg"); }
   .icon__materials {
     width: 25px;
     height: 25px;
-    background-image: url("/assets/images/icons/materials.svg"); }
+    background-image: url("../images/icons/materials.svg"); }
   .icon__tank-volume {
     width: 16px;
     height: 24px;
-    background-image: url("/assets/images/icons/tank-volume.svg"); }
+    background-image: url("../images/icons/tank-volume.svg"); }
   .icon__capsules {
     width: 24px;
     height: 20px;
-    background-image: url("/assets/images/icons/capsules.svg"); }
+    background-image: url("../images/icons/capsules.svg"); }
   .icon__cup {
     width: 26px;
     height: 22px;
-    background-image: url("/assets/images/icons/cup.svg"); }
+    background-image: url("../images/icons/cup.svg"); }
   .icon__cappuccinator {
     width: 13px;
     height: 29px;
-    background-image: url("/assets/images/icons/cappuccinator.svg"); }
+    background-image: url("../images/icons/cappuccinator.svg"); }
   .icon__jar {
     width: 24px;
     height: 21px;
-    background-image: url("/assets/images/icons/jar.svg"); }
+    background-image: url("../images/icons/jar.svg"); }
   .icon__frequency-range {
     width: 24px;
     height: 16px;
-    background-image: url("/assets/images/icons/frequency-range.svg"); }
+    background-image: url("../images/icons/frequency-range.svg"); }
   .icon__size {
     width: 21px;
     height: 28px;
-    background-image: url("/assets/images/icons/size.svg"); }
+    background-image: url("../images/icons/size.svg"); }
   .icon__plug {
     width: 20px;
     height: 28px;
-    background-image: url("/assets/images/icons/plug.svg"); }
+    background-image: url("../images/icons/plug.svg"); }
   .icon__weight {
     width: 16px;
     height: 30px;
-    background-image: url("/assets/images/icons/weight.svg"); }
+    background-image: url("../images/icons/weight.svg"); }
   .icon__warranty {
     width: 24px;
     height: 24px;
-    background-image: url("/assets/images/icons/warranty.svg"); }
+    background-image: url("../images/icons/warranty.svg"); }
   .icon__origin {
     width: 17px;
     height: 24px;
-    background-image: url("/assets/images/icons/origin.svg"); }
+    background-image: url("../images/icons/origin.svg"); }
   .icon__card {
     width: 30px;
     height: 20px;
-    background-image: url("/assets/images/icons/card.svg"); }
+    background-image: url("../images/icons/card.svg"); }
   .icon__social-fb {
     width: 32px;
     height: 32px;
-    background-image: url("/assets/images/icons/social-fb.svg"); }
+    background-image: url("../images/icons/social-fb.svg"); }
   .icon__social-youtube {
     width: 28px;
     height: 32px;
-    background-image: url("/assets/images/icons/social-youtube.svg"); }
+    background-image: url("../images/icons/social-youtube.svg"); }
   .icon__social-instagram {
     width: 32px;
     height: 32px;
-    background-image: url("/assets/images/icons/social-instagram.svg"); }
+    background-image: url("../images/icons/social-instagram.svg"); }
   .icon__social-vk {
     width: 40px;
     height: 23px;
-    background-image: url("/assets/images/icons/social-vk.svg"); }
+    background-image: url("../images/icons/social-vk.svg"); }
 
 .index {
   display: flex;
@@ -1166,11 +1166,27 @@ button:focus {
   .order-block {
     margin: 32px 0 0; } }
 
+.order-block_name {
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  color: #e6e6e6;
+  font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .6px; }
+
 .order-block_price {
   display: inline-block;
   font-size: 18px;
   line-height: 27px;
   vertical-align: baseline; }
+  @media (max-width: 639px) {
+    .order-block_price {
+      margin: 0 10px 0 0;
+      color: #e6e6e6;
+      font-family: "AkzidenzGroteskProMd", Helvetica, Arial, sans-serif;
+      font-size: 11px; } }
   @media all and (min-width: 640px) and (max-width: 939px) {
     .order-block_price {
       margin: 0 0 0 25px; } }
@@ -1321,13 +1337,13 @@ button:focus {
 .section {
   overflow-x: hidden; }
   .section__index {
-    background-image: url("/assets/images/index.jpg");
+    background-image: url("../images/index.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
     @media (max-width: 639px) {
       .section__index {
-        background-image: url("/assets/images/index-phone.jpg"); } }
+        background-image: url("../images/index-phone.jpg"); } }
   .section__gallery {
     position: relative; }
     .section__gallery::after {
@@ -1362,20 +1378,20 @@ button:focus {
         background: #000; } }
     @media all and (min-width: 640px) and (max-width: 939px) {
       .section__frothing {
-        background-image: url("/assets/images/frothing-tablet.png");
+        background-image: url("../images/frothing-tablet.png");
         background-position: center; } }
     @media all and (min-width: 940px) and (max-width: 1280px) {
       .section__frothing {
-        background-image: url("/assets/images/frothing-desktop.png");
+        background-image: url("../images/frothing-desktop.png");
         background-position: center; } }
     @media all and (min-width: 1281px) {
       .section__frothing {
-        background-image: url("/assets/images/frothing-extra-desktop.png");
+        background-image: url("../images/frothing-extra-desktop.png");
         background-position: center; } }
   .section__specifications {
     padding: 30px 0 94px;
     background-color: #151515;
-    background-image: url("/assets/images/specifications.png");
+    background-image: url("../images/specifications.png");
     background-repeat: repeat;
     background-position: center; }
     @media (max-width: 639px) {
@@ -1502,14 +1518,14 @@ button:focus {
     bottom: 0; }
   .video_play {
     position: relative;
-    z-index: 997;
+    z-index: 996;
     display: inline-block;
     width: 96px;
     height: 96px;
     margin: 10px 0 0;
     border: none;
     background-color: transparent;
-    background-image: url("/assets/images/play-video.png");
+    background-image: url("../images/play-video.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     vertical-align: top;

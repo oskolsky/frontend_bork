@@ -42,14 +42,14 @@
 
     &_play {
         position: relative;
-        z-index: 997;
+        z-index: 996;
         display: inline-block;
         width: 96px;
         height: 96px;
         margin: 10px 0 0;
         border: none;
         background-color: transparent;
-        background-image: url("/assets/images/play-video.png");
+        background-image: url("../images/play-video.png");
         background-repeat: no-repeat;
         background-position: 0 0;
         vertical-align: top;

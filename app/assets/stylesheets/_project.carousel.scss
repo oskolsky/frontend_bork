@@ -9,10 +9,10 @@
 
         @for $i from 1 through 6 {
             &__photo-#{$i} {
-                background-image: url('/assets/images/gallery/photo-#{$i}.jpg');
+                background-image: url('../images/gallery/photo-#{$i}.jpg');
 
                 @include mq('phone') {
-                    background-image: url('/assets/images/gallery/photo-m-#{$i}.jpg');
+                    background-image: url('../images/gallery/photo-m-#{$i}.jpg');
                 }
             }
         }

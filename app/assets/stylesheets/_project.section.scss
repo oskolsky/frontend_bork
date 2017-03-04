@@ -2,13 +2,13 @@
     overflow-x: hidden;
 
     &__index {
-        background-image: url("/assets/images/index.jpg");
+        background-image: url("../images/index.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
 
         @include mq('phone') {
-            background-image: url("/assets/images/index-phone.jpg");
+            background-image: url("../images/index-phone.jpg");
         }
     }
 
@@ -59,17 +59,17 @@
         }
 
         @include mq('tablet') {
-            background-image: url("/assets/images/frothing-tablet.png");
+            background-image: url("../images/frothing-tablet.png");
             background-position: center;
         }
 
         @include mq('desktop') {
-            background-image: url("/assets/images/frothing-desktop.png");
+            background-image: url("../images/frothing-desktop.png");
             background-position: center;
         }
 
         @include mq('extra-desktop') {
-            background-image: url("/assets/images/frothing-extra-desktop.png");
+            background-image: url("../images/frothing-extra-desktop.png");
             background-position: center;
         }
     }
@@ -77,7 +77,7 @@
     &__specifications {
         padding: 30px 0 94px;
         background-color: #151515;
-        background-image: url("/assets/images/specifications.png");
+        background-image: url("../images/specifications.png");
         background-repeat: repeat;
         background-position: center;
 

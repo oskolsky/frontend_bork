@@ -25,6 +25,17 @@
         margin: 32px 0 0;
     }
 
+    &_name {
+        position: absolute;
+        top: 1px;
+        left: 10px;
+        color: #e6e6e6;
+        font-family: $font-AkzidenzGroteskProMd;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: .6px;
+    }
+
     &_price {
         display: inline-block;
         font-size: 18px;
@@ -32,7 +43,10 @@
         vertical-align: baseline;
 
         @include mq('phone') {
-
+            margin: 0 10px 0 0;
+            color: #e6e6e6;
+            font-family: $font-AkzidenzGroteskProMd;
+            font-size: 11px;
         }
 
         @include mq('tablet') {

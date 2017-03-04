@@ -73,7 +73,7 @@
         right: 25px;
         width: 13px;
         height: 12px;
-        background: url("/assets/images/dialog-close.png") center no-repeat;
+        background: url("../images/dialog-close.png") center no-repeat;
         cursor: pointer;
 
         @include mq('phone') {
