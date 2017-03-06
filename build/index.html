@@ -335,14 +335,15 @@
                             <i class="contacts_icon icon icon__delivery"></i>
                             <h3>Бесплатная доставка</h3>
                             <p>Мы&nbsp;бесплатно осуществляем экспресс доставку покупок по&nbsp;более чем 7&nbsp;000 направлений в&nbsp;России</p>
-                            <a href="#" class="contacts_link contacts_link__order">Сделать заказ</a>
+                            <a href="#" class="contacts_link contacts_link__order js-order-open">Сделать заказ</a>
                         </div>
 
                         <div class="contacts_content contacts_content__phone">
                             <i class="contacts_icon icon icon__phone"></i>
                             <h3>Интернет-бутик</h3>
                             <p>Квалифицированные эксперты интернет-бутика всегда с&nbsp;радостью проконсультируют вас по&nbsp;всем вопросам</p>
-                            <a href="#" class="contacts_link contacts_link__phone">8 800 500 88 99</a>
+                            <a href="tel:88005008899" class="contacts_link contacts_link__phone visible-phone">8 800 500 88 99</a>
+                            <span class="contacts_link contacts_link__phone hidden-phone">8 800 500 88 99</span>
                         </div>
                     </div>
                 </div>
@@ -369,15 +370,15 @@
                                         <form class="order_form form" action="#">
                                             <div class="form_item">
                                                 <label class="form_label">Имя</label>
-                                                <input type="text" name="name" class="form_input" autofocus>
+                                                <input type="text" name="name" class="form_input" placeholder="Николай" autofocus>
                                             </div>
                                             <div class="form_item">
                                                 <label class="form_label">Телефон</label>
-                                                <input type="text" name="phone" class="form_input js-data-phone">
+                                                <input type="text" name="phone" class="form_input js-data-phone" placeholder="+7">
                                             </div>
                                             <div class="form_item">
                                                 <label class="form_label">Email</label>
-                                                <input type="text" name="email" class="form_input">
+                                                <input type="text" name="email" class="form_input" placeholder="me@bork.ru">
                                             </div>
                                             <div class="form_submit">
                                                 <button type="submit" class="button button__large js-order-complete-button">Оформить</button>

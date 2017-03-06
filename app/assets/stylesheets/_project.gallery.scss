@@ -63,7 +63,7 @@
 
     &_line {
         position: absolute;
-        z-index: 997;
+        z-index: 996;
         height: 1px;
 
         @include mq('phone') {
@@ -92,7 +92,7 @@
             bottom: 0;
             background: #fc642a;
             content: '';
-            animation-duration: 1.5s;
+            animation-duration: 2.5s;
             animation-iteration-count: infinite;
         }
 
@@ -146,7 +146,7 @@
                 width: 0;
             }
 
-            25% {
+            50% {
                 right: 0;
                 width: 100%;
             }
@@ -163,7 +163,7 @@
                 width: 0;
             }
 
-            25% {
+            50% {
                 left: 0;
                 width: 100%;
             }

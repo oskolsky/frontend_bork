@@ -714,7 +714,7 @@ button:focus {
       margin: 70px 0 0; } }
   .gallery_line {
     position: absolute;
-    z-index: 997;
+    z-index: 996;
     height: 1px; }
     @media (max-width: 639px) {
       .gallery_line {
@@ -738,7 +738,7 @@ button:focus {
       bottom: 0;
       background: #fc642a;
       content: '';
-      animation-duration: 1.5s;
+      animation-duration: 2.5s;
       animation-iteration-count: infinite; }
     @media (max-width: 639px) {
       .gallery_line__left {
@@ -773,7 +773,7 @@ button:focus {
   0% {
     right: 0;
     width: 0; }
-  25% {
+  50% {
     right: 0;
     width: 100%; }
   100% {
@@ -784,7 +784,7 @@ button:focus {
   0% {
     left: 0;
     width: 0; }
-  25% {
+  50% {
     left: 0;
     width: 100%; }
   100% {
