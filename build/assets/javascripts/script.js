@@ -74,11 +74,13 @@ $(function() {
     // You tube video play
     $('.js-video-play').on('click', function() {
         $('.js-video-dialog').show();
+        $('#js-video').attr({ src: 'https://www.youtube.com/embed/WrJ6px1dBzQ?autoplay=1'});
         return false;
     });
 
     $('.js-video-dialog-close').on('click', function() {
         $('.js-video-dialog').hide();
+        $('#js-video').attr({ src: '' });
         return false;
     });
 
