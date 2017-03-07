@@ -27,6 +27,35 @@
     }
 }
 
+.owl-carousel-coffee-large {
+
+    .owl-item img {
+        display: block;
+        width: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .owl-dots {
+        width: 50%;
+        height: 2px;
+        margin: 10px auto 0;
+        background: rgba(252, 100, 42, .3);
+        white-space: nowrap;
+    }
+
+    .owl-dot {
+        display: inline-block;
+        width: 14.5%;
+        height: 100%;
+        vertical-align: top;
+
+        &.active {
+            background: rgba(252, 100, 42, 1);
+        }
+    }
+}
+
 .owl-carousel-specifications {
 
     .owl-dots {

@@ -1,0 +1,145 @@
+.coffee-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    &_bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+
+        @include mq('tablet') {
+            width: 302px;
+            height: 788px;
+            background: url('../images/choose-coffee-tablet.png') center no-repeat;
+        }
+
+        @include mq('desktop') {
+            width: 326px;
+            height: 851px;
+            background: url('../images/choose-coffee-desktop.png') center no-repeat;
+        }
+
+        @include mq('extra-desktop') {
+            width: 461px;
+            height: 1204px;
+            background: url('../images/choose-coffee-extra-desktop.png') center no-repeat;
+        }
+    }
+
+    &_item {
+        position: absolute;
+        z-index: 1;
+        display: none;
+
+        @include mq('tablet') {
+            top: 350px;
+            left: 163px;
+            width: 75px;
+            height: 98px;
+
+            &__cappuccino {
+                background: url('/assets/images/coffee/menu-cappuccino-tablet.png') center no-repeat;
+            }
+
+            &__espresso {
+                background: url('/assets/images/coffee/menu-espresso-tablet.png') center no-repeat;
+            }
+
+            &__flat-white {
+                background: url('/assets/images/coffee/menu-flat-white-tablet.png') center no-repeat;
+            }
+
+            &__latte-macchiato {
+                background: url('/assets/images/coffee/menu-latte-macchiato-tablet.png') center no-repeat;
+            }
+
+            &__latte {
+                background: url('/assets/images/coffee/menu-latte-tablet.png') center no-repeat;
+            }
+
+            &__lungo {
+                background: url('/assets/images/coffee/menu-lungo-tablet.png') center no-repeat;
+            }
+
+            &__ristretto {
+                background: url('/assets/images/coffee/menu-ristretto-tablet.png') center no-repeat;
+            }
+        }
+
+        @include mq('desktop') {
+            top: 382px;
+            left: 172px;
+            width: 81px;
+            height: 106px;
+
+            &__cappuccino {
+                background: url('/assets/images/coffee/menu-cappuccino-desktop.png') center no-repeat;
+            }
+
+            &__espresso {
+                background: url('/assets/images/coffee/menu-espresso-desktop.png') center no-repeat;
+            }
+
+            &__flat-white {
+                background: url('/assets/images/coffee/menu-flat-white-desktop.png') center no-repeat;
+            }
+
+            &__latte-macchiato {
+                background: url('/assets/images/coffee/menu-latte-macchiato-desktop.png') center no-repeat;
+            }
+
+            &__latte {
+                background: url('/assets/images/coffee/menu-latte-desktop.png') center no-repeat;
+            }
+
+            &__lungo {
+                background: url('/assets/images/coffee/menu-lungo-desktop.png') center no-repeat;
+            }
+
+            &__ristretto {
+                background: url('/assets/images/coffee/menu-ristretto-desktop.png') center no-repeat;
+            }
+        }
+
+        @include mq('extra-desktop') {
+            top: 537px;
+            left: 250px;
+            width: 114px;
+            height: 149px;
+
+            &__cappuccino {
+                background: url('/assets/images/coffee/menu-cappuccino-extra-desktop.png') center no-repeat;
+            }
+
+            &__espresso {
+                background: url('/assets/images/coffee/menu-espresso-extra-desktop.png') center no-repeat;
+            }
+
+            &__flat-white {
+                background: url('/assets/images/coffee/menu-flat-white-extra-desktop.png') center no-repeat;
+            }
+
+            &__latte-macchiato {
+                background: url('/assets/images/coffee/menu-latte-macchiato-extra-desktop.png') center no-repeat;
+            }
+
+            &__latte {
+                background: url('/assets/images/coffee/menu-latte-extra-desktop.png') center no-repeat;
+            }
+
+            &__lungo {
+                background: url('/assets/images/coffee/menu-lungo-extra-desktop.png') center no-repeat;
+            }
+
+            &__ristretto {
+                background: url('/assets/images/coffee/menu-ristretto-extra-desktop.png') center no-repeat;
+            }
+        }
+    }
+}

@@ -24,6 +24,7 @@
 
     &_content {
         text-align: center;
+        overflow: hidden;
 
         @include mq('phone') {
             flex: 0 1 90%;
@@ -48,6 +49,8 @@
         }
 
         &__photo {
+            position: relative;
+
             @include mq('phone') {
                 display: none;
             }
@@ -55,19 +58,19 @@
             @include mq('tablet') {
                 width: 302px;
                 height: 788px;
-                background: url('../images/choose-coffee-tablet.png') center no-repeat;
+                // background: url('../images/choose-coffee-tablet.png') center no-repeat;
             }
 
             @include mq('desktop') {
                 width: 326px;
                 height: 851px;
-                background: url('../images/choose-coffee-desktop.png') center no-repeat;
+                // background: url('../images/choose-coffee-desktop.png') center no-repeat;
             }
 
             @include mq('extra-desktop') {
                 width: 461px;
                 height: 1204px;
-                background: url('../images/choose-coffee-extra-desktop.png') center no-repeat;
+                // background: url('../images/choose-coffee-extra-desktop.png') center no-repeat;
             }
         }
     }

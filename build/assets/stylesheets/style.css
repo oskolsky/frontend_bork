@@ -341,7 +341,8 @@ button:focus {
     .choose-coffee {
       height: 1295px; } }
   .choose-coffee_content {
-    text-align: center; }
+    text-align: center;
+    overflow: hidden; }
     @media (max-width: 639px) {
       .choose-coffee_content {
         flex: 0 1 90%; } }
@@ -357,26 +358,118 @@ button:focus {
     @media (max-width: 639px) {
       .choose-coffee_content__text {
         margin: 0 0 60px; } }
-    @media (max-width: 639px) {
-      .choose-coffee_content__photo {
-        display: none; } }
+    .choose-coffee_content__photo {
+      position: relative; }
+      @media (max-width: 639px) {
+        .choose-coffee_content__photo {
+          display: none; } }
+      @media all and (min-width: 640px) and (max-width: 939px) {
+        .choose-coffee_content__photo {
+          width: 302px;
+          height: 788px; } }
+      @media all and (min-width: 940px) and (max-width: 1280px) {
+        .choose-coffee_content__photo {
+          width: 326px;
+          height: 851px; } }
+      @media all and (min-width: 1281px) {
+        .choose-coffee_content__photo {
+          width: 461px;
+          height: 1204px; } }
+  .choose-coffee_photo {
+    width: 100%; }
+
+.coffee-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .coffee-menu_bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2; }
     @media all and (min-width: 640px) and (max-width: 939px) {
-      .choose-coffee_content__photo {
+      .coffee-menu_bg {
         width: 302px;
         height: 788px;
         background: url("../images/choose-coffee-tablet.png") center no-repeat; } }
     @media all and (min-width: 940px) and (max-width: 1280px) {
-      .choose-coffee_content__photo {
+      .coffee-menu_bg {
         width: 326px;
         height: 851px;
         background: url("../images/choose-coffee-desktop.png") center no-repeat; } }
     @media all and (min-width: 1281px) {
-      .choose-coffee_content__photo {
+      .coffee-menu_bg {
         width: 461px;
         height: 1204px;
         background: url("../images/choose-coffee-extra-desktop.png") center no-repeat; } }
-  .choose-coffee_photo {
-    width: 100%; }
+  .coffee-menu_item {
+    position: absolute;
+    z-index: 1;
+    display: none; }
+    @media all and (min-width: 640px) and (max-width: 939px) {
+      .coffee-menu_item {
+        top: 350px;
+        left: 163px;
+        width: 75px;
+        height: 98px; }
+        .coffee-menu_item__cappuccino {
+          background: url("/assets/images/coffee/menu-cappuccino-tablet.png") center no-repeat; }
+        .coffee-menu_item__espresso {
+          background: url("/assets/images/coffee/menu-espresso-tablet.png") center no-repeat; }
+        .coffee-menu_item__flat-white {
+          background: url("/assets/images/coffee/menu-flat-white-tablet.png") center no-repeat; }
+        .coffee-menu_item__latte-macchiato {
+          background: url("/assets/images/coffee/menu-latte-macchiato-tablet.png") center no-repeat; }
+        .coffee-menu_item__latte {
+          background: url("/assets/images/coffee/menu-latte-tablet.png") center no-repeat; }
+        .coffee-menu_item__lungo {
+          background: url("/assets/images/coffee/menu-lungo-tablet.png") center no-repeat; }
+        .coffee-menu_item__ristretto {
+          background: url("/assets/images/coffee/menu-ristretto-tablet.png") center no-repeat; } }
+    @media all and (min-width: 940px) and (max-width: 1280px) {
+      .coffee-menu_item {
+        top: 382px;
+        left: 172px;
+        width: 81px;
+        height: 106px; }
+        .coffee-menu_item__cappuccino {
+          background: url("/assets/images/coffee/menu-cappuccino-desktop.png") center no-repeat; }
+        .coffee-menu_item__espresso {
+          background: url("/assets/images/coffee/menu-espresso-desktop.png") center no-repeat; }
+        .coffee-menu_item__flat-white {
+          background: url("/assets/images/coffee/menu-flat-white-desktop.png") center no-repeat; }
+        .coffee-menu_item__latte-macchiato {
+          background: url("/assets/images/coffee/menu-latte-macchiato-desktop.png") center no-repeat; }
+        .coffee-menu_item__latte {
+          background: url("/assets/images/coffee/menu-latte-desktop.png") center no-repeat; }
+        .coffee-menu_item__lungo {
+          background: url("/assets/images/coffee/menu-lungo-desktop.png") center no-repeat; }
+        .coffee-menu_item__ristretto {
+          background: url("/assets/images/coffee/menu-ristretto-desktop.png") center no-repeat; } }
+    @media all and (min-width: 1281px) {
+      .coffee-menu_item {
+        top: 537px;
+        left: 250px;
+        width: 114px;
+        height: 149px; }
+        .coffee-menu_item__cappuccino {
+          background: url("/assets/images/coffee/menu-cappuccino-extra-desktop.png") center no-repeat; }
+        .coffee-menu_item__espresso {
+          background: url("/assets/images/coffee/menu-espresso-extra-desktop.png") center no-repeat; }
+        .coffee-menu_item__flat-white {
+          background: url("/assets/images/coffee/menu-flat-white-extra-desktop.png") center no-repeat; }
+        .coffee-menu_item__latte-macchiato {
+          background: url("/assets/images/coffee/menu-latte-macchiato-extra-desktop.png") center no-repeat; }
+        .coffee-menu_item__latte {
+          background: url("/assets/images/coffee/menu-latte-extra-desktop.png") center no-repeat; }
+        .coffee-menu_item__lungo {
+          background: url("/assets/images/coffee/menu-lungo-extra-desktop.png") center no-repeat; }
+        .coffee-menu_item__ristretto {
+          background: url("/assets/images/coffee/menu-ristretto-extra-desktop.png") center no-repeat; } }
 
 .coffee {
   margin: 0 auto 30px;
@@ -390,8 +483,8 @@ button:focus {
         margin-bottom: 30px; } }
     @media all and (min-width: 640px) and (max-width: 939px) {
       .coffee_preview {
-        height: 230px;
-        margin-top: 90px;
+        height: 180px;
+        margin-top: 50px;
         margin-bottom: 30px; } }
     @media all and (min-width: 940px) and (max-width: 1280px) {
       .coffee_preview {
@@ -1275,6 +1368,27 @@ button:focus {
   height: 100%;
   vertical-align: top; }
   .owl-carousel-coffee .owl-dot.active {
+    background: #fc642a; }
+
+.owl-carousel-coffee-large .owl-item img {
+  display: block;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto; }
+
+.owl-carousel-coffee-large .owl-dots {
+  width: 50%;
+  height: 2px;
+  margin: 10px auto 0;
+  background: rgba(252, 100, 42, 0.3);
+  white-space: nowrap; }
+
+.owl-carousel-coffee-large .owl-dot {
+  display: inline-block;
+  width: 14.5%;
+  height: 100%;
+  vertical-align: top; }
+  .owl-carousel-coffee-large .owl-dot.active {
     background: #fc642a; }
 
 .owl-carousel-specifications .owl-dots {

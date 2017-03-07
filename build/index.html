@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="assets/stylesheets/vendor/normalize.css">
+        <link rel="stylesheet" href="assets/stylesheets/vendor/animate.css">
         <link rel="stylesheet" href="assets/stylesheets/vendor/owl.carousel.css">
         <link rel="stylesheet" href="assets/stylesheets/style.css">
         <script type="text/javascript" src="assets/javascripts/vendor/jquery-3.1.1.min.js"></script>
@@ -91,8 +92,8 @@
                 <div class="container">
                     <div class="video">
                         <div class="video-preview"
-                             data-vide-bg="assets/video/video"
-                             data-vide-options="loop: true, muted: false, position: 50% 0, autoplay: true, resizing: true, muted: true">
+                             data-vide-bg="mp4: assets/video/video, webm: assets/video/video"
+                             data-vide-options="posterType: none, loop: true, muted: false, position: 50% 0, autoplay: true, resizing: true, muted: true">
                          </div>
                         <div class="video_content">
                             <h2>Интуитивное управление и&nbsp;безупречный результат</h2>
@@ -123,7 +124,18 @@
             <section class="section section__choose-coffee js-section" aria-label="Choose Coffee">
                 <div class="container">
                     <div class="choose-coffee">
-                        <div class="choose-coffee_content choose-coffee_content__photo"></div>
+                        <div class="choose-coffee_content choose-coffee_content__photo">
+                            <div class="coffee-menu">
+                                <div class="coffee-menu_bg"></div>
+                                <div class="coffee-menu_item coffee-menu_item__cappuccino js-menu" data-coffee-menu="cappuccino"></div>
+                                <div class="coffee-menu_item coffee-menu_item__espresso js-menu" data-coffee-menu="espresso"></div>
+                                <div class="coffee-menu_item coffee-menu_item__flat-white js-menu" data-coffee-menu="flat-white"></div>
+                                <div class="coffee-menu_item coffee-menu_item__latte-macchiato js-menu" data-coffee-menu="latte-macchiato"></div>
+                                <div class="coffee-menu_item coffee-menu_item__latte js-menu" data-coffee-menu="latte"></div>
+                                <div class="coffee-menu_item coffee-menu_item__lungo js-menu" data-coffee-menu="lungo"></div>
+                                <div class="coffee-menu_item coffee-menu_item__ristretto js-menu" data-coffee-menu="ristretto"></div>
+                            </div>
+                        </div>
 
                         <div class="choose-coffee_content choose-coffee_content__text">
                             <div class="animation animation__fade">
@@ -131,9 +143,35 @@
                                 <h2>Коллекция  неповторимых вкусов</h2>
                                 <p>Бодрящий эспрессо, нежный латте макиато или напиток по&nbsp;собственному рецепту&nbsp;&mdash; BORK C830 Creatista Plus исполнит любой каприз благодаря встроенным рецептам 7&nbsp;кофейных коктейлей и&nbsp;персонализированному режиму Barista</p>
                             </div>
-                            <div class="coffee hidden-phone">
-                                <img src="assets/images/coffee/preview-cappuccino.png" class="coffee_preview" alt="">
-                                <div class="coffee_name">Латте</div>
+                            <div class="owl-carousel owl-carousel-coffee-large hidden-phone js-owl-carousel-coffee-large">
+                                <div class="coffee js-coffee" data-coffee-preview="cappuccino">
+                                    <img src="assets/images/coffee/preview-cappuccino.png" class="coffee_preview" alt="">
+                                    <div class="coffee_name">Cappuccino</div>
+                                </div>
+                                <div class="coffee js-coffee" data-coffee-preview="espresso">
+                                    <img src="assets/images/coffee/preview-espresso.png" class="coffee_preview" alt="">
+                                    <div class="coffee_name">Espresso</div>
+                                </div>
+                                <div class="coffee js-coffee" data-coffee-preview="flat-white">
+                                    <img src="assets/images/coffee/preview-flat-white.png" class="coffee_preview" alt="">
+                                    <div class="coffee_name">Flat White</div>
+                                </div>
+                                <div class="coffee js-coffee" data-coffee-preview="latte-macchiato">
+                                    <img src="assets/images/coffee/preview-latte-macchiato.png" class="coffee_preview" alt="">
+                                    <div class="coffee_name">Latte Macchiato</div>
+                                </div>
+                                <div class="coffee js-coffee" data-coffee-preview="latte">
+                                    <img src="assets/images/coffee/preview-latte.png" class="coffee_preview" alt="">
+                                    <div class="coffee_name">Cafe Latte</div>
+                                </div>
+                                <div class="coffee js-coffee" data-coffee-preview="lungo">
+                                    <img src="assets/images/coffee/preview-lungo.png" class="coffee_preview" alt="">
+                                    <div class="coffee_name">Lungo</div>
+                                </div>
+                                <div class="coffee js-coffee" data-coffee-preview="ristretto">
+                                    <img src="assets/images/coffee/preview-ristretto.png" class="coffee_preview" alt="">
+                                    <div class="coffee_name">Ristretto</div>
+                                </div>
                             </div>
                         </div>
                         <div class="owl-carousel owl-carousel-coffee visible-phone js-owl-carousel-coffee">
@@ -155,7 +193,7 @@
                             </div>
                             <div class="coffee">
                                 <img src="assets/images/coffee/preview-latte.png" class="coffee_preview" alt="">
-                                <div class="coffee_name">Latte</div>
+                                <div class="coffee_name">Cafe Latte</div>
                             </div>
                             <div class="coffee">
                                 <img src="assets/images/coffee/preview-lungo.png" class="coffee_preview" alt="">
@@ -314,7 +352,7 @@
             <section class="section section__boutiques js-section" aria-label="Boutiques">
                 <div class="video-preview"
                      data-vide-bg="assets/video/boutiques"
-                     data-vide-options="loop: true, muted: false, position: 50% 50%, autoplay: true, resizing: true, muted: true">
+                     data-vide-options="posterType: none, loop: true, muted: false, position: 50% 50%, autoplay: true, resizing: true, muted: true">
                  </div>
                 <div class="container">
                     <div class="boutiques">

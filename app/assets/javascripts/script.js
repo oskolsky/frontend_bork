@@ -27,10 +27,27 @@ $(function() {
 
     $('.js-owl-carousel-coffee').owlCarousel({
         items: 1,
-        center: false,
-        loop: false,
+        center: true,
+        loop: true,
         dots: true,
+        margin: 40
+    });
+
+    $('.js-owl-carousel-coffee-large').owlCarousel({
+        animateOut: 'fadeOutLeft',
+        items: 1,
+        center: false,
+        loop: true,
+        dots: false,
         margin: 40,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        onChanged: function(event) {
+            var current = event.item.index;
+            var coffeeName = $(event.target).find(".owl-item").eq(current).find('.js-coffee').data('coffee-preview');
+            $('.js-menu').fadeOut();
+            $('.js-menu[data-coffee-menu="' + coffeeName + '"]').fadeIn();
+        }
     });
 
     $('.js-owl-carousel').owlCarousel({
