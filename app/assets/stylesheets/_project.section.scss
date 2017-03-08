@@ -1,5 +1,4 @@
 .section {
-    overflow-x: hidden;
 
     &__index {
         background-image: url("../images/index.jpg");
@@ -43,6 +42,7 @@
     }
 
     &__quick-result {
+        position: relative;
         background: #000;
     }
 

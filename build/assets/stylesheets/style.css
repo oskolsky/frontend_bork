@@ -256,6 +256,45 @@ button:focus {
     padding: 0 64px;
     border-radius: 37px; }
 
+.capsule {
+  position: absolute;
+  z-index: 996;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  @media (max-width: 639px) {
+    .capsule {
+      display: none; } }
+  @media all and (min-width: 640px) and (max-width: 939px) {
+    .capsule {
+      display: none; } }
+  .capsule__1 {
+    top: 0px;
+    left: 100px;
+    width: 140px;
+    height: 132px;
+    background-image: url("../images/capsule-1.png"); }
+  .capsule__2 {
+    top: 50%;
+    left: 50%;
+    width: 140px;
+    height: 132px;
+    margin: 0 0 0 -70px;
+    background-image: url("../images/capsule-2.png"); }
+  .capsule__3 {
+    top: 100%;
+    right: 100px;
+    width: 140px;
+    height: 133px;
+    background-image: url("../images/capsule-3.png");
+    margin: -133px 0 0 -140px; }
+  .capsule__4 {
+    top: 1200px;
+    left: 100px;
+    width: 140px;
+    height: 141px;
+    background-image: url("../images/capsule-4.png"); }
+
 .carousel_item {
   width: 100%;
   height: 100%;
@@ -1448,83 +1487,92 @@ button:focus {
   .quick-result_photo {
     width: 100%; }
 
-.section {
-  overflow-x: hidden; }
-  .section__index {
-    background-image: url("../images/index.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
-    @media (max-width: 639px) {
-      .section__index {
-        background-image: url("../images/index-phone.jpg"); } }
-  .section__gallery {
-    position: relative; }
-    .section__gallery::after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      z-index: -1;
-      background: #000;
-      content: ''; }
-      @media (max-width: 639px) {
-        .section__gallery::after {
-          height: 380px; } }
-      @media all and (min-width: 640px) and (max-width: 939px) {
-        .section__gallery::after {
-          height: 480px; } }
-      @media all and (min-width: 940px) and (max-width: 1280px) {
-        .section__gallery::after {
-          height: 520px; } }
-      @media all and (min-width: 1281px) {
-        .section__gallery::after {
-          height: 600px; } }
-  .section__quick-result {
-    background: #000; }
-  .section__choose-coffee {
-    background: #000; }
-  .section__frothing {
-    background-color: #000;
-    background-repeat: no-repeat; }
-    @media (max-width: 639px) {
-      .section__frothing {
-        background: #000; } }
-    @media all and (min-width: 640px) and (max-width: 939px) {
-      .section__frothing {
-        background-image: url("../images/frothing-tablet.png");
-        background-position: center; } }
-    @media all and (min-width: 940px) and (max-width: 1280px) {
-      .section__frothing {
-        background-image: url("../images/frothing-desktop.png");
-        background-position: center; } }
-    @media all and (min-width: 1281px) {
-      .section__frothing {
-        background-image: url("../images/frothing-extra-desktop.png");
-        background-position: center; } }
-  .section__specifications {
-    padding: 30px 0 94px;
-    background-color: #151515;
-    background-image: url("../images/specifications.png");
-    background-repeat: repeat;
-    background-position: center; }
-    @media (max-width: 639px) {
-      .section__specifications {
-        background: none; } }
-  .section__boutiques {
-    position: relative; }
+.section__index {
+  background-image: url("../images/index.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
   @media (max-width: 639px) {
-    .section_icon {
-      margin: 0 0 15px; } }
+    .section__index {
+      background-image: url("../images/index-phone.jpg"); } }
+
+.section__gallery {
+  position: relative; }
+  .section__gallery::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background: #000;
+    content: ''; }
+    @media (max-width: 639px) {
+      .section__gallery::after {
+        height: 380px; } }
+    @media all and (min-width: 640px) and (max-width: 939px) {
+      .section__gallery::after {
+        height: 480px; } }
+    @media all and (min-width: 940px) and (max-width: 1280px) {
+      .section__gallery::after {
+        height: 520px; } }
+    @media all and (min-width: 1281px) {
+      .section__gallery::after {
+        height: 600px; } }
+
+.section__quick-result {
+  position: relative;
+  background: #000; }
+
+.section__choose-coffee {
+  background: #000; }
+
+.section__frothing {
+  background-color: #000;
+  background-repeat: no-repeat; }
+  @media (max-width: 639px) {
+    .section__frothing {
+      background: #000; } }
   @media all and (min-width: 640px) and (max-width: 939px) {
-    .section_icon {
-      margin: 0 0 20px; } }
+    .section__frothing {
+      background-image: url("../images/frothing-tablet.png");
+      background-position: center; } }
   @media all and (min-width: 940px) and (max-width: 1280px) {
-    .section_icon {
-      margin: 0 0 25px; } }
+    .section__frothing {
+      background-image: url("../images/frothing-desktop.png");
+      background-position: center; } }
   @media all and (min-width: 1281px) {
-    .section_icon {
-      margin: 0 0 25px; } }
+    .section__frothing {
+      background-image: url("../images/frothing-extra-desktop.png");
+      background-position: center; } }
+
+.section__specifications {
+  padding: 30px 0 94px;
+  background-color: #151515;
+  background-image: url("../images/specifications.png");
+  background-repeat: repeat;
+  background-position: center; }
+  @media (max-width: 639px) {
+    .section__specifications {
+      background: none; } }
+
+.section__boutiques {
+  position: relative; }
+
+@media (max-width: 639px) {
+  .section_icon {
+    margin: 0 0 15px; } }
+
+@media all and (min-width: 640px) and (max-width: 939px) {
+  .section_icon {
+    margin: 0 0 20px; } }
+
+@media all and (min-width: 940px) and (max-width: 1280px) {
+  .section_icon {
+    margin: 0 0 25px; } }
+
+@media all and (min-width: 1281px) {
+  .section_icon {
+    margin: 0 0 25px; } }
 
 .social {
   display: flex;

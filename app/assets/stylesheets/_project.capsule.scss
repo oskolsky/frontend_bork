@@ -1,0 +1,49 @@
+.capsule {
+    position: absolute;
+    z-index: 996;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include mq('phone') {
+        display: none;
+    }
+
+    @include mq('tablet') {
+        display: none;
+    }
+
+    &__1 {
+        top: 0px;
+        left: 100px;
+        width: 140px;
+        height: 132px;
+        background-image: url('../images/capsule-1.png');
+    }
+
+    &__2 {
+        top: 50%;
+        left: 50%;
+        width: 140px;
+        height: 132px;
+        margin: 0 0 0 -70px;
+        background-image: url('../images/capsule-2.png');
+    }
+
+    &__3 {
+        top: 100%;
+        right: 100px;
+        width: 140px;
+        height: 133px;
+        background-image: url('../images/capsule-3.png');
+        margin: -133px 0 0 -140px;
+    }
+
+    &__4 {
+        top: 1200px;
+        left: 100px;
+        width: 140px;
+        height: 141px;
+        background-image: url('../images/capsule-4.png');
+    }
+}
