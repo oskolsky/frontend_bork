@@ -71,7 +71,7 @@ $(function() {
                 margin: 150
             },
             1281: {
-                margin: 400
+                margin: 100
             }
         }
     });
