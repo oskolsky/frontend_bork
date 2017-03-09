@@ -39,6 +39,7 @@ body {
 h1 {
     color: #fff;
     font-family: $font-BorkDisplayRegilar;
+    font-weight: 400;
 
     @include mq('phone') {
         font-size: 18px;
@@ -67,6 +68,7 @@ h1 {
 h2 {
     color: #fff;
     font-family: $font-AkzidenzGroteskProExt;
+    font-weight: 400;
 
     @include mq('phone') {
         margin: 0 0 12px;
@@ -99,6 +101,7 @@ h3 {
     font-family: $font-AkzidenzGroteskProExt;
     font-size: 18px;
     line-height: 26px;
+    font-weight: 400;
 }
 
 p {

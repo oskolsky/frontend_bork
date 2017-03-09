@@ -56,7 +56,8 @@ body {
 
 h1 {
   color: #fff;
-  font-family: "BorkDisplayRegilar", Helvetica, Arial, sans-serif; }
+  font-family: "BorkDisplayRegilar", Helvetica, Arial, sans-serif;
+  font-weight: 400; }
   @media (max-width: 639px) {
     h1 {
       font-size: 18px;
@@ -79,7 +80,8 @@ h1 {
 
 h2 {
   color: #fff;
-  font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif; }
+  font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif;
+  font-weight: 400; }
   @media (max-width: 639px) {
     h2 {
       margin: 0 0 12px;
@@ -106,7 +108,8 @@ h3 {
   color: #fff;
   font-family: "AkzidenzGroteskProExt", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  line-height: 26px; }
+  line-height: 26px;
+  font-weight: 400; }
 
 p {
   margin: 0; }
