@@ -4,7 +4,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     height: 100%;
 
     @include mq('phone') {

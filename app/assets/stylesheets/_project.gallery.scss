@@ -4,7 +4,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: center;
     box-sizing: border-box;
 
     @include mq('phone') {
@@ -92,7 +92,7 @@
             bottom: 0;
             background: #fc642a;
             content: '';
-            animation-duration: 2.5s;
+            animation-duration: 3s;
             animation-iteration-count: infinite;
         }
 
@@ -140,15 +140,20 @@
             }
         }
 
-        @-webkit-keyframes line-left {
+        @keyframes line-left {
             0% {
                 right: 0;
                 width: 0;
             }
 
-            50% {
+            33% {
                 right: 0;
                 width: 100%;
+            }
+
+            66% {
+                right: 100%;
+                width: 0;
             }
 
             100% {
@@ -157,15 +162,20 @@
             }
         }
 
-        @-webkit-keyframes line-right {
+        @keyframes line-right {
             0% {
                 left: 0;
                 width: 0;
             }
 
-            50% {
+            33% {
                 left: 0;
                 width: 100%;
+            }
+
+            66% {
+                left: 100%;
+                width: 0;
             }
 
             100% {

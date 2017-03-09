@@ -29,7 +29,7 @@ $(function() {
 
         capsules.map(function(item, index) {
             var $el = item.el;
-            var k = (index + 1) / 100 * 20;
+            var k = (index + 1) / 100 * 40;
 
             $el.css({
                 top: item.position - (scrolled * k ),

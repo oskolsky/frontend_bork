@@ -127,3 +127,7 @@ img {
 button:focus {
     outline: none;
 }
+
+input::-ms-clear {
+    display: none;
+}

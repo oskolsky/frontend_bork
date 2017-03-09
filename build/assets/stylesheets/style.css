@@ -129,6 +129,9 @@ img {
 button:focus {
   outline: none; }
 
+input::-ms-clear {
+  display: none; }
+
 @font-face {
   font-family: 'BorkDisplayRegilar';
   src: url("../fonts/Bork-Display-Regilar/Bork-Display-Regilar.eot");
@@ -179,38 +182,37 @@ button:focus {
     transform: translateX(0); }
 
 .boutiques {
-  position: relative;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: center; }
   @media (max-width: 639px) {
     .boutiques {
-      min-height: 485px; } }
+      height: 485px; } }
   @media all and (min-width: 640px) and (max-width: 939px) {
     .boutiques {
-      min-height: 405px; } }
+      height: 405px; } }
   @media all and (min-width: 940px) and (max-width: 1280px) {
     .boutiques {
-      min-height: 540px; } }
+      height: 540px; } }
   @media all and (min-width: 1281px) {
     .boutiques {
-      min-height: 645px; } }
+      height: 645px; } }
   .boutiques_content {
     text-align: center; }
     @media (max-width: 639px) {
       .boutiques_content {
-        width: 70%; } }
+        flex: 0 1 70%; } }
     @media all and (min-width: 640px) and (max-width: 939px) {
       .boutiques_content {
-        width: 60%; } }
+        flex: 0 1 60%; } }
     @media all and (min-width: 940px) and (max-width: 1280px) {
       .boutiques_content {
-        width: 40%; } }
+        flex: 0 1 40%; } }
     @media all and (min-width: 1281px) {
       .boutiques_content {
-        width: 40%; } }
+        flex: 0 1 40%; } }
 
 .button {
   display: inline-block;
@@ -807,7 +809,7 @@ button:focus {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: center;
   box-sizing: border-box; }
   @media (max-width: 639px) {
     .gallery {
@@ -873,7 +875,7 @@ button:focus {
       bottom: 0;
       background: #fc642a;
       content: '';
-      animation-duration: 2.5s;
+      animation-duration: 3s;
       animation-iteration-count: infinite; }
     @media (max-width: 639px) {
       .gallery_line__left {
@@ -904,24 +906,30 @@ button:focus {
     .gallery_line__right::before {
       animation-name: line-right; }
 
-@-webkit-keyframes line-left {
+@keyframes line-left {
   0% {
     right: 0;
     width: 0; }
-  50% {
+  33% {
     right: 0;
     width: 100%; }
+  66% {
+    right: 100%;
+    width: 0; }
   100% {
     right: 100%;
     width: 0; } }
 
-@-webkit-keyframes line-right {
+@keyframes line-right {
   0% {
     left: 0;
     width: 0; }
-  50% {
+  33% {
     left: 0;
     width: 100%; }
+  66% {
+    left: 100%;
+    width: 0; }
   100% {
     left: 100%;
     width: 0; } }
@@ -1654,7 +1662,7 @@ button:focus {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   height: 100%; }
   @media (max-width: 639px) {
     .video {

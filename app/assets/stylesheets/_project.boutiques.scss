@@ -1,44 +1,43 @@
 .boutiques {
-    position: relative;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 
     @include mq('phone') {
-        min-height: 485px;
+        height: 485px;
     }
 
     @include mq('tablet') {
-        min-height: 405px;
+        height: 405px;
     }
 
     @include mq('desktop') {
-        min-height: 540px;
+        height: 540px;
     }
 
     @include mq('extra-desktop') {
-        min-height: 645px;
+        height: 645px;
     }
 
     &_content {
         text-align: center;
 
         @include mq('phone') {
-            width: 70%;
+            flex: 0 1 70%;
         }
 
         @include mq('tablet') {
-            width: 60%;
+            flex: 0 1 60%;
         }
 
         @include mq('desktop') {
-            width: 40%;
+            flex: 0 1 40%;
         }
 
         @include mq('extra-desktop') {
-            width: 40%;
+            flex: 0 1 40%;
         }
     }
 }
