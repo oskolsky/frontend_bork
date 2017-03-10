@@ -58,8 +58,11 @@ $(function() {
         nav: true,
         navText: ['', ''],
         autoplay: true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 2500,
+        smartSpeed: 1500,
         mergeFit: true,
+        animateIn: 'easeinoutsine',
+        animateOut: 'easeoutsine',
         responsive: {
             0: {
                 margin: 50
