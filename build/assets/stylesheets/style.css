@@ -28,7 +28,6 @@ html {
 body {
   box-sizing: border-box;
   height: 100%;
-  overflow-x: hidden;
   background: #1b1b1b;
   color: #fff;
   font-family: "AkzidenzGroteskProLight", Helvetica, Arial, sans-serif;
@@ -177,6 +176,10 @@ input::-ms-clear {
   opacity: 0;
   transition: opacity 1s, transform 1s;
   transform: translateX(30%); }
+  @media (max-width: 639px) {
+    .animation__slide-left {
+      opacity: 1;
+      transform: translateX(0); } }
   .animation-start .animation__slide-left {
     opacity: 1;
     transform: translateX(0); }

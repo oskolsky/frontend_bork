@@ -40,7 +40,7 @@ $(function() {
         loop: true,
         dots: false,
         margin: 40,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 3000,
         onChanged: function(event) {
             var current = event.item.index;
