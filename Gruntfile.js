@@ -32,7 +32,7 @@ module.exports = function(grunt) {
             video: {
                 expand: true,
                 cwd: 'app/assets/video/',
-                src: ['**/*.{mp4,webm}'],
+                src: ['**/*.{mp4,webm,jpg}'],
                 dest: 'build/assets/video/'
             },
             html: {

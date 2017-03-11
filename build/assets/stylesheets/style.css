@@ -536,12 +536,12 @@ input::-ms-clear {
     @media all and (min-width: 940px) and (max-width: 1280px) {
       .coffee_preview {
         height: 270px;
-        margin-top: 100px;
+        margin-top: 50px;
         margin-bottom: 30px; } }
     @media all and (min-width: 1281px) {
       .coffee_preview {
         height: 330px;
-        margin-top: 200px;
+        margin-top: 100px;
         margin-bottom: 30px; } }
   @media (max-width: 639px) {
     .coffee_name {
